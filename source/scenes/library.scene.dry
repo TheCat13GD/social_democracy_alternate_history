@@ -5,12 +5,12 @@ go-to: menu
 
 = The Library
 
-Herein contains relevant information about the government and politics of the German republic.
+Herein contains relevant information about the government and politics of the Aurelian Republic.
 
 @menu
 
-- @government: Germany's system of government
-- @weimar_timeline: Timeline of the Weimar Republic before 1928
+- @government: Aurelia's system of government
+- @weimar_timeline: Timeline of Aurelia before 9368
 - @curr_gov: Current government details
 - @demographics: Demographics
 - @parties: Parties
@@ -23,13 +23,13 @@ Herein contains relevant information about the government and politics of the Ge
 @government
 go-to: menu
 
-The German Republic, called by some of our detractors as the "Weimar Republic", is a parliamentary republic with a somewhat weak president and a strong parliament, called the Reichstag. The Reichstag is responsible for governing, while the President has a largely ceremonial role but also has some important governing responsibilities.
+The Aurelian Republic is a parliamentary republic with a president as head of state and a strong parliament. The Reichstag is responsible for governing, while the President has a largely ceremonial role but also has some important governing responsibilities.
 
-The Reichstag is elected based on a proportional representation system, giving parties seats roughly proportional to their vote share in each electoral district. The Reichstag then elects the Chancellor and the cabinet by a majority vote, who are responsible for government. A majority vote-of-no-confidence can remove the current government.
+The Parliament is elected based on a proportional representation system, giving parties seats roughly proportional to their vote share in each electoral constituency, as well as national lists. The Parliament then forms a government by appointing an acting President and the cabinet through a majority vote. A majority vote-of-no-confidence can remove the current government.
 
-The President is elected by a national direct vote, in two rounds. The second round is used if the first round does not result in a majority for one candidate; the candidate who receives a plurality in the second round becomes president (there is no obligation for weaker candidates to drop out). The role of the president is mostly to represent Germany, but he also has some crucial governing powers. The president and chancellor can together use emergency decrees to govern, bypassing the Reichstag. The president can also appoint or remove a chancellor when a parliamentary majority is unable to be established, and can thus influence the formation of a government.
+The President, officially the President of the Government, is elected by a national direct vote, in two rounds. The second round is used if the first round does not result in a majority for one candidate; if the candidate supported by the new coalition receives a plurality in the second round, they become president (the opposition candidates tend to form a joint list to contest the second round). The role of the President is mostly to represent Aurelia, but they also have some crucial governing powers. The President can use emergency decrees to govern, bypassing the Parliament. The president can also dissolve the Parliament without needing the support of other parties, though this usually only happens if the government lacks a parliamentary majority, or if no government is able to be formed.
 
-Germany is divided into a number of states, each of which have their own governments with some responsibilities. By far the largest and most important state is Prussia.
+Aurelia is divided into a number of autonomous provinces, each of which have their own governments with some responsibilities.
 
 @weimar_timeline
 go-to: menu
