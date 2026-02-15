@@ -9,11 +9,13 @@ new-page: true
 I know you don't want to read allat, but please do, reading will make everything make sense.
 
 - @infotext: Dynamic Social Democracy (Highly recommended for new players)
-- @faq: FAQ (not)
+- @faq: Frequently Asked Questions
+- @paths: What are all the paths?
+- @changelog: Changelog + Future Updates!
+- @discord: Discord
 - @source: Credits and Sources
 - @root.start: Start game
 - @root: Back
-
 
 @infotext
 
