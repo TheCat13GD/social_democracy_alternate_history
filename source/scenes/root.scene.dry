@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Verdant Spring: An Alternate History
+= Verdant Spring: An Alternate Future
 
 @start_menu_2
 
