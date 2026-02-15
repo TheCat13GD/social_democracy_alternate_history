@@ -29,6 +29,8 @@ Dynamic Social Democracy is an ambitious overhaul mod aimed to bring historical 
 
 Answer.
 
+- @flavors: Back
+
 @changelog
 on-arrival:{!
 const toolsWrapper = document.getElementById('tools_wrapper');
@@ -48,10 +50,6 @@ elements.forEach(el => {
 [? if not snoopy: - Dynamtions to not apply. ?]
 
 [? if not snoopy: - Other bug fixes. ?]
-
-= Future Plans
-
-I'm currently working on another mod, *La Via Chilena al Socialismo*. Updates will resume once that's finished.
 
 - @back3: Back
 
@@ -101,3 +99,5 @@ Various JSTOR articles, and German wikipedia pages
 = Original Soundtrack
 
 None (yet).
+
+- @flavors: Back
