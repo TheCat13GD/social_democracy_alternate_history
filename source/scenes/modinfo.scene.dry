@@ -19,7 +19,7 @@ I know you don't want to read allat, but please do, reading will make everything
 
 @infotext
 
-Dynamic Social Democracy is an ambitious overhaul mod aimed to bring historical realism and a dynamic party system to the late Weimar Republic. Something something <span style="color: #7A3C00;">Nazis</span>, yadda yadda <span style="color: #c00000;">**SPD**</span>, <span style="color: #000000;">Center</span>, <span style="color: #C0A054;">**DVP**</span>, <span style="color: #7A3C00;">Hitle</span><span style="color: #808080;">nburg</span>, you know the drill... or do you?
+Dynamic Social Democracy is an ambitious overhaul mod aimed to bring historical realism and a dynamic party system to the late Weimar Republic. Something something <span style="color: #7A3C00;">Nazis</span>, yadda yadda <span style="color: #c00000;">**SPD**</span>, <span style="color: #000000;">Zentrum</span>, <span style="color: #C0A054;">**DVP**</span>, <span style="color: #7A3C00;">Hitle</span><span style="color: #808080;">nburg</span>, you know the drill... or do you?
 
 - @flavors: Back
 
@@ -27,43 +27,9 @@ Dynamic Social Democracy is an ambitious overhaul mod aimed to bring historical 
 
 = FAQ
 
-**Hindenburg keeps sacking me! How do I prevent it?**
+**Question?**
 
-It's hard to prevent him from sacking you if you plan to stay in office for the full four years, but pausing reparations (by not exposing rearmament), keeping the Reichswehr loyal, maintaining a budget surplus, keeping a high pro republic support, a low coalition dissent, avoiding land reform, and keeping unemployment and NSDAP poll numbers low, all help. Remember, him sacking you is not the end of the world, and being free from the burden of government could be a blessing in disguise. Sometimes you have to accept it.
-
-**How impactful is government burden?**
-
-A main problem with newer players is that, they overestimate the negative effects of not completing government burden. It is not the end of the world if you miss a goal or two or three, some sacrifices are needed if you need to garner the budget for an economic plan. That said, you also can't afford to completely ignore the Labor Ministry; repeated failures there will significantly increase internal dissent.
-
-**How do I impact a party's ideologies and get certain paths? Is it RNG?**
-
-Nothing in Dynamic relies on RNG, aside from card draws. The Support for the Republic value plays a crucial role in determining party congress outcomes, particularly within the <span style="color: #3E88B3;">**DNVP**</span>. The liberal parties, on the other hand, are primarily influenced by governmental actions—moving toward economic democracy and left-wing policies will push them rightward, while maintaining good relations and avoiding major socialist policies will bring them closer. Relations also matter significantly, making the negotiation skills of Müller and Braun highly valuable.
-
-**What happened to the WTB Plan?**
-
-Woytinsky only came up with the plan in late 1931 after the Banking Crisis, so to represent this, you need to get the event where Woytinsky proposes the concept in order to support it. The event is dynamic, and can trigger depending on factors such as: the state of the economy, deflation, labor faction strength, and most importantly internal party dissent. Appointing Woytinsky as an advisor aids significantly, as his presence passively increases the rate.
-
-**What is Dynamic Mode?**
-
-Dynamic mode is the intended way to play the mod, combining elements of both easy and historical modes. It reduces RNG with the shuffle leadership and card dismissal features of easy mode while retaining the starting variables of historical mode, such as relations and Reichsbanner strength.
-
-**How do I elect Stegerwald?**
-
-You will have to get Stegerwald as the leader of Prussia, either through Braun resigning, or having a right-wing coalition form.
-
-**How do I cross the rubicon?**
-
-Hindenburg needs to dismiss Chancellor Brüning following the 1932 Presidential elections. This unlocks Rubicon Mode, which remains active for the rest of the game. Since this is the historical sequence of events, you'll need to follow a similar political path, such as securing a Hugenberg-led <span style="color: #3E88B3;">**DNVP**</span>, to have a better chance of unlocking it.
-
-**Why is the left path so hard?**
-
-Unlike Redux, this mod does not include any post–civil war content or additional <span style="color: #700000;">**KPD**</span> or revolutionary paths. This is primarily due to time constraints—by the time of release, the mod had already been in development for over 9 months. As a result, the only truly "viable" path is the Reformist one, given the immense difficulty of building socialism within a bourgeois democracy—especially with figures like Hindenburg as president and the hostility of the bourgeois parties.
-
-# for the angry redditors....
-
-**Why can't I form a coalition with a moderate Christian-Socialist DNVP or KVP?**
-
-The Christian Socials of the DNVP, and the party as a whole, remain a racist and antisemitic party, though they are more willing to operate within a democratic framework. The "Christian Socialism" of Weimar Germany is not the Christian Socialism of today; a better comparison would be Austria’s Christian Social Party. It is a nationalist, corporatist, and deeply religious right-wing ideology. The KVP is still a strongly anti-Marxist and nationalistic party at heart, and it would be against everything they stand for to coalition with the socialists.
+Answer.
 
 - @flavors: Back
 
