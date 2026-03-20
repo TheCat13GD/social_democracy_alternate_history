@@ -545,6 +545,9 @@ table {
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
+.seat.prarr {
+    fill: #c9c;
+}
 .seat.ddp {
     fill: #DCCA4A;
 }
