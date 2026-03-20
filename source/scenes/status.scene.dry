@@ -40,6 +40,8 @@ Reichstag composition:
 # 1928: 30, 1930: 25, 1932: 22
 {!<span class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
+# PRARR
+{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans">PRARR</span>!}: [+ prarr_r +]%
 # 1928: 15, 1930: 15, 1932: 
 {!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
 # 1928: 10, 1930: 13
@@ -75,6 +77,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
+{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans">PRARR</span>!}: [+ prarr_relation : relationships +]
+
 {!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
 
 {!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
@@ -90,6 +94,8 @@ Economic growth: [+ economic_growth_2 +]%
 = Party Leadership
 
 {!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: #390;"><strong>VPs</strong></span>!}: Reformist Verdantianism (IDK)
+
+{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;"><strong>PRARR</strong></span>!}: IDK (IDK)
 
 {!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
 
@@ -174,6 +180,8 @@ Q.socialism_disp = Math.round(Q.socialism);
 (if the election were to be held now):
 
 SPD: [+ spd_votes +]%
+
+<span style="color: #c9c;"><strong>PRARR</strong></span>: [+ prarr_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
