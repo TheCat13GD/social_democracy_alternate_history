@@ -15,7 +15,16 @@ The consensus candidate on the right is incumbent leader XXX, who has lately bee
 @xxx
 on-arrival: z_party_leader = "Kaas"; z_relation -= 5
 
-Unfortunately, XXX has been reelected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>, and has approved the merger with the smaller technocratic groups, who have also done the same. What remains of the party's Left and Center have resigned, with many joining the <span style="color: #390;"><strong>VPs</strong></span> and <span style="color: #f90;"><strong>ADP</strong></span>.
+Unfortunately, XXX has been re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>, and has approved the merger with the smaller technocratic groups, who have also done the same.
+
+- @rpp: The <span style="color: #99c;"><strong>RPP</strong></span> is formed.
+
+@rpp
+on-arrival: z_party_leader = "Kaas"; z_relation -= 5
+
+With XXX's re-election and the approved merger of the technocratic forces, the Right seems to have finally won the intra-party struggle. Styling itself as the <span style="color: #99c;">Revolutionary Progress Party</span> (<span style="color: #99c;"><strong>RPP</strong></span>), the new party aims to end all cooperation with us, and to work more closely with the political right, particularly the Taulè government.
+
+What remains of the Left and Center have finally resigned, with many joining the <span style="color: #390;"><strong>VPs</strong></span> or the <span style="color: #f90;"><strong>ADP</strong></span>.
 
 @yyy
 unavailable-subtitle: Our relations are not good enough.
