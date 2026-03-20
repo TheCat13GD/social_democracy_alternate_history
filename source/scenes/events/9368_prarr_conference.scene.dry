@@ -12,4 +12,29 @@ max-visits: 1
 
 The <span style="color: #c9c;"><strong>PRARR</strong></span> is holding its biennial conference to determine the party's future. Since the Left lost control of the leadership four years ago, the party has been slowly but steadily drifting to the right. A split which took away half of the party's membership further accelerated this shift.
 
-Csndidates n sutd.
+The consensus candidate on the right is incumbent leader XXX, who has lately been flirting with the idea of merging with the various minor technocratic and conservative groups across the Republic. On the other hand, there is YYY, who has been more supportive of cooperation with the VPs than most of the party, and is back by the remaining members of the Left and Center.
+
+- @kaas: The <span style="color: #c9c;"><strong>PRARR</strong></span> votes in favor of the merger.
+- @joos: Influence the <span style="color: #c9c;"><strong>PRARR</strong></span> to select YYY as the party chair and reject any merger with right-wing groups.
+
+@kaas
+on-arrival: z_party_leader = "Kaas"; z_relation -= 5
+
+Unfortunately, XXX has been reelected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>, and has approved the merger with the smaller technocratic groups, who have also dones the same. What remains of the party's Left and Center have resigned, with many joining the <span style="color: #390;"><strong>VPs</strong></span> and <span style="color: #f90;"><strong>ADP</strong></span>.
+
+@joos
+unavailable-subtitle: Our relations are not good enough.
+subtitle: Joos is likely to be friendlier to us than Kaas.
+choose-if: z_relation >= 70
+on-arrival: z_party_leader = "Joos"; catholics_spd += 5; workers_z += 3
+
+With our grassroots connections, we have been able to influence the Center delegates to support Joseph Joos as the new Center chairman. He has long been a friend of the SPD, and will be more inclined to collaborate with us compared to Kaas. He also increases the appeal of the Center Party to the working class.
+
+@joos_campaign
+choose-if: z_relation >= 62 and resources >= 1 
+view-if: z_relation < 70
+unavailable-subtitle: [? if z_relation <= 62 : Our relations are not good enough. ?] [? if resources < 1 : We do not have enough resources. ?]
+subtitle: -1 resource. Joos is likely to be friendlier to us than Kaas.
+on-arrival: resources -= 1; z_party_leader = "Joos"; catholics_spd += 5; workers_z += 3
+
+With our grassroots connections as well as a professional campaign, we have been able to influence the Center delegates to support Joseph Joos as the new Center chairman. He has long been a friend of the SPD, and will be more inclined to collaborate with us compared to Kaas. He also increases the appeal of the Center Party to the working class.
