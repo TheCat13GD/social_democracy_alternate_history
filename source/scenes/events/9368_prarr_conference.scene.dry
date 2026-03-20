@@ -1,0 +1,15 @@
+title: 1929
+subtitle: A new year
+on-arrival: {!
+// see post_event.scene.dry for changes.
+Q.economic_growth -= 4;
+
+!}
+tags: event
+view-if: year = 1928 and month = 3
+priority: 2
+max-visits: 1
+
+The <span style="color: #c9c;"><strong>PRARR</strong></span> is holding its biennial conference to determine the party's future. Since the Left lost control of the leadership four years ago, the party has been slowly but steadily drifting to the right. A split which took away half of the party's membership further accelerated this shift.
+
+Csndidates n sutd.
