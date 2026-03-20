@@ -1,18 +1,13 @@
-title: 1929
-subtitle: A new year
-on-arrival: {!
-// see post_event.scene.dry for changes.
-Q.economic_growth -= 4;
-
-!}
-tags: event
-view-if: year = 1928 and month = 3
-priority: 2
+title: <span style="color: #c9c;"><strong>PRARR</strong></span> Conference
+subtitle: The Center Party chooses their new leader...
+view-if: year = 1928 and month = 3 and z_party_leader = "Marx"
 max-visits: 1
+tags: event
+new-page: true
 
-The <span style="color: #c9c;"><strong>PRARR</strong></span> is holding its biennial conference to determine the party's future. Since the Left lost control of the leadership four years ago, the party has been slowly but steadily drifting to the right. A split which took away half of the party's membership further accelerated this shift.
+The <span style="color: #c9c;"><strong>PRARR</strong></span> is holding its biennial conference to determine the party's future. Since the Left lost control of the leadership four years ago, the party has been slowly but steadily drifting to the right. A split that took away half of the party's membership in November 9365 further accelerated this shift.
 
-The consensus candidate on the right is incumbent leader XXX, who has lately been flirting with the idea of merging with the various minor technocratic and conservative groups across the Republic. On the other hand, there is YYY, who has been more supportive of cooperation with the VPs than most of the party, and is back by the remaining members of the Left and Center.
+The consensus candidate on the right is incumbent leader XXX, who has lately been flirting with the idea of merging with the various minor technocratic and conservative groups across the Republic. On the other hand, there is YYY, who has been more supportive of cooperation with the <span style="color: #390;"><strong>VPs</strong></span> than most of the party lately, and is backed by the remaining members of the Left and Center.
 
 - @xxx: The <span style="color: #c9c;"><strong>PRARR</strong></span> votes in favor of the merger.
 - @yyy: Influence the <span style="color: #c9c;"><strong>PRARR</strong></span> to select YYY as the party chair and reject any merger with right-wing groups.
