@@ -1,35 +1,35 @@
 title: <span style="color: #c9c;"><strong>PRARR</strong></span> Conference
 subtitle: The party decides on its future...
-view-if: year = 1928 and month = 3 and z_party_leader = "Marx"
+view-if: year = 1928 and month = 3
 max-visits: 1
 tags: event
 new-page: true
 
 The <span style="color: #c9c;"><strong>PRARR</strong></span> is holding its biennial conference to determine the party's future. Since the Left lost control of the leadership four years ago, the party has been slowly but steadily drifting to the right. A split that took away half of the party's membership in November 9365 further accelerated this shift.
 
-The consensus candidate on the right is incumbent leader XXX, who has lately been flirting with the idea of merging with the various minor technocratic and conservative groups across the Republic. On the other hand, there is YYY, who has been more supportive of cooperation with the <span style="color: #390;"><strong>VPs</strong></span> than most of the party lately, and is backed by the remaining members of the Left and Center.
+The consensus candidate on the right is incumbent leader Facra, who has lately been flirting with the idea of merging with the various minor technocratic and conservative groups across the Republic. On the other hand, there is YYY, who has been more supportive of cooperation with the <span style="color: #390;"><strong>VPs</strong></span> than most of the party lately, and is backed by the remaining members of the Left and Center.
 
-- @xxx: The <span style="color: #c9c;"><strong>PRARR</strong></span> votes for XXX and in favor of the merger.
+- @facra: The <span style="color: #c9c;"><strong>PRARR</strong></span> votes for Facra and in favor of the merger.
 - @yyy: Influence the <span style="color: #c9c;"><strong>PRARR</strong></span> to select YYY as the party chair and reject any merger with right-wing groups.
 
-@xxx
-on-arrival: z_party_leader = "Kaas"; z_relation -= 5
+@facra
+on-arrival: prarr_leader = "Facra"; z_relation -= 5
 
-Unfortunately, XXX has been re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>, and has approved the merger with the smaller technocratic groups, who have also done the same.
+Unfortunately, Facra has been re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>, and has approved the merger with the smaller technocratic groups, who have also done the same.
 
 - @rpp: The <span style="color: #99c;"><strong>RPP</strong></span> is formed.
 
 @rpp
-on-arrival: z_party_leader = "Kaas"; z_relation -= 5
+on-arrival: prarr_relation -= 15; workers_prarr -= 3 new_middle_prarr -= 2; old_middle_prarr += 5;
 
-With XXX's re-election and the approved merger of the technocratic forces, the Right seems to have finally won the intra-party struggle. Styling itself as the <span style="color: #99c;">Revolutionary Progress Party</span> (<span style="color: #99c;"><strong>RPP</strong></span>), the new party aims to end all cooperation with us, and to work more closely with the political right, particularly the Taulè government.
+With Facra's re-election and the approved merger of the technocratic forces, the Right seems to have finally won the intra-party struggle. Styling itself as the <span style="color: #99c;">Revolutionary Progress Party</span> (<span style="color: #99c;"><strong>RPP</strong></span>), the new party aims to end all cooperation with us, and to work more closely with the political right, particularly the Taulè government.
 
 What remains of the Left and Center have finally resigned, with many joining the <span style="color: #390;"><strong>VPs</strong></span> or the <span style="color: #f90;"><strong>ADP</strong></span>.
 
 @yyy
 unavailable-subtitle: Our relations are not good enough.
-subtitle: YYY is strongly opposed to the proposed merger and is likely to be friendlier to us than XXX.
+subtitle: YYY is strongly opposed to the proposed merger and is likely to be much friendlier to us than Facra.
 choose-if: z_relation >= 70
-on-arrival: z_party_leader = "Joos"; catholics_spd += 5; workers_z += 3
+on-arrival: prarr_leader = "YYY"; new_middle_spd += 5; workers_prarr += 3
 
-With our grassroots connections, we have been able to influence the <span style="color: #c9c;"><strong>PRARR</strong></span> delegates to support YYY as the new chairman, replacing XXX. He will attempt to push the party toward a more cooperative line with us. This victory has helped the party to recover some of its lost electoral strenght, compensating for the defection of XXX's supporters.
+With our grassroots connections, we have been able to influence the <span style="color: #c9c;"><strong>PRARR</strong></span> delegates to support YYY as the new chairman, replacing Facra. He will attempt to push the party toward a more cooperative line with us. This victory has helped the party to recover some of its lost electoral strenght, compensating for the defection of Facra's supporters.
