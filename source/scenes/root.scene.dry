@@ -102,6 +102,7 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
+Q.prarr_relation = 50;
 Q.z_relation = 50;
 Q.kpd_relation = 25;
 Q.ddp_relation = 60;
@@ -229,7 +230,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['spd', 'prarr', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
@@ -237,6 +238,7 @@ Q.sapd_formed = 0;
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_spd = 60;
+Q.workers_prarr = 10;
 Q.workers_kpd = 20;
 Q.workers_z = 5;
 Q.workers_ddp = 0;
@@ -246,6 +248,7 @@ Q.workers_nsdap = 0;
 Q.workers_other = 10;
 
 Q.old_middle_spd = 5;
+Q.old_middle_prarr = 15;
 Q.old_middle_kpd = 0;
 Q.old_middle_z = 5;
 Q.old_middle_ddp= 10;
@@ -255,6 +258,7 @@ Q.old_middle_nsdap = 10;
 Q.old_middle_other = 10;
 
 Q.new_middle_spd = 5;
+Q.new_middle_prarr = 20;
 Q.new_middle_kpd = 1;
 Q.new_middle_z = 10;
 Q.new_middle_ddp= 25;
@@ -264,6 +268,7 @@ Q.new_middle_nsdap = 5;
 Q.new_middle_other = 15;
 
 Q.rural_spd = 10;
+Q.rural_prarr = 0;
 Q.rural_kpd = 0;
 Q.rural_z = 5;
 Q.rural_ddp= 5;
@@ -273,6 +278,7 @@ Q.rural_nsdap = 5;
 Q.rural_other = 10;
 
 Q.unemployed_spd = 25;
+Q.unemployed_prarr = 0;
 Q.unemployed_kpd = 55;
 Q.unemployed_z = 1;
 Q.unemployed_ddp = 0;
@@ -282,6 +288,7 @@ Q.unemployed_nsdap = 15;
 Q.unemployed_other = 9;
 
 Q.catholics_spd = 15;
+Q.catholics_prarr = 0;
 Q.catholics_kpd = 2;
 Q.catholics_z = 50;
 Q.catholics_ddp = 0;
@@ -298,7 +305,8 @@ Q.catholics_other = 12;
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
 Q.spd_r = 26;
-Q.kpd_r = 9;
+Q.prarr_r = 2;
+Q.kpd_r = 7;
 Q.z_r = 17;
 Q.ddp_r = 6;
 Q.dvp_r = 10;
@@ -308,7 +316,8 @@ Q.other_r = 9;
 
 // diff from prev
 Q.old_spd_r = 26;
-Q.old_kpd_r = 9;
+Q.old_prarr_r = 2;
+Q.old_kpd_r = 7;
 Q.old_z_r = 17;
 Q.old_ddp_r = 6;
 Q.old_dvp_r = 10;
@@ -320,6 +329,8 @@ Q.old_other_r = 9;
 Q.sapd_r = 0;
 Q.old_sapd_r = 0;
 
+// for changing the PRARR's name to the RPP
+Q.prarr_name = "PRARR";
 // for changing the DDP's name to the DStP
 Q.ddp_name = "DDP";
 
@@ -505,9 +516,9 @@ Q.n_elections = 0;
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
-Q.next_election_year = 1928;
-Q.next_election_month = 5;
-Q.next_election_time = 5;
+Q.next_election_year = 1929;
+Q.next_election_month = 4;
+Q.next_election_time = 4;
 // government affairs timers
 Q.agricultural_policy_timer = 0;
 Q.domestic_enemies_timer = 0;
