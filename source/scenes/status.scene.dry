@@ -41,7 +41,7 @@ Reichstag composition:
 {!<span class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # PRARR
-{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans">PRARR</span>!}: [+ prarr_r +]%
+{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;"><strong>PRARR</strong></span>!}: [+ prarr_r +]%
 # 1928: 15, 1930: 15, 1932: 
 {!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
 # 1928: 10, 1930: 13
@@ -77,7 +77,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
-{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans">PRARR</span>!}: [+ prarr_relation : relationships +]
+{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;"><strong>PRARR</strong></span>!}: [+ prarr_relation : relationships +]
 
 {!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
 
