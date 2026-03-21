@@ -189,6 +189,14 @@ data = [
         "seats": Math.round(Q.kpd_r*5),
     }
 ];
+data = data.concat([
+    {
+        "id": "rpls",
+        "legend": "RPL&S",
+        "name": "RPL&S",
+        "seats": Q.rpls_r*5,
+    },
+]);
 if (Q.sapd_formed && Q.sapd_r) {
     data.push({
             "id": "sapd",
@@ -278,6 +286,8 @@ go-to: coalition_menu
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#8B0000'> </div> !}KPD: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#c9c'> </div> !}RPL&S: {!</td><td>!} [+ rpls_r +]% {!</td><td>!} [+ str_change_rpls +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#c9c'> </div> !}PRARR: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!}
 
