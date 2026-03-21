@@ -48,7 +48,7 @@ go-to: menu
 
 **9359**: The <span style="color: #390;">Green Unions</span>' congress passes an extensive series of reforms, officially establishing the <span style="color: #390;">Party of Verdantian Progressives</span> (<span style="color: #390;">**VPs**</span>).
 
-**9360**: <span style="color: #000;">**Center** Party</span> and <span style="color: #f90;">**ADP**</span> leaders proclaim the formation of the Aurelian Republic. New elections are held, resulting in the <span style="color: #000;">**Center**</span>'s Urjoi Pol becoming the Republic's first President and forming a majority Grand Coalition with the <span style="color: #6cf;">**APP**</span>. The radical and futurist branches of the <span style="color: #f90;">**ADP**</span> break away, forming the <span style="color: #f30;">**RPL&S**</span> and <span style="color: #c9c;">**PRARR**</span> respectively. The constitution of the new Republic is ratified in August.
+**9360**: <span style="color: #000;">**Center** Party</span> and <span style="color: #f90;">**ADP**</span> leaders proclaim the formation of the Aurelian Republic. New elections are held, resulting in the <span style="color: #000;">**Center**</span>'s Urjoi Pol becoming the Republic's first President and forming a majority Grand Coalition with the <span style="color: #6cf;">**APP**</span>. The radical and futurist branches of the <span style="color: #f90;">**ADP**</span> break away, forming the <span style="color: #f30;">****</span> and <span style="color: #c9c;">**PRARR**</span> respectively. The constitution of the new Republic is ratified in August.
 
 **9363**: Snap elections are called amidst of a worsening economic situation and an internal crisis within the <span style="color: #6cf;">**APP**</span>, resulting in the Grand Coalition being extended to the <span style="color: #f90;">**ADP**</span> in order to retain their majority.
 
@@ -341,7 +341,7 @@ data = [
     }];
 data = data.concat([
     {
-        "id": "rpl&s",
+        "id": "rpls",
         "legend": "RPL&S",
         "name": "RPL&S",
         "seats": Q.rpls_r*5,
@@ -423,7 +423,7 @@ if (d3 && window) {
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'spd': '#E3000F', 'kpd': '#8B0000', 'rpl&s': '#f30', 'prarr': '#C9C', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
+            {'spd': '#E3000F', 'kpd': '#8B0000', 'rpls': '#f30', 'prarr': '#C9C', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
             {'spd': 'SPD', 'kpd': 'KPD', 'prarr': 'PRARR', 'ddp': Q.ddp_name, 'z': 'Z', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
@@ -436,8 +436,8 @@ if (d3 && window) {
     if (!Q.historical_mode || Q.game_over) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-            {'spd': '#E3000F', 'kpd': '#8B0000', 'rpl&s': '#f30', 'prarr': '#C9C', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'spd': 'SPD', 'kpd': 'KPD', 'rpl&s': 'RPL&S', 'prarr': 'PRARR', 'ddp': Q.ddp_name, 'z': 'Z', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
+            {'spd': '#E3000F', 'kpd': '#8B0000', 'rpls': '#f30', 'prarr': '#C9C', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
+            {'spd': 'SPD', 'kpd': 'KPD', 'rpls': 'RPL&S', 'prarr': 'PRARR', 'ddp': Q.ddp_name, 'z': 'Z', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -465,7 +465,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!}KPD: {!</td><td>!} [+ kpd_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#f30'> </div></td> <td>!}RPL&S: {!</td><td>!} [+ rpls_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#f30'> </div></td> <td>!}RPLS: {!</td><td>!} [+ rpls_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#c9c'> </div></td> <td>!}PRARR: {!</td><td>!} [+ prarr_r +]% {!</td></tr>!}
 
