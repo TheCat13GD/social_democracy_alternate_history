@@ -42,6 +42,8 @@ Reichstag composition:
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 10, 1930: 13
 {!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_r +]%
+# RPL&S
+{!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: #f30;"><strong>RPL&S</strong></span>!}: [+ rpl&s_r +]%
 # PRARR
 {!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;"><strong>PRARR</strong></span>!}: [+ prarr_r +]%
 # 1928: 15, 1930: 15, 1932: 
@@ -79,6 +81,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
 
+{!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: #f30;"><strong>RPL&S</strong></span>!}: [+ rpl&s_relation : relationships +]
+
 {!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;"><strong>PRARR</strong></span>!}: [+ prarr_relation : relationships +]
 
 {!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
@@ -96,6 +100,8 @@ Economic growth: [+ economic_growth_2 +]%
 {!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: #390;"><strong>VPs</strong></span>!}: Reformist Verdantianism (IDK)
 
 {!<span class="tooltip-text" title="Communist Party of Germany" style="color: #700000;"><strong>KPD</strong></span>!}: [+ kpd_ideology +] ([+ kpd_party_leader +])
+
+{!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: #f30;"><strong>RPL&S</strong></span>!}: [+ rpl&s_relation : relationships +]
 
 {!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;"><strong>PRARR</strong></span>!}: [+ prarr_ideology +] ([+ prarr_leader +])
 
@@ -181,11 +187,13 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 SPD: [+ spd_votes +]%
 
+[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+
 KPD: [+ kpd_votes +]%
 
-<span style="color: #c9c;"><strong>PRARR</strong></span>: [+ prarr_votes +]%
+<span style="color: #f30;"><strong>RPL&S</strong></span>: [+ rpl&s_votes +]%
 
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+<span style="color: #c9c;"><strong>PRARR</strong></span>: [+ prarr_votes +]%
 
 Z: [+ z_votes +]%
 
@@ -201,7 +209,7 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: SPD: [+ workers_spd_display +]%, KPD: [+ workers_kpd_display +]%, PRARR: [+ workers_prarr_display +]%, Z: [+ workers_z_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: SPD: [+ workers_spd_display +]%, KPD: [+ workers_kpd_display +]%, RPL&S: [+ workers_rpl&s_display +]%, PRARR: [+ workers_prarr_display +]%, Z: [+ workers_z_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
 New Middle Class: SPD: [+ new_middle_spd_display +]%, KPD: [+ new_middle_kpd_display +]%, PRARR: [+ new_middle_prarr_display +]%, Z: [+ new_middle_z_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ new_middle_ddp_display +]%, DVP: [+ new_middle_dvp_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
