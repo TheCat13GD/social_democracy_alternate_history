@@ -540,6 +540,9 @@ table {
 .seat.kpd {
     fill: #8B0000;
 }
+.seat.rpls {
+    fill: #f30;
+}
 .seat.spd {
     fill: #E3000F;
     stroke: var(--border-color);
