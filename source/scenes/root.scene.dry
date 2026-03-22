@@ -118,6 +118,8 @@ Q.kpd_party_leader = "Thälmann";
 Q.kpd_ideology = "Stalinism";
 Q.prarr_leader = "Facra";
 Q.prarr_ideology = "IDK";
+Q.ddp_leader = "Koch-Weser";
+Q.ddp_ideology = "Left Liberalism";
 Q.z_leader = "Brüning";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
 Q.z_party_leader = "Marx";
