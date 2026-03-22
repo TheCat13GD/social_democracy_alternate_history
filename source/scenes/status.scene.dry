@@ -105,7 +105,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;"><strong>PRARR</strong></span>!}: [+ prarr_ideology +] ([+ prarr_leader +])
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_ideology +] ([+ ddp_leader +])
 
 {!<span class="tooltip-text" title="Center Party" style="color: #000;"><strong>Z</strong></span>!}: [+ z_ideology +] ([+ z_party_leader +])
 
