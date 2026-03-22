@@ -313,10 +313,6 @@ Q.catholics_other = 12;
 
 // Current Reichstag composition
 // % of Reichstag in Jan 1928
-// source: wikipedia
-// note: the Z figures also include the Bavarian people's party (...Not!)
-// since they were ideologically similar, but they were separate parties.
-// They did not have a CDU/CSU-style relationship.
 Q.spd_r = 9;
 Q.kpd_r = 5;
 Q.rpls_r = 15;
