@@ -317,28 +317,28 @@ Q.catholics_other = 12;
 // note: the Z figures also include the Bavarian people's party (...Not!)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.spd_r = 26;
-Q.kpd_r = 4;
-Q.rpls_r = 3;
-Q.prarr_r = 2;
+Q.spd_r = 9;
+Q.kpd_r = 5;
+Q.rpls_r = 15;
+Q.prarr_r = 1;
+Q.ddp_r = 8;
 Q.z_r = 17;
-Q.ddp_r = 6;
-Q.dvp_r = 10;
-Q.dnvp_r = 20;
-Q.nsdap_r = 3;
-Q.other_r = 9;
+Q.dvp_r = 17;
+Q.dnvp_r = 21;
+Q.nsdap_r = 7;
+Q.other_r = 0;
 
 // diff from prev
-Q.old_spd_r = 26;
-Q.old_kpd_r = 4;
-Q.old_rpls_r = 3;
-Q.old_prarr_r = 2;
+Q.old_spd_r = 9;
+Q.old_kpd_r = 5;
+Q.old_rpls_r = 15;
+Q.old_prarr_r = 1;
+Q.old_ddp_r = 8;
 Q.old_z_r = 17;
-Q.old_ddp_r = 6;
-Q.old_dvp_r = 10;
-Q.old_dnvp_r = 20;
-Q.old_nsdap_r = 3;
-Q.old_other_r = 9;
+Q.old_dvp_r = 17;
+Q.old_dnvp_r = 21;
+Q.old_nsdap_r = 7;
+Q.old_other_r = 0;
 
 // sapd isn't formed yet, but it may be formed
 Q.sapd_r = 0;
