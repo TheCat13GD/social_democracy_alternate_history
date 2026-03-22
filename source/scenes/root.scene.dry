@@ -342,8 +342,6 @@ Q.old_sapd_r = 0;
 
 // for changing the PRARR's name to the RPP (Unused)
 Q.prarr_name = "PRARR";
-// for changing the DDP's name to the DStP
-Q.ddp_name = "DDP";
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
