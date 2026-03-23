@@ -261,8 +261,8 @@ Q.new_middle_rpls = 3;
 Q.new_middle_prarr = 5;
 Q.new_middle_ddp= 25;
 Q.new_middle_z = 20;
-Q.new_middle_dvp = 37;
-Q.new_middle_dnvp = 20;
+Q.new_middle_dvp = 42;
+Q.new_middle_dnvp = 15;
 Q.new_middle_nsdap = 5;
 Q.new_middle_other = 0;
 
@@ -271,9 +271,9 @@ Q.old_middle_kpd = 0;
 Q.old_middle_rpls = 0;
 Q.old_middle_prarr = 5;
 Q.old_middle_ddp= 8;
-Q.old_middle_z = 10;
-Q.old_middle_dvp = 35;
-Q.old_middle_dnvp = 30;
+Q.old_middle_z = 15;
+Q.old_middle_dvp = 40;
+Q.old_middle_dnvp = 20;
 Q.old_middle_nsdap = 15;
 Q.old_middle_other = 0;
 
