@@ -117,3 +117,5 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#000'> </div></td><td>!}Z: {!</td><td>!} [+ z_r +]% {!</td></tr>!}
 {!</table>!}
+
+Something something new leader.
