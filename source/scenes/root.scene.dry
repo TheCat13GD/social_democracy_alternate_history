@@ -248,11 +248,11 @@ Q.workers_spd = 20;
 Q.workers_kpd = 15;
 Q.workers_rpls = 40;
 Q.workers_prarr = 2;
-Q.workers_z = 8;
+Q.workers_z = 10;
 Q.workers_ddp = 10;
 Q.workers_dvp = 5;
 Q.workers_dnvp = 30;
-Q.workers_nsdap = 5;
+Q.workers_nsdap = 3;
 Q.workers_other = 0;
 
 Q.new_middle_spd = 2;
@@ -295,8 +295,8 @@ Q.unemployed_prarr = 0;
 Q.unemployed_z = 5;
 Q.unemployed_ddp = 1;
 Q.unemployed_dvp = 2;
-Q.unemployed_dnvp = 12;
-Q.unemployed_nsdap = 15;
+Q.unemployed_dnvp = 22;
+Q.unemployed_nsdap = 5;
 Q.unemployed_other = 0;
 
 Q.catholics_spd = 10;
