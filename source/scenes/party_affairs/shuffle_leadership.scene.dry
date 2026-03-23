@@ -290,11 +290,11 @@ tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_adv
 frequency: 1
 
 
-- @left: Add Leftists
-- @neorev: Add Neorevisionists
-- @centrist: Add Centrists
-- @labor: Add Labor
-- @reformist: Add Reformists
+- @left: Add <span style="color: #060;">Leftists</span>
+- @neorev: Add <span style="color: #096;">Neorevisionists</span>
+- @centrist: Add <span style="color: #390;">Centrists</span>
+- @labor: Add <span style="color: #cc0;">Labor</span>
+- @reformist: Add <span style="color: #6c0;">Reformists</span>
 - @nonfactional: Add non-factional advisors
 - @rm_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
