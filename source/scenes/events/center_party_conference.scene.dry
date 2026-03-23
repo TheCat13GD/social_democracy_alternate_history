@@ -1,11 +1,11 @@
-title: <span style="color: #c9c;"><strong>Center</strong></span> Party Conference
-subtitle: The Center Party chooses their new leader...
-view-if: year = 1928 and month = 12 and z_party_leader = "Marx"
+title: <span style="color: #000;"><strong>Center</strong></span> Party Conference
+subtitle: The <span style="color: #000;"><strong>Center</strong></span> Party chooses their new leader...
+view-if: year = 1929 and month = 5 and z_party_leader = "Marx"
 max-visits: 1
 tags: event
 new-page: true
 
-= <span style="color: #c9c;"><strong>Center</strong></span> Party Conference
+= <span style="color: #000;"><strong>Center</strong></span> Party Conference
 
 # reference: Evans, Ellen L. “Adam Stegerwald and the Role of the Christian Trade Unions in the Weimar Republic.” The Catholic Historical Review 59, no. 4 (1974): 602–26.
 
