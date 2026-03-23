@@ -15,7 +15,7 @@ The consensus candidate on the right is incumbent leader Facra, who has lately b
 - @yyy: Influence the <span style="color: #c9c;"><strong>PRARR</strong></span> to select YYY as the party chair and reject any merger with right-wing groups.
 
 @facra
-on-arrival: prarr_leader = "Facra"; z_relation -= 5
+on-arrival: prarr_leader = "Facra"; prarr_relation -= 5
 
 Unfortunately, Facra has been re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>, and has approved the merger with the smaller technocratic groups, who have also done the same.
 
