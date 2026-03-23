@@ -1,1 +1,12 @@
+title: <span style="color: #390;"><strong>VPs</strong></span> Conference
+subtitle: The <span style="color: #390;"><strong>VPs</strong></span> hold a party conference.
+view-if: year = 1928 and month = 11
+max-visits: 1
+tags: event
+new-page: true
 
+= 9368 <span style="color: #390;"><strong>VPs</strong></span> Conference
+
+Our party's congress is being held to determine the party's future, following Reformy McReformface's resignation.
+
+WIP.
