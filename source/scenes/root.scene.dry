@@ -293,9 +293,9 @@ Q.unemployed_kpd = 35;
 Q.unemployed_rpls = 45;
 Q.unemployed_prarr = 0;
 Q.unemployed_z = 5;
-Q.unemployed_ddp = 1;
-Q.unemployed_dvp = 2;
-Q.unemployed_dnvp = 22;
+Q.unemployed_ddp = 3;
+Q.unemployed_dvp = 7;
+Q.unemployed_dnvp = 15;
 Q.unemployed_nsdap = 5;
 Q.unemployed_other = 0;
 
@@ -303,10 +303,10 @@ Q.catholics_spd = 10;
 Q.catholics_kpd = 2;
 Q.catholics_rpls = 3;
 Q.catholics_prarr = 0;
-Q.catholics_z = 40;
+Q.catholics_z = 30;
 Q.catholics_ddp = 0;
-Q.catholics_dvp = 10;
-Q.catholics_dnvp = 15;
+Q.catholics_dvp = 15;
+Q.catholics_dnvp = 20;
 Q.catholics_nsdap = 10;
 Q.catholics_other = 0;
 
