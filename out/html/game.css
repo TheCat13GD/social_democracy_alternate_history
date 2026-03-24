@@ -577,19 +577,19 @@ table {
 }
 
 .seat.left {
-    fill: #69A2BE;
+    fill: #060;
 }
 .seat.sorcerer {
-    fill: #D5AC27;
+    fill: #096;
 }
 .seat.center {
-    fill: #909090;
+    fill: #390;
 }
 .seat.agrarian {
-    fill: #3F7BC1;
+    fill: #cc0;
 }
 .seat.right {
-    fill: #954B00;
+    fill: #6c0;
 }
 
 .tooltip-text {
