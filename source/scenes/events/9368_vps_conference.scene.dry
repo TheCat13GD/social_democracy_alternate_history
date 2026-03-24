@@ -20,32 +20,32 @@ data = [
         "id": "kpd",
         "legend": "KPD",
         "name": "KPD",
-        "seats": Q.kpd_r*4,
+        "seats": Q.left_strength*4,
     }];
 data = data.concat([
     {
         "id": "rpls",
         "legend": "RPL&S",
         "name": "RPL&S",
-        "seats": Q.rpls_r*4,
+        "seats": Q.neorevisionist_strength*4,
     },
     {
         "id": "prarr",
         "legend": "PRARR",
         "name": "PRARR",
-        "seats": Q.prarr_r*4,
+        "seats": Q.center_strength*4,
     },
     {
         "id": "ddp",
         "legend": "DDP",
         "name": "DDP",
-        "seats": Q.ddp_r*4,
+        "seats": Q.labor_strength*4,
     },
     {
         "id": "z",
         "legend": "Center",
         "name": "Center",
-        "seats": Q.z_r*4,
+        "seats": Q.reformist_strength*4,
     },
 ]);
 if (d3 && window) {
@@ -97,20 +97,18 @@ if (d3 && window) {
 }
 !}
 
-= Reichstag composition
-
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
-{!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!}KPD: {!</td><td>!} [+ kpd_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#060'> </div></td> <td>!}Left: {!</td><td>!} [+ left_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#f30'> </div></td> <td>!}RPL&S: {!</td><td>!} [+ rpls_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#096'> </div></td> <td>!}Neorevisionists: {!</td><td>!} [+ neorevisionist_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#c9c'> </div></td> <td>!}PRARR: {!</td><td>!} [+ prarr_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#390'> </div></td> <td>!}Center: {!</td><td>!} [+ center_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#f90'> </div></td><td>!}DDP: {!</td><td>!} [+ ddp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#cc0'> </div></td><td>!}Labor: {!</td><td>!} [+ labor_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000'> </div></td><td>!} Z: {!</td><td>!} [+ z_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#6c0'> </div></td><td>!}Reformists: {!</td><td>!} [+ reformist_strength +]% {!</td></tr>!}
 {!</table>!}
 
 Here's some text.
