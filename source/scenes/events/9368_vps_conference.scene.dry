@@ -120,4 +120,24 @@ if (d3 && window) {
 {!<tr><td><div class="box" style='background-color:#6c0'> </div></td><td>!}Reformists: {!</td><td>!} [+ reformist_strength +]% {!</td></tr>!}
 {!</table>!}
 
-Here's some text.
+The first matter in the conference is, as usual, the election of the General Secretary. Our Pragmatist faction has put forth "Caas".
+
+On the other hand, there's "Roos", supported by the Reformists and Agrarians. He's sometimes referred to as "McReformface Jr.", I sure wonder why.
+
+- @caas: The <span style="color: #390;"><strong>VPs</strong></span> elect Center boi as General Secretary.
+- @roos: The <span style="color: #390;"><strong>VPs</strong></span> elect Right boi as General Secretary.
+
+@caas
+unavailable-subtitle: The Left, Center and Agrarians lack enough votes.
+subtitle: The Left, Center and Agrarians hold a majority.
+choose-if: left_strength + neorevisionist_strength + center_strength > 50
+on-arrival: workers_spd += 5
+
+Center boi wins.
+
+@roos
+unavailable-subtitle: The Right and Agrarians lack enough votes.
+subtitle: The Right and Agrarians hold a majority.
+choose-if: labor_strength + reformist_strength > 50
+
+Right boi wins.
