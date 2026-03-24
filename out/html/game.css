@@ -576,6 +576,22 @@ table {
     fill: #C40000;
 }
 
+.seat.left {
+    fill: #69A2BE;
+}
+.seat.sorcerer {
+    fill: #D5AC27;
+}
+.seat.center {
+    fill: #909090;
+}
+.seat.agrarian {
+    fill: #3F7BC1;
+}
+.seat.right {
+    fill: #954B00;
+}
+
 .tooltip-text {
     text-decoration: underline;
     text-decoration-style: dotted;
