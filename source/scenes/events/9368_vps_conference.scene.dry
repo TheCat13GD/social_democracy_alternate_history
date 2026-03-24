@@ -14,13 +14,13 @@ WIP.
 - @conference: The delegates enter...
 
 @conference
-on-display: {
-    left_c: (Q.left_strength * 10) / 10,
-    neorevisionist_c: (Q.neorevisionist_strength * 10) / 10,
-    center_c: (Q.center_strength * 10) / 10,
-    labor_c: (Q.labor_strength * 10) / 10,
-    reformist_c: (Q.reformist_strength * 10) / 10
-}
+on-display: {! 
+    left_c = Math.round(Q.left_strength * 10) / 10;
+    neorevisionist_c = Math.round(Q.neorevisionist_strength * 10) / 10;
+    center_c = Math.round(Q.center_strength * 10) / 10;
+    labor_c = Math.round(Q.labor_strength * 10) / 10;
+    reformist_c = Math.round(Q.reformist_strength * 10) / 10;
+!}
 
 {!
 data = [
