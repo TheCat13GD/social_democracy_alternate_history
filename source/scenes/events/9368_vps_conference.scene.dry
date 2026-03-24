@@ -14,39 +14,38 @@ WIP.
 - @conference: The delegates enter...
 
 @conference
-Q.left_c = Q.left_strength.toFixed(1);
 on-display: {!
 data = [
     {
         "id": "kpd",
         "legend": "KPD",
         "name": "KPD",
-        "seats": Q.left_c*5,
+        "seats": Q.left_strength*5,
     }];
 data = data.concat([
     {
         "id": "rpls",
         "legend": "RPL&S",
         "name": "RPL&S",
-        "seats": Q.neorevisionist_c*5,
+        "seats": Q.neorevisionist_strength*5,
     },
     {
         "id": "prarr",
         "legend": "PRARR",
         "name": "PRARR",
-        "seats": Q.center_c*5,
+        "seats": Q.center_strength*5,
     },
     {
         "id": "ddp",
         "legend": "DDP",
         "name": "DDP",
-        "seats": Q.labor_c*5,
+        "seats": Q.labor_strength*5,
     },
     {
         "id": "z",
         "legend": "Center",
         "name": "Center",
-        "seats": Q.reformist_c*5,
+        "seats": Q.reformist_strength*5,
     },
 ]);
 if (d3 && window) {
@@ -101,15 +100,15 @@ if (d3 && window) {
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
-{!<tr><td><div class="box" style='background-color:#060'> </div></td> <td>!}Left: {!</td><td>!} [+ left_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#060'> </div></td> <td>!}Left: {!</td><td>!} [+ Number(left_strength.toFixed(1)) +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#096'> </div></td> <td>!}Neorevisionists: {!</td><td>!} [+ neorevisionist_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#096'> </div></td> <td>!}Neorevisionists: {!</td><td>!} [+ neorevisionist_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#390'> </div></td> <td>!}Center: {!</td><td>!} [+ center_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#390'> </div></td> <td>!}Center: {!</td><td>!} [+ center_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#cc0'> </div></td><td>!}Labor: {!</td><td>!} [+ labor_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#cc0'> </div></td><td>!}Labor: {!</td><td>!} [+ labor_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#6c0'> </div></td><td>!}Reformists: {!</td><td>!} [+ reformist_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#6c0'> </div></td><td>!}Reformists: {!</td><td>!} [+ reformist_strength +]% {!</td></tr>!}
 {!</table>!}
 
 Here's some text.
