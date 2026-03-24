@@ -14,6 +14,13 @@ WIP.
 - @conference: The delegates enter...
 
 @conference
+on-arrival: {!
+    Q.left_strength = Math.round(Q.left_strength * 10) / 10;
+    Q.neorevisionist_strength = Math.round(Q.neorevisionist_strength * 10) / 10;
+    Q.center_strength = Math.round(Q.center_strength * 10) / 10;
+    Q.labor_strength = Math.round(Q.labor_strength * 10) / 10;
+    Q.reformist_strength = Math.round(Q.reformist_strength * 10) / 10;
+!}
 on-display: {!
 data = [
     {
