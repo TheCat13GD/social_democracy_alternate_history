@@ -14,7 +14,6 @@ WIP.
 - @conference: The delegates enter...
 
 @conference
-go-to: menu
 on-display: {!
 data = [
     {
