@@ -14,7 +14,7 @@ WIP.
 - @conference: The delegates enter...
 
 @conference
-left_c = {{ Math.round(left_strength * 10) / 10 }}
+set left_c = {{ Math.round(left_strength * 10) / 10 }}
 on-display: {!
 data = [
     {
