@@ -14,11 +14,11 @@ WIP.
 - @conference: The delegates enter...
 
 @conference
-Q.left_c = Number(Q.left_strength.toFixed(1));
-Q.neorevisionist_c = Number(Q.neorevisionist_strength.toFixed(1));
-Q.center_c = Number(Q.center_strength.toFixed(1));
-Q.labor_c = Number(Q.labor_strength.toFixed(1));
-Q.reformist_c = Number(Q.reformist_strength.toFixed(1));
+Q.left_c = Math.round(Q.left_strength*10)/10;
+Q.neorevisionist_c = Math.round(Q.neorevisionist_strength*10)/10;
+Q.center_c = Math.round(Q.center_strength*10)/10;
+Q.labor_c = Math.round(Q.labor_strength*10)/10;
+Q.reformist_c = Math.round(Q.reformist_strength*10)/10;
 on-display: {!
 data = [
     {
