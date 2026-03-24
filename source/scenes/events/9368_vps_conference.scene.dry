@@ -14,7 +14,7 @@ WIP.
 - @conference: The delegates enter...
 
 @conference
-Q.left_c = left_strength.toFixed(1);
+left_c = left_strength.toFixed(1);
 on-display: {!
 data = [
     {
