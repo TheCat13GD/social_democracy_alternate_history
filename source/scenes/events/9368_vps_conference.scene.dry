@@ -15,6 +15,10 @@ WIP.
 
 @conference
 Q.left_c = Math.round(Q.left_strength*10)/10;
+Q.left_c = Math.round(Q.left_strength*10)/10;
+Q.left_c = Math.round(Q.left_strength*10)/10;
+Q.left_c = Math.round(Q.left_strength*10)/10;
+Q.left_c = Math.round(Q.left_strength*10)/10;
 on-display: {!
 data = [
     {
