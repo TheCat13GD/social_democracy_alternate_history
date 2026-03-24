@@ -153,18 +153,4 @@ if (d3 && window) {
 {!<tr><td><div class="box" style='background-color:#000'> </div></td><td>!} Z: {!</td><td>!} [+ z_r +]% {!</td></tr>!}
 {!</table>!}
 
-= Election history
-
-[? if year = 1928 and month < 5 : No new elections yet. ?]
-
-{!<svg id="election_history" style="width: 500px; height: 400px;"> </svg>!}
-
-= Party support history
-
-[? if historical_mode: Not available in historical mode. ?]
-
-{!<svg id="party_support_history" style="width: 500px; height: 400px;"> </svg>!}
-
-= Economic history
-
-{!<svg id="economic_history" style="width: 500px; height: 300px;"> </svg>!}
+Here's some text.
