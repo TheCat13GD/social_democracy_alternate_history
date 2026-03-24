@@ -128,8 +128,8 @@ On the other hand, there's "Roos", supported by the Reformists and Agrarians. He
 - @roos: The <span style="color: #390;"><strong>VPs</strong></span> elect Right boi as General Secretary.
 
 @caas
-unavailable-subtitle: The Left, Center and Agrarians lack enough votes.
-subtitle: The Left, Center and Agrarians hold a majority.
+unavailable-subtitle: The Left, Center and Sorcerers lack enough votes.
+subtitle: The Left, Center and Sorcerers hold a majority.
 choose-if: left_strength + neorevisionist_strength + center_strength > 50
 on-arrival: workers_spd += 5
 
