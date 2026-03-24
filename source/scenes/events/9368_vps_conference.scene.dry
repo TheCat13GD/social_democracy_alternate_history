@@ -24,34 +24,34 @@ on-arrival: {!
 on-display: {!
 data = [
     {
-        "id": "kpd",
-        "legend": "KPD",
-        "name": "KPD",
+        "id": "left",
+        "legend": "Left-VPs",
+        "name": "Left-VPs",
         "seats": Q.left_strength*5,
     }];
 data = data.concat([
     {
-        "id": "rpls",
-        "legend": "RPL&S",
-        "name": "RPL&S",
+        "id": "sorcerer",
+        "legend": "Sorcerers",
+        "name": "Sorcerers",
         "seats": Q.neorevisionist_strength*5,
     },
     {
-        "id": "prarr",
-        "legend": "PRARR",
-        "name": "PRARR",
+        "id": "center",
+        "legend": "Center-VPs",
+        "name": "Center-VPs",
         "seats": Q.center_strength*5,
     },
     {
-        "id": "ddp",
-        "legend": "DDP",
-        "name": "DDP",
+        "id": "agrarian",
+        "legend": "Agrarians",
+        "name": "Agrarians",
         "seats": Q.labor_strength*5,
     },
     {
-        "id": "z",
-        "legend": "Center",
-        "name": "Center",
+        "id": "right",
+        "legend": "Right-VPs",
+        "name": "Right-VPs",
         "seats": Q.reformist_strength*5,
     },
 ]);
