@@ -100,42 +100,15 @@ if (d3 && window) {
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
+{!<tr><td><div class="box" style='background-color:#060'> </div></td> <td>!}Left: {!</td><td>!} [+ left_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#060'> </div></td><td>!}Left:{!</td><td>!}
-[+ (left_strength < 10 
-      ? (left_strength + "").slice(0, 3) 
-      : (left_strength + "").slice(0, 4)
-   ) +]%
-{!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#096'> </div></td> <td>!}Neorevisionists: {!</td><td>!} [+ neorevisionist_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#096'> </div></td><td>!}Neorevisionists:{!</td><td>!}
-[+ (neorevisionist_strength < 10 
-      ? (neorevisionist_strength + "").slice(0, 3) 
-      : (neorevisionist_strength + "").slice(0, 4)
-   ) +]%
-{!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#390'> </div></td> <td>!}Center: {!</td><td>!} [+ center_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#390'> </div></td><td>!}Center:{!</td><td>!}
-[+ (center_strength < 10 
-      ? (center_strength + "").slice(0, 3) 
-      : (center_strength + "").slice(0, 4)
-   ) +]%
-{!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#cc0'> </div></td><td>!}Labor: {!</td><td>!} [+ labor_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#cc0'> </div></td><td>!}Labor:{!</td><td>!}
-[+ (labor_strength < 10 
-      ? (labor_strength + "").slice(0, 3) 
-      : (labor_strength + "").slice(0, 4)
-   ) +]%
-{!</td></tr>!}
-
-{!<tr><td><div class="box" style='background-color:#6c0'> </div></td><td>!}Reformists:{!</td><td>!}
-[+ (reformist_strength < 10 
-      ? (reformist_strength + "").slice(0, 3) 
-      : (reformist_strength + "").slice(0, 4)
-   ) +]%
-{!</td></tr>!}
-
+{!<tr><td><div class="box" style='background-color:#6c0'> </div></td><td>!}Reformists: {!</td><td>!} [+ reformist_strength +]% {!</td></tr>!}
 {!</table>!}
 
 Here's some text.
