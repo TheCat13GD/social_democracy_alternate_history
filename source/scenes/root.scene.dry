@@ -60,6 +60,9 @@ Q.labor_dissent = 5;
 Q.reformist_strength = 40;
 Q.reformist_dissent = 5;
 
+// party congress
+Q.left_c = 0;
+
 // secret events...
 Q.unions_independent = 0;
 Q.centrists_resign = 0;
