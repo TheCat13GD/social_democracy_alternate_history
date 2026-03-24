@@ -15,10 +15,10 @@ WIP.
 
 @conference
 Q.left_c = Math.round(Q.left_strength*10)/10;
-Q.left_c = Math.round(Q.left_strength*10)/10;
-Q.left_c = Math.round(Q.left_strength*10)/10;
-Q.left_c = Math.round(Q.left_strength*10)/10;
-Q.left_c = Math.round(Q.left_strength*10)/10;
+Q.neorevisionist_c = Math.round(Q.neorevisionist_strength*10)/10;
+Q.center_c = Math.round(Q.center_strength*10)/10;
+Q.labor_c = Math.round(Q.labor_strength*10)/10;
+Q.reformist_c = Math.round(Q.reformist_strength*10)/10;
 on-display: {!
 data = [
     {
