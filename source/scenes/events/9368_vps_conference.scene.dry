@@ -14,15 +14,7 @@ WIP.
 - @conference: The delegates enter...
 
 @conference
-on-display: {! 
-    left_c = Math.round(Q.left_strength * 10) / 10;
-    neorevisionist_c = Math.round(Q.neorevisionist_strength * 10) / 10;
-    center_c = Math.round(Q.center_strength * 10) / 10;
-    labor_c = Math.round(Q.labor_strength * 10) / 10;
-    reformist_c = Math.round(Q.reformist_strength * 10) / 10;
-!}
-
-{!
+on-display: {!
 data = [
     {
         "id": "kpd",
@@ -108,15 +100,15 @@ if (d3 && window) {
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
-{!<tr><td><div class="box" style='background-color:#060'> </div></td> <td>!}Left: {!</td><td>!} [+ left_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#060'> </div></td> <td>!}Left: {!</td><td>!} [+ left_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#096'> </div></td> <td>!}Neorevisionists: {!</td><td>!} [+ neorevisionist_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#096'> </div></td> <td>!}Neorevisionists: {!</td><td>!} [+ neorevisionist_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#390'> </div></td> <td>!}Center: {!</td><td>!} [+ center_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#390'> </div></td> <td>!}Center: {!</td><td>!} [+ center_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#cc0'> </div></td><td>!}Labor: {!</td><td>!} [+ labor_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#cc0'> </div></td><td>!}Labor: {!</td><td>!} [+ labor_strength +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#6c0'> </div></td><td>!}Reformists: {!</td><td>!} [+ reformist_c +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#6c0'> </div></td><td>!}Reformists: {!</td><td>!} [+ reformist_strength +]% {!</td></tr>!}
 {!</table>!}
 
 Here's some text.
