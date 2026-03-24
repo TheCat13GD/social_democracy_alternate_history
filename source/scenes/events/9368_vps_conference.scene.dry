@@ -29,22 +29,6 @@ data = data.concat([
         "name": "RPL&S",
         "seats": Q.rpls_r*4,
     },
-]);
-if (Q.sapd_formed && Q.sapd_r) {
-    data.push({
-            "id": "sapd",
-            "legend": "SAPD",
-            "name": "SAPD",
-            "seats": Math.round(Q.sapd_r*4),
-            });
-}
-data = data.concat([
-    {
-        "id": "spd",
-        "legend": "SPD",
-        "name": "SPD",
-        "seats": Q.spd_r*4,
-    },
     {
         "id": "prarr",
         "legend": "PRARR",
@@ -62,30 +46,6 @@ data = data.concat([
         "legend": "Center",
         "name": "Center",
         "seats": Q.z_r*4,
-    },
-    {
-        "id": "dvp",
-        "legend": "DVP",
-        "name": "DVP",
-        "seats": Q.dvp_r*4,
-    },
-    {
-        "id": "other",
-        "legend": "Other",
-        "name": "Other",
-        "seats": Q.other_r*4,
-    },
-    {
-        "id": "dnvp",
-        "legend": "DNVP",
-        "name": "DNVP",
-        "seats": Q.dnvp_r*4,
-    },
-    {
-        "id": "nsdap",
-        "legend": "NSDAP",
-        "name": "NSDAP",
-        "seats": Q.nsdap_r*4,
     },
 ]);
 if (d3 && window) {
