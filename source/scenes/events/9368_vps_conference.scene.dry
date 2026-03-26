@@ -135,9 +135,34 @@ on-arrival: workers_spd += 5
 
 Center boi wins.
 
+Next up is the program to appeal to urban workers.
+
+- @yesProgram: The program is adopted!
+- @noProgram: The program is rejected.
+
 @roos
 unavailable-subtitle: The Right and Agrarians lack enough votes.
 subtitle: The Right and Agrarians hold a majority.
 choose-if: labor_strength + reformist_strength > 50
 
 Right boi wins.
+
+Next up is the program to appeal to urban workers.
+
+- @yesProgram: The program is adopted!
+- @noProgram: The program is rejected.
+
+@yesProgram
+unavailable-subtitle: The Left and Center lack enough votes.
+subtitle: The Left and Center, together with the Sorcerers, sway the party.
+choose-if: left_strength + neorevisionist_strength + center_strength > 50
+on-arrival: labor_strength -= 3; workers_spd += 2; urban_program = 1;
+
+The urban program has been adopted! This will make it easier to expand our reach beyond rural areas.
+
+@noProgram
+unavailable-subtitle: The Right and Agrarians lack enough votes.
+subtitle: The Right and Agrarians, together with the Sorcerers, sway the party.
+choose-if: neorevisionist_strength + labor_strength + reformist_strength > 50
+
+The urban program is not adopted.
