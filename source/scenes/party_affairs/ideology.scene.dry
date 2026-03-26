@@ -15,6 +15,7 @@ The SPD is torn between many different ideological currents. What should be our 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
 - @class_struggle: Class struggle and preparing the proletariat for the revolution are our primary goals.
+- @neorev: We should focus on revisioning, but like, in a new way.
 - @centrist: The Center Marxism of Karl Kautsky remains the best way to resolve our internal contradictions.
 - @labor: We should work with the trade unions to improve the lives of workers.
 - @reform: Following Eduard Bernstein, we should work for ethical socialism, strengthen democracy, and expand the party's electorate.
@@ -30,6 +31,17 @@ go-to: changed if changed = 1
 on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
 
 The radical left of the party supports a course of class struggle, and potentially a reconcilliation with the Communists.
+
+@neorev
+on-arrival: {!
+if (Q.ideology && Q.ideology != "neorevisionist") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "neorevisionist"; neorevisionist_strength += 10; neorevisionist_dissent -= 5;
+
+The Neorevisionists support... I don't really know what they support exactly, but they're cool.
 
 @centrist
 on-arrival: {!
