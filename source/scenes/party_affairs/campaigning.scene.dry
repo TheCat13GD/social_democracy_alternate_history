@@ -11,10 +11,10 @@ tags: party_affairs
 
 Whether or not we are in an electoral campaign, the party is always trying to broaden its voter base. Who should we focus our campaign efforts on?
 
-- @workers: The urban working class, who have felt neglected by us in the past.
+- @workers: The urban working class.
 - @new_middle: The "new middle class" of government employees and white-collar workers.
 - @old_middle: The "old middle class" of small independent businessmen and artisans.
-- @rural: Rural workers and small farmers.
+- @rural: Rural workers and small farmers, part of our traditional support base.
 - @unemployed: The unemployed.
 - @catholics: Catholics, who typically support the Center Party.
 - @root: We either don't want to or cannot campaign right now.
