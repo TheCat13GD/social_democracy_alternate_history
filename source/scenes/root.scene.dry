@@ -178,16 +178,16 @@ Q.reichswehr_loyalty = 0.2;
 // popular opinion
 // national ideology - on a binary scale
 // nationalism vs internationalism or pacifism or non-nationalism
-Q.nationalism = 60;
+Q.nationalism = 63;
 // socialism vs capitalism
-Q.socialism = 40;
+Q.socialism = 29;
 // pro-republic vs anti-republic
-Q.pro_republic = 59;
+Q.pro_republic = 56;
 
 Q.emergency_rule = 0;
 
 // minimum percentage of votes to be represented in the Reichstag
-Q.electoral_threshold = 0;
+Q.electoral_threshold = 1;
 // constitutional reform level
 Q.constitutional_reform = 0;
 // constructive vote of no confidence
@@ -479,7 +479,7 @@ Q.lower_tax_rates = 0;
 Q.upper_tax_rates = 0;
 Q.tariffs = 0;
 
-Q.electoral_threshold = 0;
+Q.electoral_threshold = 1;
 
 // our conduct in the government, and the conduct of our coalition opponents.
 // did the SPD vote against the previous government in a vote of no confidence?
