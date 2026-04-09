@@ -423,7 +423,7 @@ if (d3 && window) {
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'spd': '#390', 'kpd': '#8B0000', 'rpls': '#f30', 'prarr': '#c9c', 'ddp': '#f90', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
+            {'spd': '#390', 'kpd': '#900', 'rpls': '#f30', 'prarr': '#c9c', 'ddp': '#f90', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
             {'spd': 'SPD', 'kpd': 'KPD', 'rpls': 'RPL&S', 'prarr': 'PRARR', 'ddp': 'DDP', 'z': 'Z', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
@@ -436,7 +436,7 @@ if (d3 && window) {
     if (!Q.historical_mode || Q.game_over) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-            {'spd': '#390', 'kpd': '#8B0000', 'rpls': '#f30', 'prarr': '#c9c', 'ddp': '#f90', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
+            {'spd': '#390', 'kpd': '#900', 'rpls': '#f30', 'prarr': '#c9c', 'ddp': '#f90', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
             {'spd': 'SPD', 'kpd': 'KPD', 'rpls': 'RPL&S', 'prarr': 'PRARR', 'ddp': 'DDP', 'z': 'Z', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
@@ -463,7 +463,7 @@ if (d3 && window) {
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div></td> <td> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!}KPD: {!</td><td>!} [+ kpd_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#900'> </div></td> <td>!}KPD: {!</td><td>!} [+ kpd_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#f30'> </div></td> <td>!}RPL&S: {!</td><td>!} [+ rpls_r +]% {!</td></tr>!}
 
