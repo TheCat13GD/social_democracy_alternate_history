@@ -17,18 +17,20 @@ In opposition to Facra is Tanya Peral, with support from the remaining members o
 - @peral: Influence the <span style="color: #c9c;"><strong>PRARR</strong></span> to select Peral as the party chair and reject any further cooperation with reactionaries.
 
 @facra
-on-arrival: prarr_leader = "Facra"; prarr_relation -= 5
+on-arrival: prarr_leader = "Facra"; prarr_relation -= 7
 
 Perhaps expectedly, Facra has been re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>. More surprisingly, it has been revealed that he had already been negotiating a potential merger with right-wing technocratic groups such as the Union for Progress and the paradoxically named Syndical Federation. With Facra having now secured his position, all involved organizations have approved the merger.
 
 - @rpp: The <span style="color: #99c;"><strong>RPP</strong></span> has been formed.
 
 @rpp
-on-arrival: prarr_relation -= 15; workers_prarr -= 3; sorcerers_prarr = 0; old_middle_prarr += 5;
+on-arrival: prarr_relation -= 25; workers_prarr -= 3; sorcerers_prarr = 0; old_middle_prarr += 5;
 
-With Facra's re-election and the approved merger of the technocratic forces, the Right seems to have finally won the intra-party struggle. Styling itself as the <span style="color: #99c;">Revolutionary Progress Party</span> (<span style="color: #99c;"><strong>RPP</strong></span>), the new party aims to end all cooperation with us, and to work more closely with the political right, particularly the Taulè government.
+Having finally overcome the obstacle posed by the remaining leftists within the <span style="color: #c9c;"><strong>PRARR</strong></span>, Facra has finally been able to carry out his planned merger of the technocratic forces. Styling itself as the <span style="color: #99c;">Revolutionary Progress Party</span> (<span style="color: #99c;"><strong>RPP</strong></span>), the new party aims to end all cooperation with us, and work more closely with the political right, particularly the Taulè government.
 
-What remains of the Left and Center have finally resigned, with many joining the <span style="color: #390;"><strong>VPs</strong></span> or the <span style="color: #f90;"><strong>ADP</strong></span>.
+Remaining members of the party's former Left and Center factions have either resigned their positions or left the party altogether, including most of the proletarian and sorcerer sections of its base, many of them turning towards the <span style="color: #390;"><strong>VPs</strong></span> or the <span style="color: #f90;"><strong>ADP</strong></span>.
+
+We have noticed an abrupt deterioration in our relations with the <span style="color: #99c;"><strong>RPP</strong></span> compared to the <span style="color: #c9c;"><strong>PRARR</strong></span>, as the new party now seeks to obstruct us at any given opportunity. We should expect them to start by striking at our provincial government in Monsila-Ebre, which now consists solely of the <span style="color: #f30;"><strong>RPL&S</strong></span> and <span style="color: #390;"><strong>VPs</strong></span>.
 
 @peral
 unavailable-subtitle: Our relations are not good enough.
@@ -36,4 +38,4 @@ subtitle: Peral is strongly opposed to the proposed merger and is likely to be m
 choose-if: z_relation >= 70
 on-arrival: prarr_leader = "Peral"; new_middle_spd += 3; workers_prarr += 3; old_middle_prarr -= 2;
 
-With our grassroots connections, we have been able to influence the <span style="color: #c9c;"><strong>PRARR</strong></span> delegates to support Peral as the new chairman, replacing Facra. She will attempt to push the party toward a more cooperative line with us. This victory has helped the party to recover some of its lost electoral strenght, compensating for the defection of Facra's supporters.
+(I gotta edit this part) With our grassroots connections, we have been able to influence the <span style="color: #c9c;"><strong>PRARR</strong></span> delegates to support Peral as the new chairman, replacing Facra. She will attempt to push the party toward a more cooperative line with us. This victory has helped the party to recover some of its lost electoral strenght, compensating for the defection of Facra's supporters.
