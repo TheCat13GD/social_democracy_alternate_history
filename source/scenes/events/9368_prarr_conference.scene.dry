@@ -11,29 +11,29 @@ The <span style="color: #c9c;"><strong>PRARR</strong></span> is holding its bien
 
 Current chairman Anton Facra, first elected two years ago, has opted to run for re-election. Despite being situated in the party's right-wing, he has so far refrained from shifting its platform or cutting ties with us. However, over the past few months he has been showing increasing willingness to work with technocratic and conservative groups openly hostile towards us. It is rumored that Taulè and the <span style="color: #069;"><strong>NAPP</strong></span> may have played a part in this sudden flip. If this turns out to be true, the re-election of Facra could very well spell the end of all cooperation between our parties.
 
-In opposition to Facra is YYY, with support from the remaining members of the Left and Center. She has been more supportive of cooperation with the <span style="color: #390;"><strong>VPs</strong></span> than the majority of the party as of lately, and her victory could reverse the party's current course, or at the very least halt its rightward turn. However, she has faced significant pushback from those outside of the <span style="color: #c9c;"><strong>PRARR</strong></span>'s old guard, and the party establishment has been notably obstructive towards her campaign efforts.
+In opposition to Facra is Tanya Peral, with support from the remaining members of the Left and Center. She has been more supportive of cooperation with the <span style="color: #390;"><strong>VPs</strong></span> than the majority of the party as of lately, and her victory could reverse the party's current course, or at the very least halt its rightward turn. However, she has faced significant pushback from those outside of the <span style="color: #c9c;"><strong>PRARR</strong></span>'s old guard, and the party establishment has been notably obstructive towards her campaign efforts.
 
 - @facra: Facra is re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>.
-- @yyy: Influence the <span style="color: #c9c;"><strong>PRARR</strong></span> to select YYY as the party chair and reject any further cooperation with reactionaries.
+- @peral: Influence the <span style="color: #c9c;"><strong>PRARR</strong></span> to select Peral as the party chair and reject any further cooperation with reactionaries.
 
 @facra
 on-arrival: prarr_leader = "Facra"; prarr_relation -= 5
 
-Unfortunately, Facra has been re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>, and has approved the merger with the smaller technocratic groups, who have also done the same.
+Perhaps expectedly, Facra has been re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>. More surprisingly, it has been revealed that he had already been negotiating a potential merger with right-wing technocratic groups such as the Union for Progress and the paradoxically named Syndical Federation. With Facra having now secured his position, all involved organizations have approved the merger.
 
-- @rpp: The <span style="color: #99c;"><strong>RPP</strong></span> is formed.
+- @rpp: The <span style="color: #99c;"><strong>RPP</strong></span> has been formed.
 
 @rpp
-on-arrival: prarr_relation -= 15; workers_prarr -= 3; sorcerers_prarr = 0; new_middle_prarr -= 2; old_middle_prarr += 5;
+on-arrival: prarr_relation -= 15; workers_prarr -= 3; sorcerers_prarr = 0; old_middle_prarr += 5;
 
 With Facra's re-election and the approved merger of the technocratic forces, the Right seems to have finally won the intra-party struggle. Styling itself as the <span style="color: #99c;">Revolutionary Progress Party</span> (<span style="color: #99c;"><strong>RPP</strong></span>), the new party aims to end all cooperation with us, and to work more closely with the political right, particularly the Taulè government.
 
 What remains of the Left and Center have finally resigned, with many joining the <span style="color: #390;"><strong>VPs</strong></span> or the <span style="color: #f90;"><strong>ADP</strong></span>.
 
-@yyy
+@peral
 unavailable-subtitle: Our relations are not good enough.
-subtitle: YYY is strongly opposed to the proposed merger and is likely to be much friendlier to us than Facra.
+subtitle: Peral is strongly opposed to the proposed merger and is likely to be much friendlier to us than Facra.
 choose-if: z_relation >= 70
-on-arrival: prarr_leader = "YYY"; new_middle_spd += 5; workers_prarr += 3
+on-arrival: prarr_leader = "Peral"; new_middle_spd += 3; workers_prarr += 3; old_middle_prarr -= 2;
 
-With our grassroots connections, we have been able to influence the <span style="color: #c9c;"><strong>PRARR</strong></span> delegates to support YYY as the new chairman, replacing Facra. He will attempt to push the party toward a more cooperative line with us. This victory has helped the party to recover some of its lost electoral strenght, compensating for the defection of Facra's supporters.
+With our grassroots connections, we have been able to influence the <span style="color: #c9c;"><strong>PRARR</strong></span> delegates to support Peral as the new chairman, replacing Facra. She will attempt to push the party toward a more cooperative line with us. This victory has helped the party to recover some of its lost electoral strenght, compensating for the defection of Facra's supporters.
