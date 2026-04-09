@@ -99,7 +99,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: #390;"><strong>VPs</strong></span>!}: Reformist Verdantianism (IDK)
 
-{!<span class="tooltip-text" title="Communist Party of Germany" style="color: #700000;"><strong>KPD</strong></span>!}: [+ kpd_ideology +] ([+ kpd_party_leader +])
+{!<span class="tooltip-text" title="Communist Party of Germany" style="color: #900;"><strong>KPD</strong></span>!}: [+ kpd_ideology +] ([+ kpd_party_leader +])
 
 {!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: #f30;"><strong>RPL&S</strong></span>!}: [+ rpls_relation : relationships +]
 
