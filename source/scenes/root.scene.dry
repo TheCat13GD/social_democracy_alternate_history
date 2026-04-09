@@ -207,15 +207,12 @@ Q.capital_strike_progress = 0;
 Q.budget = 4;
 
 // Proportion of different social groups
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
-Q.workers = 48; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
+Q.workers = 48; // urban proletariat
 Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
-Q.catholics = 30;
+Q.unemployed = 9.2;
+Q.new_middle = 21; // middle class
+Q.old_middle = 6; // rich industrialists and landowners
+Q.catholics = 24; // wip
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -239,8 +236,8 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'rpls', 'prarr', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.classes = ['workers', 'rural', 'unemployed', 'new_middle', 'old_middle', 'catholics'];
+Q.parties = ['spd', 'kpd', 'rpls', 'prarr', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
@@ -257,28 +254,6 @@ Q.workers_dvp = 10;
 Q.workers_dnvp = 25;
 Q.workers_nsdap = 3;
 Q.workers_other = 0;
-
-Q.new_middle_spd = 2;
-Q.new_middle_kpd = 1;
-Q.new_middle_rpls = 3;
-Q.new_middle_prarr = 5;
-Q.new_middle_ddp= 25;
-Q.new_middle_z = 20;
-Q.new_middle_dvp = 42;
-Q.new_middle_dnvp = 15;
-Q.new_middle_nsdap = 5;
-Q.new_middle_other = 0;
-
-Q.old_middle_spd = 2;
-Q.old_middle_kpd = 0;
-Q.old_middle_rpls = 0;
-Q.old_middle_prarr = 5;
-Q.old_middle_ddp= 8;
-Q.old_middle_z = 25;
-Q.old_middle_dvp = 40;
-Q.old_middle_dnvp = 15;
-Q.old_middle_nsdap = 15;
-Q.old_middle_other = 0;
 
 Q.rural_spd = 22;
 Q.rural_kpd = 0;
@@ -301,6 +276,28 @@ Q.unemployed_dvp = 5;
 Q.unemployed_dnvp = 15;
 Q.unemployed_nsdap = 5;
 Q.unemployed_other = 0;
+
+Q.new_middle_spd = 2;
+Q.new_middle_kpd = 1;
+Q.new_middle_rpls = 3;
+Q.new_middle_prarr = 5;
+Q.new_middle_ddp= 25;
+Q.new_middle_z = 20;
+Q.new_middle_dvp = 42;
+Q.new_middle_dnvp = 15;
+Q.new_middle_nsdap = 5;
+Q.new_middle_other = 0;
+
+Q.old_middle_spd = 2;
+Q.old_middle_kpd = 0;
+Q.old_middle_rpls = 0;
+Q.old_middle_prarr = 5;
+Q.old_middle_ddp= 8;
+Q.old_middle_z = 25;
+Q.old_middle_dvp = 40;
+Q.old_middle_dnvp = 15;
+Q.old_middle_nsdap = 15;
+Q.old_middle_other = 0;
 
 Q.catholics_spd = 10;
 Q.catholics_kpd = 2;
