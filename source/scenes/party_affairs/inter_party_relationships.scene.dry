@@ -69,7 +69,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
-go-to: prarr_facra if prarr_leader = "Facra" and (left_strength + center_strength) > reformist_strength; prarr_1 if prarr_leader != "Facra" and (left_strength + center_strength) < reformist_strength
+go-to: prarr_facra if prarr_leader = "Facra" and (left_strength + center_strength) > reformist_strength; prarr_1 if prarr_leader = "Facra" and (left_strength + center_strength) < reformist_strength
 
 @prarr_facra
 on-arrival: prarr_relation += 3*(1 - dissent)
