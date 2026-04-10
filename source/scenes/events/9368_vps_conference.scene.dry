@@ -125,7 +125,7 @@ Next up is the program to appeal to urban workers.
 unavailable-subtitle: The Left and Center lack enough votes.
 subtitle: The Left and Center, together with the Sorcerers, sway the party.
 choose-if: left_strength + neorevisionist_strength + center_strength > 50
-on-arrival: labor_strength -= 3; workers_spd += 2; urban_program = 1;
+on-arrival: labor_strength -= 3; workers_spd += 2; workers_rpls -= 2; urban_program = 1;
 
 The urban program has been adopted! This will make it easier to expand our reach beyond rural areas.
 
