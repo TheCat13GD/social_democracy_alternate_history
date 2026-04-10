@@ -12,6 +12,7 @@ max-visits: 12
 
 The SPD cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Weimar Coalition of the SPD, Center, and Democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
 
+- @prarr: Strengthen our bonds with the center-left technocratic <span style="color: #c9c;">Party of Revolutionaries, Accelerationists and Radical-Republicans</span>.
 - @liberals: Strengthen our bonds with the left-liberal German Democratic Party and conservative-liberal German People's Party.
 - @center: Strengthen our bonds with the Catholic Center Party.
 - @kpd: Work towards repairing relationships with the Communist Party.
@@ -62,6 +63,23 @@ After the success of the coalition government with the KPD, they are much more a
 on-arrival: kpd_relation += 3*(1 - dissent); reformist_dissent += 1
 
 After the events of Blütmai, reconciling with the Communists is difficult, if not impossible. Nevertheless, we must try.
+
+@prarr
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1
+go-to: prarr_facra if prarr_leader = "Facra" and (left_strength + center_strength) > reformist_strength; prarr_1 if prarr_leader != "Facra" and (left_strength + center_strength) < reformist_strength
+
+@prarr_facra
+on-arrival: prarr_relation += 3*(1 - dissent)
+
+Facra is a goddamn fascist.
+
+@prarr_1
+on-arrival: prarr_relation += 6*(1 - dissent)
+
+The PRARR has been one of our closest allies through the course of the Republic.
 
 @center
 subtitle: -1 resources
