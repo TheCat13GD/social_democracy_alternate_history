@@ -35,7 +35,7 @@ We have noticed an abrupt deterioration in our relations with the <span style="c
 @peral
 unavailable-subtitle: Our relations are not good enough.
 subtitle: Peral is strongly opposed to the proposed merger and is likely to be much friendlier to us than Facra.
-choose-if: z_relation >= 70
+choose-if: prarr_relation >= 60
 on-arrival: prarr_leader = "Peral"; new_middle_spd += 3; workers_prarr += 3; old_middle_prarr -= 2;
 
 (I gotta edit this part) With our grassroots connections, we have been able to influence the <span style="color: #c9c;"><strong>PRARR</strong></span> delegates to support Peral as the new chairman, replacing Facra. She will attempt to push the party toward a more cooperative line with us. This victory has helped the party to recover some of its lost electoral strenght, compensating for the defection of Facra's supporters.
