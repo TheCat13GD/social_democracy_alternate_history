@@ -268,7 +268,7 @@ Q.rural_nsdap = 13;
 Q.rural_other = 0;
 
 Q.unemployed_spd = 18;
-Q.unemployed_kpd = 35;
+Q.unemployed_kpd = 30;
 Q.unemployed_rpls = 45;
 Q.unemployed_prarr = 0;
 Q.unemployed_ddp = 5;
@@ -279,9 +279,9 @@ Q.unemployed_nsdap = 5;
 Q.unemployed_other = 0;
 
 Q.sorcerers_spd = 65;
-Q.sorcerers_kpd = 5;
-Q.sorcerers_rpls = 15;
-Q.sorcerers_prarr = 4;
+Q.sorcerers_kpd = 2;
+Q.sorcerers_rpls = 20;
+Q.sorcerers_prarr = 2;
 Q.sorcerers_ddp = 2;
 Q.sorcerers_z = 5;
 Q.sorcerers_dvp = 2;
