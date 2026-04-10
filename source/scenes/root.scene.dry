@@ -536,10 +536,10 @@ Q.n_elections = 0;
 // number of elections without a clear majority.
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
-Q.in_election = 1;
-Q.next_election_year = 1928; //1929
-Q.next_election_month = 1; //4
-Q.next_election_time = 4;
+Q.in_election = 0;
+Q.next_election_year = 1930; //canonically in 1929 (9369) because of a successful vonc
+Q.next_election_month = 1; //canonically in 4 (April) because of a successful vonc
+Q.next_election_time = 3;
 // government affairs timers
 Q.agricultural_policy_timer = 0;
 Q.domestic_enemies_timer = 0;
