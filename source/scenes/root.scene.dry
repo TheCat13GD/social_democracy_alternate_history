@@ -280,12 +280,12 @@ Q.unemployed_other = 0;
 
 Q.sorcerers_spd = 65;
 Q.sorcerers_kpd = 2;
-Q.sorcerers_rpls = 20;
+Q.sorcerers_rpls = 10;
 Q.sorcerers_prarr = 2;
 Q.sorcerers_ddp = 2;
-Q.sorcerers_z = 5;
-Q.sorcerers_dvp = 2;
-Q.sorcerers_dnvp = 1;
+Q.sorcerers_z = 10;
+Q.sorcerers_dvp = 5;
+Q.sorcerers_dnvp = 3;
 Q.sorcerers_nsdap = 5;
 Q.sorcerers_other = 0;
 
