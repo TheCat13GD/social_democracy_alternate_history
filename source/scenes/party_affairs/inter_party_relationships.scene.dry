@@ -74,7 +74,7 @@ go-to: prarr_facra if prarr_leader = "Facra" and (left_strength + center_strengt
 @prarr_facra
 on-arrival: prarr_relation += 3*(1 - dissent)
 
-Although our cooperation with the <span style="color: #c9c;"><strong>PRARR</strong></span> has been dwindling in recent years, they still seem willing to negotiate with us. However, they seem to keep throwing us hurdles and pinning the blame on what they refer to as "hard-left deviationism". Such criticism is unfounded, but the <span style="color: #c9c;"><strong>PRARR</strong></span>'s right-wing does not seem to care. Still, we can at least see a small improvement in attitudes.
+Although our cooperation with the <span style="color: #c9c;"><strong>PRARR</strong></span> has been dwindling in recent years, they still seem willing to negotiate with us. However, they do keep throwing us new hurdles and pinning the blame on what they refer to as "hard-left deviationism". Such criticism is unfounded, but the <span style="color: #c9c;"><strong>PRARR</strong></span>'s right-wing does not seem to care. Still, we can at least see a small improvement in attitudes.
 
 @prarr_1
 on-arrival: prarr_relation += 6*(1 - dissent)
