@@ -69,17 +69,22 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
-go-to: prarr_facra if prarr_leader = "Facra" and (left_strength + center_strength) > reformist_strength; prarr_1 if prarr_leader = "Facra" and (left_strength + center_strength) < reformist_strength
+go-to: prarr_facra if prarr_leader = "Facra" and (left_strength + center_strength) > reformist_strength; prarr_1 if prarr_leader = "Facra" and (left_strength + center_strength) < reformist_strength; prarr_2 if prarr_leader != "Facra"
 
 @prarr_facra
 on-arrival: prarr_relation += 3*(1 - dissent)
 
-Facra is a goddamn fascist.
+Although our cooperation with the <span style="color: #c9c;"><strong>PRARR</strong></span> has been dwindling in recent years, they still seem willing to negotiate with us. However, they seem to keep throwing us hurdles and pinning the blame on what they refer to as "hard-left deviationism". Such criticism is unfounded, but the <span style="color: #c9c;"><strong>PRARR</strong></span>'s right-wing does not seem to care. Still, we can at least see a small improvement in attitudes.
 
 @prarr_1
 on-arrival: prarr_relation += 6*(1 - dissent)
 
-The PRARR has been one of our closest allies through the course of the Republic.
+The <span style="color: #c9c;"><strong>PRARR</strong></span> has been decently cooperative with us since the Republic's founding, and while the current right-leaning leadership is skeptical of our attempts at approaching them, their doubts are mostly assuaged thanks to our reformist path.
+
+@prarr_2
+on-arrival: prarr_relation += 6*(1 - dissent)
+
+The <span style="color: #c9c;"><strong>PRARR</strong></span> has consistently worked with us and been one of our main allies since the establishment of the Republic. By establishing contacts with their leadership, we can further strengthen our ties.
 
 @center
 subtitle: -1 resources
