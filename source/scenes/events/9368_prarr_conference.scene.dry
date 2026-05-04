@@ -9,12 +9,12 @@ new-page: true
 
 The <span style="color: #c9c;"><strong>PRARR</strong></span> is holding its biennial conference to determine the party's future. Since the Left lost control of the leadership four years ago, the party has been slowly but steadily drifting to the right. A split that took away half of the party's membership in November 9365 further accelerated this shift.
 
-Current chairman Anton Facra, first elected two years ago, has opted to run for re-election. Despite being situated in the party's right-wing, he has so far refrained from shifting its platform or cutting ties with us. However, over the past few months he has been showing increasing willingness to work with technocratic and conservative groups openly hostile towards us. It is rumored that Taulè and the <span style="color: #069;"><strong>NAPP</strong></span> may have played a part in this sudden flip. If this turns out to be true, the re-election of Facra could very well spell the end of all cooperation between our parties.
+Current chairman Anton Facra, first elected two years ago, has opted to run for re-election. Despite being situated in the party's right wing, he has so far refrained from shifting its platform or cutting ties with us. However, over the past few months he has been showing increasing willingness to work with technocratic and conservative groups openly hostile towards us. It is rumored that Taulè and the <span style="color: #069;"><strong>NAPP</strong></span> may have played a part in this sudden flip. If this turns out to be true, the re-election of Facra could very well spell the end of all cooperation between our parties.
 
 In opposition to Facra is Tanya Peral, with support from the remaining members of the Left and Center. She has been more supportive of cooperation with the <span style="color: #390;"><strong>VPs</strong></span> than the majority of the party as of lately, and her victory could reverse the party's current course, or at the very least halt its rightward turn. However, she has faced significant pushback from those outside of the <span style="color: #c9c;"><strong>PRARR</strong></span>'s old guard, and the party establishment has been notably obstructive towards her campaign efforts.
 
 - @facra: Facra is re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>.
-- @peral: Influence the <span style="color: #c9c;"><strong>PRARR</strong></span> to select Peral as the party chair and reject any further cooperation with reactionaries.
+- @peral: Use our connections with the <span style="color: #c9c;"><strong>PRARR</strong></span> to sway the vote in favor of Peral.
 
 @facra
 on-arrival: prarr_leader = "Facra"; prarr_relation -= 7
@@ -33,11 +33,11 @@ Remaining members of the party's former Left and Center factions have either res
 We have noticed an abrupt deterioration in our relations with the <span style="color: #99c;"><strong>RPP</strong></span> compared to the <span style="color: #c9c;"><strong>PRARR</strong></span>, as the new party now seeks to obstruct us at any given opportunity. We should expect them to start by striking at our provincial government in Monsila-Ebre, which now consists solely of the <span style="color: #f30;"><strong>RPL&S</strong></span> and <span style="color: #390;"><strong>VPs</strong></span>.
 
 @peral
-unavailable-subtitle: Our relations are not good enough.
-subtitle: Peral is strongly opposed to collaboration with the hard-right and is likely to be friendlier to us than Facra.
-choose-if: prarr_relation >= 60
-on-arrival: prarr_leader = "Peral"; new_middle_spd += 3; workers_prarr += 3; old_middle_prarr -= 2;
+unavailable-subtitle: [? if prarr_relation < 60 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
+subtitle: Peral is opposed to collaborating with the hard-right and is likely to be friendlier to us than Facra.
+choose-if: prarr_relation >= 60 and resources >= 2
+on-arrival: resources -= 2; prarr_leader = "Peral"; reformist_strength += 5; new_middle_spd += 3; workers_prarr += 3; old_middle_prarr -= 2;
 
 With our grassroots connections, we have been able to influence the <span style="color: #c9c;"><strong>PRARR</strong></span> delegates to support Peral as the new chairwoman, replacing Facra. This victory has strengthened the remaining left-leaning elements within the party, as well as helped the party to recover some of its lost electoral strenght, compensating for the defections of right-wing members.
 
-Now, Peral aims to steer the party toward a more cooperative line with us and away from upper class interests. However, the right wing of the <span style="color: #c9c;"><strong>PRARR</strong></span> still holds significant sway over party affairs, and will attempt their best to block these efforts.
+Now, Peral aims to steer the party toward a more cooperative line with us and away from upper class interests. However, the right wing of the <span style="color: #c9c;"><strong>PRARR</strong></span> still holds significant sway over party affairs, and will attempt their best to block these efforts. Meanwhile, President Taulè has released an official statement on our interference, threatening open conflict between us and the <span style="color: #069;"><strong>NAPP</strong></span>, though for now he seems willing to bide his time... for now.
