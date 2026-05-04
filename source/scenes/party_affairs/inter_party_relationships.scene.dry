@@ -74,7 +74,9 @@ go-to: prarr_facra if prarr_leader = "Facra" and (left_strength + center_strengt
 @prarr_facra
 on-arrival: prarr_relation += 3*(1 - dissent)
 
-Although our cooperation with the <span style="color: #c9c;"><strong>PRARR</strong></span> has been dwindling in recent years, they still seem willing to negotiate with us. However, they do keep throwing us new hurdles and pinning the blame on what they refer to as "hard-left deviationism". Such criticism is unfounded, but the <span style="color: #c9c;"><strong>PRARR</strong></span>'s right-wing does not seem to care. Still, we can at least see a small improvement in attitudes.
+Although our cooperation with the <span style="color: #c9c;"><strong>PRARR</strong></span> has been dwindling in recent years, they still seem willing to negotiate with us. However, the right-leaning leadership keeps throwing us new hurdles and referring to us as "hard-left deviants". Such criticism is unfounded, but the <span style="color: #c9c;"><strong>PRARR</strong></span>'s right-wing does not seem to care.
+
+Either way, we can at least see a small improvement in attitudes. Still, it seems that taking a more moderate course may be necessary in order to actually solve our differences.
 
 @prarr_1
 on-arrival: prarr_relation += 6*(1 - dissent)
@@ -84,7 +86,7 @@ The <span style="color: #c9c;"><strong>PRARR</strong></span> has been decently c
 @prarr_2
 on-arrival: prarr_relation += 6*(1 - dissent)
 
-The <span style="color: #c9c;"><strong>PRARR</strong></span> has consistently worked with us and been one of our main allies since the establishment of the Republic. By establishing contacts with their leadership, we can further strengthen our ties.
+The <span style="color: #c9c;"><strong>PRARR</strong></span> has often worked with us and been one of our main allies since the establishment of the Republic. By establishing contacts with their leadership, we can further strengthen our ties.
 
 @center
 subtitle: -1 resources
