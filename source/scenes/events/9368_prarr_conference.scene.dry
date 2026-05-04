@@ -34,7 +34,7 @@ We have noticed an abrupt deterioration in our relations with the <span style="c
 
 @peral
 unavailable-subtitle: [? if prarr_relation < 60 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
-subtitle: Peral is opposed to collaborating with the hard-right and is likely to be friendlier to us than Facra.
+subtitle: -2 resources - Peral is opposed to collaborating with the hard-right and is likely to be friendlier to us than Facra.
 choose-if: prarr_relation >= 60 and resources >= 2
 on-arrival: resources -= 2; prarr_leader = "Peral"; reformist_strength += 5; new_middle_spd += 3; workers_prarr += 3; old_middle_prarr -= 2;
 
