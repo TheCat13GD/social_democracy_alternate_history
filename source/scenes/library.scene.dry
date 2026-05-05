@@ -509,5 +509,6 @@ if (d3 && window) {
 # TODO: maybe add textual histories too? some accessibility stuff as well...
 
 = Ideological trends
+= Test: [+ pro_republic +] // [+ pro_republic_disp +]
 
 {!<svg id="ideology_history" style="width: 500px; height: 300px;"> </svg>!}
