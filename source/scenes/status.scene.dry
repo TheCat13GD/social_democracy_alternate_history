@@ -67,7 +67,7 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 Inflation: [+ inflation_2 +]%
 
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+Unemployment: [+ unemployed_2 +]% 
 
 Economic growth: [+ economic_growth_2 +]%
 
@@ -224,3 +224,7 @@ Industrialists & Landowners: VPs: [+ old_middle_spd_display +]%, KPD: [+ old_mid
 Catholics: VPs: [+ catholics_spd_display +]%, KPD: [+ catholics_kpd_display +]%, RPL&S: [+ catholics_rpls_display +]%, [+ prarr_name +]: [+ catholics_prarr_display +]%, DDP: [+ catholics_ddp_display +]%, Z: [+ catholics_z_display +]%, DVP: [+ catholics_dvp_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
 
 Support for the Republic: [+ pro_republic_disp +]%
+
+Support for Nationalism: [+ nationalism_disp +]%
+
+Support for Socialism: [+ socialism_disp +]%
