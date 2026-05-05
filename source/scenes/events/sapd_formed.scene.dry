@@ -10,6 +10,7 @@ Q.old_middle_sapd = 0;
 Q.rural_sapd = 0;
 Q.unemployed_sapd = 2;
 Q.catholics_sapd = 0;
+Q.sorcerers_sapd = 5;
 
 Q.workers_other -= 5;
 
