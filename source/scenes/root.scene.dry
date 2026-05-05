@@ -359,7 +359,7 @@ Q.prarr_name = "PRARR";
 Q.election_records = [];
 // party support records for every month
 Q.party_support_records = [];
-// inflation and unemployment records
+// inflation, unemployment and economic growth records
 Q.economic_records = [];
 
 
