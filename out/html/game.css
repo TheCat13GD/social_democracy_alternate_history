@@ -592,6 +592,13 @@ table {
     fill: #6c0;
 }
 
+.party-prarr {
+    color: #CC99CC;
+}
+.party-rpp {
+    color: #9999CC;
+}
+
 .tooltip-text {
     text-decoration: underline;
     text-decoration-style: dotted;
