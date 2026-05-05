@@ -24,7 +24,7 @@ Perhaps expectedly, Facra has been re-elected as the chairman of the <span style
 - @rpp: The <span style="color: #99c;"><strong>RPP</strong></span> has been formed.
 
 @rpp
-on-arrival: prarr_name = "RPP"; prarr_class = "party-rpp"; prarr_desc = "Revolutionary Progress Party"; prarr_name = "RPP"; prarr_color = "#9999CC"; prarr_relation -= 25; workers_prarr -= 3; sorcerers_prarr = 0; old_middle_prarr += 5;
+on-arrival: prarr_name = "RPP"; prarr_color = "#9999CC"; prarr_relation -= 25; workers_prarr -= 3; sorcerers_prarr = 0; old_middle_prarr += 5;
 
 Having finally overcome the obstacle posed by the remaining leftists within the <span style="color: #c9c;"><strong>PRARR</strong></span>, Facra has finally been able to carry out his planned merger of the technocratic forces. Styling itself as the <span style="color: #99c;">Revolutionary Progress Party</span> (<span style="color: #99c;"><strong>RPP</strong></span>), the new party aims to end all cooperation with us, and work more closely with the political right, particularly the Taulè government.
 
