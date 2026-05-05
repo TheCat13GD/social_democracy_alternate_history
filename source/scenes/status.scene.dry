@@ -45,7 +45,7 @@ Reichstag composition:
 # RPL&S
 {!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: #f30;"><strong>RPL&S</strong></span>!}: [+ rpls_r +]%
 # PRARR
-{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: prarr_color">!}<strong>[? if not prarr_name: PRARR?][? if prarr_name != 0 : [+ prarr_name +]?]</strong>{!</span>!}: [+ prarr_r +]%
+{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: [+ prarr_color +]">!}<strong>[? if not prarr_name: PRARR?][? if prarr_name != 0 : [+ prarr_name +]?]</strong>{!</span>!}: [+ prarr_r +]%
 # 1928: 5, 1930: 4 (as DstP)
 {!<span class="tooltip-text" title="German Democratic Party" style="color: #f90;"><strong>DDP</strong></span>!}: [+ ddp_r +]%
 # 1928: 15, 1930: 15, 1932: 
