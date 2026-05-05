@@ -451,7 +451,16 @@ if (d3 && window) {
             maxUnemployment + 5, minInflation - 5, 21);
     lines_3.width(width).height(300);
     d3.select("#economic_history").datum(Q.economic_records).call(lines_3);
-}
+    }
+
+    // ideological stats
+    var lines_3 = d3.linegraph(true, true, ['repulicanism', 'nationalism', 'socialism'],
+            {'repulicanism': '#2370A6', 'nationalism': '#D9BB39', 'socialism': '#29B463'},
+            {'repulicanism': 'Repulicanism', 'nationalism': 'Nationalism', 'socialism': 'Socialism'},
+            100, 0, 21);
+    lines_3.width(width).height(300);
+    d3.select("#ideology_history").datum(Q.ideology_records).call(lines_3);
+    }
 !}
 
 = Reichstag composition
@@ -498,3 +507,7 @@ if (d3 && window) {
 
 {!<svg id="economic_history" style="width: 500px; height: 300px;"> </svg>!}
 # TODO: maybe add textual histories too? some accessibility stuff as well...
+
+= Ideological trends
+
+{!<svg id="ideology_history" style="width: 500px; height: 300px;"> </svg>!}
