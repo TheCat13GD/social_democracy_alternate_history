@@ -108,9 +108,9 @@ Q.moderate_plan_adopted = 0;
 Q.kpd_relation = 25;
 Q.rpls_relation = 65;
 Q.prarr_relation = 50;
-Q.z_relation = 50;
-Q.ddp_relation = 60;
-Q.dvp_relation = 35;
+Q.z_relation = 45;
+Q.ddp_relation = 45;
+Q.dvp_relation = 30;
 // DNVP and NSDAP are invariably hostile
 Q.DNVP_relation = 10;
 Q.NSDAP_relation = 0;
@@ -352,7 +352,7 @@ Q.old_other_r = 0;
 Q.sapd_r = 0;
 Q.old_sapd_r = 0;
 
-// for changing the PRARR's name to the RPP (Unused)
+// for changing the PRARR's name to the RPP
 Q.prarr_name = "PRARR";
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
