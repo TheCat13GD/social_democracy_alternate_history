@@ -353,8 +353,6 @@ Q.sapd_r = 0;
 Q.old_sapd_r = 0;
 
 // for changing the PRARR's name to the RPP
-Q.prarr_class = "party-prarr";
-Q.prarr_desc = "Party of Revolutionaries, Accelerationists and Radical-Republicans";
 Q.prarr_name = "PRARR";
 Q.prarr_color = "#CC99CC";
 
