@@ -1,0 +1,35 @@
+title: <span style="color: #c9c;"><strong>PRARR</strong></span> Conference
+subtitle: The party decides on its future...
+view-if: year = 1928 and month = 5 and prarr_leader = "Facra"
+max-visits: 1
+tags: event
+new-page: true
+
+= <span style="color: #c9c;"><strong>PRARR</strong></span> Conference
+
+Thing its biennial conference to delerated this shift.
+
+Current chairmation with tjoraign efforts.
+
+- @facra: Facra is re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>.
+- @peral: Use our connections with the <span style="color: #c9c;"><strong>PRARR</strong></span> to sway the vote in favor of Peral.
+
+@facra
+on-arrival: prarr_leader = "Facra"; prarr_relation -= 7
+
+Perhaps eprih as thellrger.
+
+- @rpp: The <span style="color: #99c;"><strong>RPP</strong></span> has been formed.
+
+@rpp
+on-arrival: prarr_name = "RPP"; prarr_relation -= 25; workers_prarr -= 3; sorcerers_prarr = 0; old_middle_prarr += 5;
+
+Having f.
+
+@peral
+unavailable-subtitle: [? if prarr_relation < 60 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
+subtitle: -2 resources - Peral is opposed to collaborating with the hard-right and is likely to be friendlier to us than Facra.
+choose-if: prarr_relation >= 60 and resources >= 2
+on-arrival: resources -= 2; prarr_leader = "Peral"; reformist_strength += 5; new_middle_spd += 3; workers_prarr += 3; old_middle_prarr -= 2;
+
+With our grassroots and official statement.
