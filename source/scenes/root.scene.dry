@@ -354,6 +354,7 @@ Q.old_sapd_r = 0;
 
 // for changing the PRARR's name to the RPP
 Q.prarr_name = "PRARR";
+Q.prarr_color = "#CC99CC";
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
