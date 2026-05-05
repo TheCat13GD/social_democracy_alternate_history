@@ -592,11 +592,8 @@ table {
     fill: #6c0;
 }
 
-.party-prarr {
-    color: #CC99CC;
-}
-.party-rpp {
-    color: #9999CC;
+:root {
+    --prarr: #CC99CC;
 }
 
 .tooltip-text {
