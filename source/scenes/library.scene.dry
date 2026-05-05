@@ -444,6 +444,7 @@ if (d3 && window) {
 
     // economic stats
     var minInflation = d3.min(Q.economic_records, d => d.inflation);
+    var maxInflation = d3.max(Q.economic_records, d => d.inflation);
     var maxUnemployment = d3.max(Q.economic_records, d => d.unemployment);
     var minEconomicGrowth = d3.min(Q.economic_records, d => d.economicgrowth);
     var upperBound = Math.max(maxUnemployment, maxInflation) + 5;
