@@ -424,7 +424,7 @@ if (d3 && window) {
     var lines = d3.linegraph(false, false,
             Q.parties,
             {'spd': '#390', 'kpd': '#900', 'rpls': '#f30', 'prarr': '#c9c', 'ddp': '#f90', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'spd': 'SPD', 'kpd': 'KPD', 'rpls': 'RPL&S', 'prarr': 'PRARR', 'ddp': 'DDP', 'z': 'Z', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
+            {'spd': 'SPD', 'kpd': 'KPD', 'rpls': 'RPL&S', 'prarr': Q.prarr_name, 'ddp': 'DDP', 'z': 'Z', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     if (Q.election_records.length > 0) {
@@ -437,7 +437,7 @@ if (d3 && window) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
             {'spd': '#390', 'kpd': '#900', 'rpls': '#f30', 'prarr': '#c9c', 'ddp': '#f90', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'spd': 'SPD', 'kpd': 'KPD', 'rpls': 'RPL&S', 'prarr': 'PRARR', 'ddp': 'DDP', 'z': 'Z', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
+            {'spd': 'SPD', 'kpd': 'KPD', 'rpls': 'RPL&S', 'prarr': Q.prarr_name, 'ddp': 'DDP', 'z': 'Z', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -467,7 +467,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#f30'> </div></td> <td>!}RPL&S: {!</td><td>!} [+ rpls_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#c9c'> </div></td> <td>!}PRARR: {!</td><td>!} [+ prarr_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#c9c'> </div></td> <td>!}[+ prarr_name +]: {!</td><td>!} [+ prarr_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#f90'> </div></td><td>!}DDP: {!</td><td>!} [+ ddp_r +]% {!</td></tr>!}
 
