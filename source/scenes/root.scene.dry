@@ -361,6 +361,8 @@ Q.election_records = [];
 Q.party_support_records = [];
 // inflation, unemployment and economic growth records
 Q.economic_records = [];
+// republicanism, nationalism and socialism records
+Q.ideology_records = [];
 
 
 // State of the government
