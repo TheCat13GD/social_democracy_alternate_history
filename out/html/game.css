@@ -592,10 +592,6 @@ table {
     fill: #6c0;
 }
 
-:root {
-    --prarr: #CC99CC;
-}
-
 .tooltip-text {
     text-decoration: underline;
     text-decoration-style: dotted;
