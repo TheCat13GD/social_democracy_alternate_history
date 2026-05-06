@@ -363,7 +363,7 @@ data = data.concat([
         "seats": Math.trunc(Q.spd_r*4),
     },
 ]);
-if (Q.prarr_name == "PRARR") {
+if (Q.prarr_name == "PRARR" && Q.prarr_r) {
     data.push({
         "id": "prarr",
         "legend": "PRARR",
@@ -385,7 +385,7 @@ data = data.concat([
         "seats": Math.trunc(Q.z_r*4),
     },
 ]);
-if (Q.prarr_name == "RPP") {
+if (Q.prarr_name == "RPP" && Q.prarr_r) {
     data.push({
         "id": "rpp",
         "legend": "RPP",
@@ -401,12 +401,6 @@ data = data.concat([
         "seats": Math.trunc(Q.dvp_r*4),
     },
     {
-        "id": "other",
-        "legend": "Other",
-        "name": "Other",
-        "seats": Math.trunc(Q.other_r*4),
-    },
-    {
         "id": "dnvp",
         "legend": "DNVP",
         "name": "DNVP",
@@ -419,6 +413,14 @@ data = data.concat([
         "seats": Math.trunc(Q.nsdap_r*4),
     },
 ]);
+if (Q.other_r) {
+    data.push({
+        "id": "other",
+        "legend": "Other",
+        "name": "Other",
+        "seats": Math.trunc(Q.other_r*4),
+    });
+}
 if (d3 && window) {
     // get screen width
     var width = 500;
