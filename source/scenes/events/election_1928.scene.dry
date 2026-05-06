@@ -293,29 +293,29 @@ go-to: coalition_menu
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#390; outline: 2px; outline-style: solid;'> </div> !}**SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--vp); outline: 2px; outline-style: solid;'> </div> !}**SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color: var(--lvp)'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#900'> </div> !}KPD: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--pac)'> </div> !}KPD: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#f30'> </div> !}RPL&S: {!</td><td>!} [+ rpls_r +]% {!</td><td>!} [+ str_change_rpls +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--rpls)'> </div> !}RPL&S: {!</td><td>!} [+ rpls_r +]% {!</td><td>!} [+ str_change_rpls +] {!</td></tr>!}
 
-[? if prarr_name = "PRARR": {!<tr><td><div class="box" style='background-color:#c9c'> </div> !}PRARR: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!} ?]
+[? if prarr_name = "PRARR": {!<tr><td><div class="box" style='background-color: var(--prarr)'> </div> !}PRARR: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#f90'> </div> !}DDP: {!</td><td>!} [+ ddp_r +]% {!</td><td>!} [+ str_change_ddp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--adp)'> </div> !}DDP: {!</td><td>!} [+ ddp_r +]% {!</td><td>!} [+ str_change_ddp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000'> </div> !}Z: {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--c)'> </div> !}Z: {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +] {!</td></tr>!}
 
-[? if prarr_name = "RPP": {!<tr><td><div class="box" style='background-color:#99c'> </div> !}RPP: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!} ?]
+[? if prarr_name = "RPP": {!<tr><td><div class="box" style='background-color: var(--rpp)'> </div> !}RPP: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !}DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--app)'> </div> !}DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#3f7bc1'> </div> !}DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td><td>!} [+ str_change_dnvp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--napp)'> </div> !}DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td><td>!} [+ str_change_dnvp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#954B00'> </div> !}NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td><td>!} [+ str_change_nsdap +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--tani)'> </div> !}NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td><td>!} [+ str_change_nsdap +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !}Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: #a0a0a0'> </div> !}Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
 {!</table>!}
 
 **Potential coalitions:**
