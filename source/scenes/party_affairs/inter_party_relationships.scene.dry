@@ -12,10 +12,11 @@ max-visits: 12
 
 The SPD cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of the Weimar Coalition of the SPD, Center, and Democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
 
-- @prarr: Strengthen our bonds with the center-left technocratic <span style="color: #c9c;">Party of Revolutionaries, Accelerationists and Radical-Republicans</span>.
+- @prarr: Strengthen our bonds with the center-left <span style="color: var(--prarr);">Party of Revolutionaries, Accelerationists and Radical-Republicans</span>.
 - @liberals: Strengthen our bonds with the left-liberal German Democratic Party and conservative-liberal German People's Party.
 - @center: Strengthen our bonds with the Catholic Center Party.
 - @kpd: Work towards repairing relationships with the Communist Party.
+- @rpp: Attempt to reconcile with the <span style="color: var(--rpp);">Revolutionary Progress Party</span>.
 - @spd_alone: The SPD can stand alone for now.
 - @easy_discard
 
@@ -66,7 +67,7 @@ After the events of Blütmai, reconciling with the Communists is difficult, if n
 
 @prarr
 subtitle: -1 resources
-choose-if: resources >= 1
+choose-if: resources >= 1 && prarr_name == "PRARR"
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
 go-to: prarr_facra if prarr_leader = "Facra" and (left_strength + center_strength) > reformist_strength; prarr_1 if prarr_leader = "Facra" and (left_strength + center_strength) < reformist_strength; prarr_2 if prarr_leader != "Facra"
@@ -74,19 +75,19 @@ go-to: prarr_facra if prarr_leader = "Facra" and (left_strength + center_strengt
 @prarr_facra
 on-arrival: prarr_relation += 3*(1 - dissent)
 
-Although our cooperation with the <span style="color: #c9c;"><strong>PRARR</strong></span> has been dwindling in recent years, they still seem willing to negotiate with us. However, the right-leaning leadership keeps throwing us new hurdles and referring to us as "hard-left deviants". Such criticism is unfounded, but the <span style="color: #c9c;"><strong>PRARR</strong></span>'s right-wing does not seem to care.
+Although our cooperation with the <span style="color: var(--prarr);"><strong>PRARR</strong></span> has been dwindling in recent years, they still seem willing to negotiate with us. However, the right-leaning leadership keeps throwing us new hurdles and referring to us as "hard-left deviants". Such criticism is unfounded, but the <span style="color: var(--prarr);"><strong>PRARR</strong></span>'s right-wing does not seem to care.
 
-Either way, we can at least see a small improvement in attitudes. Still, it seems that taking a more moderate course may be necessary in order to actually solve our differences.
+Either way, we can at least see a small improvement in attitudes. Still, it seems that taking a more moderate course may be necessary if we were to actually try to solve our differences.
 
 @prarr_1
 on-arrival: prarr_relation += 6*(1 - dissent)
 
-The <span style="color: #c9c;"><strong>PRARR</strong></span> has been decently cooperative with us since the Republic's founding, and while the current right-leaning leadership is skeptical of our attempts at approaching them, their doubts are mostly assuaged thanks to our reformist path.
+The <span style="color: var(--prarr);"><strong>PRARR</strong></span> has been decently cooperative with us since the Republic's founding, and while the current right-leaning leadership is skeptical of our attempts at approaching them, their reservations are mostly assuaged thanks to our reformist path.
 
 @prarr_2
 on-arrival: prarr_relation += 6*(1 - dissent)
 
-The <span style="color: #c9c;"><strong>PRARR</strong></span> has often worked with us and been one of our main allies since the establishment of the Republic. By establishing contacts with their new conciliatory leadership, we can further strengthen our ties.
+The <span style="color: var(--prarr);"><strong>PRARR</strong></span> has often worked with us and been one of our main allies since the establishment of the Republic. By establishing contacts with their new conciliatory leadership, we can further strengthen our ties.
 
 @center
 subtitle: -1 resources
@@ -137,6 +138,14 @@ on-arrival: dvp_relation += 5*(1 - dissent)
 The liberal parties (both the DDP and DVP) are electorally moribund, so perhaps our efforts are best spent elsewhere.
 
 However, given the influence of the DVP among the other right-leaning parties[? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
+
+@rpp
+subtitle: -1 resources
+choose-if: resources >= 1 && prarr_name == "RPP"
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; rpp_relation += 3*(1 - dissent)
+
+The <span style="color: var(--rpp);"><strong>RPP</strong></span> has proven much less amicable than its predecessor, and building ties with them will be very difficult, although they at least don't just turn us away immediately. On top of that, the <span style="color: var(--rpp);"><strong>RPP</strong></span> lacks electoral strength, so perhaps our efforts are best spent elsewhere.
 
 @spd_alone
 
