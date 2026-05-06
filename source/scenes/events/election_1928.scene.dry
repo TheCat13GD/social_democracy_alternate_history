@@ -249,12 +249,6 @@ data = data.concat([
         "seats": Math.trunc(Q.dvp_r*4),
     },
     {
-        "id": "other",
-        "legend": "Other",
-        "name": "Other",
-        "seats": Math.trunc(Q.other_r*4),
-    },
-    {
         "id": "dnvp",
         "legend": "DNVP",
         "name": "DNVP",
@@ -267,6 +261,14 @@ data = data.concat([
         "seats": Math.trunc(Q.nsdap_r*4),
     },
 ]);
+if (Q.other_r) {
+    data.push({
+        "id": "other",
+        "legend": "Other",
+        "name": "Other",
+        "seats": Math.trunc(Q.other_r*4),
+    });
+}
 
 if (window && d3) {
     var width = 500; 
