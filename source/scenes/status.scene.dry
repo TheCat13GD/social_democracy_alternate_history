@@ -41,23 +41,23 @@ Reichstag composition:
 {!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: var(--vp);"><strong>VPs</strong></span>!}: [+ spd_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Communist Party of Germany" style="color: var(--pac);"><strong>KPD</strong></span>!}: [+ kpd_r +]%
+{!<span class="tooltip-text" title="Party of Aurelian Communists" style="color: var(--pac);"><strong>PAC</strong></span>!}: [+ kpd_r +]%
 # RPL&S
 {!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: var(--rpls);"><strong>RPL&S</strong></span>!}: [+ rpls_r +]%
 # PRARR
 [? if prarr_name = "PRARR": {!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: var(--prarr);">!}<strong>PRARR</strong>{!</span>!}: [+ prarr_r +]% ?]
 # DDP
-{!<span class="tooltip-text" title="German Democratic Party" style="color: var(--adp);"><strong>DDP</strong></span>!}: [+ ddp_r +]%
+{!<span class="tooltip-text" title="Aurelian Democratic Party" style="color: var(--adp);"><strong>ADP</strong></span>!}: [+ ddp_r +]%
 # Z
-{!<span class="tooltip-text" title="Center Party" style="color: var(--c);"><strong>Z</strong></span>!}: [+ z_r +]%
+{!<span class="tooltip-text" title="Center Party" style="color: var(--c);"><strong>C</strong></span>!}: [+ z_r +]%
 # RPP
 [? if prarr_name = "RPP": {!<span class="tooltip-text" title="Revolutionary Progress Party" style="color: var(--rpp);">!}<strong>RPP</strong>{!</span>!}: [+ prarr_r +]% ?]
 # DVP
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
+{!<span class="tooltip-text" title="Aurelian People's Party" style="color: var(--app);"><strong>APP</strong></span>!}: [+ dvp_r +]%
 # 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
+{!<span class="tooltip-text" title="National Aurelian People's Party" style="color: var(--napp);"><strong>NAPP</strong></span>!}: [+ dnvp_r +]%
 # 1928: 3, 1930: 18
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_r +]%
+{!<span class="tooltip-text" title="Territorial Alliance of Nobles and Intellectuals" style="color: var(--tani);"><strong>TANI</strong></span>!}: [+ nsdap_r +]%
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
 
@@ -89,15 +89,15 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="German Democratic Party" style="color: var(--adp);"><strong>DDP</strong></span>!}: [+ ddp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Center Party" style="color: var(--c);"><strong>Z</strong></span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Center Party" style="color: var(--c);"><strong>C</strong></span>!}: [+ z_relation : relationships +]
 
 [? if prarr_name = "RPP": {!<span class="tooltip-text" title="Revolutionary Progress Party" style="color: var(--rpp);">!}<strong>RPP</strong>{!</span>!}: [+ prarr_relation : relationships +] ?]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+{!<span class="tooltip-text" title="Aurelian People's Party" style="color: var(--app);"><strong>APP</strong></span>!}: [+ dvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="National Aurelian People's Party" style="color: var(--napp);"><strong>NAPP</strong></span>!}: [+ dnvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="Territorial Alliance of Nobles and Intellectuals" style="color: var(--tani);"><strong>TANI</strong></span>!}: [+ nsdap_relation : relationships +]
 
 = Party Leadership
 
@@ -111,15 +111,15 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="German Democratic Party" style="color: var(--adp);"><strong>DDP</strong></span>!}: [+ ddp_ideology +] ([+ ddp_leader +])
 
-{!<span class="tooltip-text" title="Center Party" style="color: var(--c);"><strong>Z</strong></span>!}: [+ z_ideology +] ([+ z_party_leader +])
+{!<span class="tooltip-text" title="Center Party" style="color: var(--c);"><strong>C</strong></span>!}: [+ z_ideology +] ([+ z_party_leader +])
 
 [? if prarr_name = "RPP": {!<span class="tooltip-text" title="Revolutionary Progress Party" style="color: var(--rpp);">!}<strong>RPP</strong>{!</span>!}: [+ prarr_ideology +] ([+ prarr_leader +]) ?]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_ideology +] ([+ dvp_leader +])
+{!<span class="tooltip-text" title="Aurelian People's Party" style="color: var(--app);"><strong>APP</strong></span>!}: [+ dvp_ideology +] ([+ dvp_leader +])
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_ideology +] ([+ dnvp_leader +])
+{!<span class="tooltip-text" title="National Aurelian People's Party" style="color: var(--napp);"><strong>NAPP</strong></span>!}: [+ dnvp_ideology +] ([+ dnvp_leader +])
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_ideology +] ([+ nsdap_leader +])
+{!<span class="tooltip-text" title="Territorial Alliance of Nobles and Intellectuals" style="color: var(--tani);"><strong>TANI</strong></span>!}: [+ nsdap_ideology +] ([+ nsdap_leader +])
 
 = Internal Factions of the <span style="color: #390;"><strong>VPs</strong></span>
 
@@ -207,11 +207,11 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 [? if prarr_name = "RPP": <span style="color: var(--rpp);"><strong>RPP</strong></span>: [+ prarr_votes +]% ?]
 
-DVP: [+ dvp_votes +]%
+<span style="color: var(--app);"><strong>APP</strong></span>: [+ dvp_votes +]%
 
-DNVP: [+ dnvp_votes +]%
+<span style="color: var(--napp);"><strong>NAPP</strong></span>: [+ dnvp_votes +]%
 
-NSDAP: [+ nsdap_votes +]%
+<span style="color: var(--tani);"><strong>TANI</strong></span>: [+ nsdap_votes +]%
 
 Others: [+ other_votes +]%
 
