@@ -349,11 +349,11 @@ data = data.concat([
 ]);
 if (Q.sapd_formed && Q.sapd_r) {
     data.push({
-            "id": "sapd",
-            "legend": "SAPD",
-            "name": "SAPD",
-            "seats": Math.trunc(Q.sapd_r*4),
-            });
+        "id": "sapd",
+        "legend": "SAPD",
+        "name": "SAPD",
+        "seats": Math.trunc(Q.sapd_r*4),
+    });
 }
 data = data.concat([
     {
