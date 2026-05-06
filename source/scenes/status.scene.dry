@@ -49,7 +49,7 @@ Reichstag composition:
 # DDP
 {!<span class="tooltip-text" title="German Democratic Party" style="color: var(--adp);"><strong>DDP</strong></span>!}: [+ ddp_r +]%
 # Z
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_r +]%
+{!<span class="tooltip-text" title="Center Party" style="color: var(--c);"><strong>Z</strong></span>!}: [+ z_r +]%
 # RPP
 [? if prarr_name = "RPP": {!<span class="tooltip-text" title="Revolutionary Progress Party" style="color: var(--rpp);">!}<strong>RPP</strong>{!</span>!}: [+ prarr_r +]% ?]
 # DVP
@@ -89,7 +89,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="German Democratic Party" style="color: var(--adp);"><strong>DDP</strong></span>!}: [+ ddp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Center Party" style="color: var(--c);"><strong>Z</strong></span>!}: [+ z_relation : relationships +]
 
 [? if prarr_name = "RPP": {!<span class="tooltip-text" title="Revolutionary Progress Party" style="color: var(--rpp);">!}<strong>RPP</strong>{!</span>!}: [+ prarr_relation : relationships +] ?]
 
@@ -111,7 +111,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="German Democratic Party" style="color: var(--adp);"><strong>DDP</strong></span>!}: [+ ddp_ideology +] ([+ ddp_leader +])
 
-{!<span class="tooltip-text" title="Center Party" style="color: #000;"><strong>Z</strong></span>!}: [+ z_ideology +] ([+ z_party_leader +])
+{!<span class="tooltip-text" title="Center Party" style="color: var(--c);"><strong>Z</strong></span>!}: [+ z_ideology +] ([+ z_party_leader +])
 
 [? if prarr_name = "RPP": {!<span class="tooltip-text" title="Revolutionary Progress Party" style="color: var(--rpp);">!}<strong>RPP</strong>{!</span>!}: [+ prarr_ideology +] ([+ prarr_leader +]) ?]
 
@@ -203,7 +203,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 <span style="color: var(--adp);"><strong>DDP</strong></span>: [+ ddp_votes +]%
 
-Z: [+ z_votes +]%
+<span style="color: var(--c);"><strong>Z</strong></span>: [+ z_votes +]%
 
 [? if prarr_name = "RPP": <span style="color: var(--rpp);"><strong>RPP</strong></span>: [+ prarr_votes +]% ?]
 
