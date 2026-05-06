@@ -38,7 +38,7 @@ go-to: menu
 
 **9334**: The <span style="color: var(--vp);">Green Unions</span>, an agrarian sorcerers' labor confederation, is formed. Juli Verdantí becomes the first leader of the organization.
 
-**9345**: The <span style="color: var(--vp);">Green Unions</span> declare independence from the <span style="color: var(--adp);">**ADP**</span> following disputes over electoral laws. A year later, they contest the parliamentary elections for the first time, winning 11 seats.
+**9345**: The <span style="color: var(--vp);">Green Unions</span> break with the <span style="color: var(--adp);">**ADP**</span> following disputes over electoral laws. A year later, they contest the parliamentary elections for the first time, winning 11 seats.
 
 **9356**: The first "Palm-Leaf Coalition" government is formed, consisting of the <span style="color: var(--adp);">**ADP**</span>, <span style="color: #6c3;">**ADPP**</span>, and <span style="color: var(--vp);">Green Unions</span>.
 
@@ -119,17 +119,17 @@ go-to: menu
 
 **Demographic Groups**
 
-**Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are socialist, and have historically supported either the <span style="color: #f30;">**RPL&S**</span> or <span style="color: #900;">**PAC**</span>, though in recent years they have also become receptive to us. They make up 40-50% of the population.
+**Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are socialist, and have historically supported either the <span style="color: var(--rpls);">**RPL&S**</span> or <span style="color: var(--pac);">**PAC**</span>, though in recent years they have also become receptive to us. They make up 40-50% of the population.
 
-**Rural**: Small and large farmers and independent rural workers. They are part of our main voter base, despite the bulk of them often supporting the <span style="color: #6cf;">**APP**</span> and <span style="color: #069;">**NAPP**</span>. 20-25% of the population.
+**Rural**: Small and large farmers and independent rural workers. They are part of our main voter base, despite the bulk of them often supporting the <span style="color: var(--app);">**APP**</span> and <span style="color: var(--napp);">**NAPP**</span>. 20-25% of the population.
 
-**Sorcerers**: A term usually used to refer to those with unusual powers and abilities, accounting for roughly 10-15% of the population. The vast majority belong to the working class, and are notably more progressive than other groups. They are the strongest base of the <span style="color: #390;">**VPs**</span>.
+**Sorcerers**: A term usually used to refer to those with unusual powers and abilities, accounting for roughly 10-15% of the population. The vast majority belong to the working class, and are notably more progressive than other groups. They are the strongest base of the <span style="color: var(--vp);">**VPs**</span>.
 
 **Middle Class**: The middle class consists of white-collar workers, government employees, shopkeepers, and small-time businesspeople. This is the base of liberalism. 15-20% of the population.
 
 **Industrialists & Landowners**: Consisting of the economic elites and former aristocracy. They tend to be conservative and overwhelmingly support the classical bourgeois parties, though a notable portion also supports the far-right. Roughly 5% of the population.
 
-**Catholics**: The largest religious group, at about 25% of the population. They are divided between the <span style="color: #000;">Center Party</span>, <span style="color: #069;">**NAPP**</span>, and to a lesser extent the <span style="color: #6cf;">**APP**</span>.
+**Catholics**: The largest religious group, at about 25% of the population. They are divided between the <span style="color: var(--c);">Center Party</span>, <span style="color: var(--napp);">**NAPP**</span>, and to a lesser extent the <span style="color: var(--app);">**APP**</span>.
 
 
 @public_opinion
@@ -292,6 +292,14 @@ Strength: [+ left_strength : strength +]
 
 Dissent: [+ left_dissent : dissent +]
 
+**Neorevisionists**
+
+Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extraparliamentary action in defense of the republic.
+
+Strength: [+ neorevisionist_strength : strength +]
+
+Dissent: [+ neorevisionist_dissent : dissent +]
+
 **Centrists**
 
 Centrists in the SPD are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
@@ -318,14 +326,6 @@ Dissent: [+ reformist_dissent : dissent +]
 
 @neorevisionists
 go-to: menu
-
-**Neorevisionists**
-
-Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extraparliamentary action in defense of the republic.
-
-Strength: [+ neorevisionist_strength : strength +]
-
-Dissent: [+ neorevisionist_dissent : dissent +]
 
 
 @figures
