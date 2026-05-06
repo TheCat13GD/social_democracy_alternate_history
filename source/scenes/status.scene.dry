@@ -45,12 +45,14 @@ Reichstag composition:
 # RPL&S
 {!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: #f30;"><strong>RPL&S</strong></span>!}: [+ rpls_r +]%
 # PRARR
-{!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;">!}<strong>[? if not prarr_name: PRARR?][? if prarr_name != 0: [+ prarr_name +]?]</strong>{!</span>!}: [+ prarr_r +]%
-# 1928: 5, 1930: 4 (as DstP)
+[? if prarr_name = "PRARR": {!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;">!}<strong>ifnotprarr_nararr_name</strong>{!</span>!}: [+ prarr_r +]% ?]
+# DDP
 {!<span class="tooltip-text" title="German Democratic Party" style="color: #f90;"><strong>DDP</strong></span>!}: [+ ddp_r +]%
-# 1928: 15, 1930: 15, 1932: 
+# Z
 {!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_r +]%
-# 1928: 9, 1930: 5
+# RPP
+[? if prarr_name = "RPP": {!<span class="tooltip-text" title="Revolutionary Progress Party" style="color: #99c;">!}<strong>ifnotpraarr_name</strong>{!</span>!}: [+ prarr_r +]% ?]
+# DVP
 {!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
 # 1928: 14, 1930: 7
 {!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
