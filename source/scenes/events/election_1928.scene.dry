@@ -211,7 +211,7 @@ data = data.concat([
         "seats": Math.trunc(Q.spd_r*4),
     },
 ]);
-if (Q.prarr_name == "PRARR") {
+if (Q.prarr_name == "PRARR" && Q.prarr_r) {
     data.push({
         "id": "prarr",
         "legend": "PRARR",
@@ -233,7 +233,7 @@ data = data.concat([
         "seats": Math.trunc(Q.z_r*4),
     },
 ]);
-if (Q.prarr_name == "RPP") {
+if (Q.prarr_name == "RPP" && Q.prarr_r) {
     data.push({
         "id": "rpp",
         "legend": "RPP",
