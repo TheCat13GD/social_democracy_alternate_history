@@ -536,46 +536,69 @@ table {
     border-spacing: 0.5em;
 }
 
+.tooltip-text {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
 /* Styles for parties */
+:root {
+  --lf: #000000;
+  --pac: #8B0000;
+  --rpls: #E3000F;
+  --lvp: #fc7a82;
+  --vp: #ff3c00;
+  --rvp: #DCCA4A;
+  --prarr: #c700a2;
+  --adp: #ff006a;
+  --dcp: #c268ff;
+  --c: #FFBB5A;
+  --rpp: #fc61c7;
+  --cldp: #00780A;
+  --rpa: #76f981;
+  --app: #3F7BC1;
+  --nscu: #919191;
+  --napp: #fe67ff;
+  --tani: #0030ff;
+  --anf: #758fff;
+}
 .seat.kpd {
-    fill: #900;
+    fill: var(--pac);
 }
 .seat.rpls {
-    fill: #f30;
+    fill: var(--rpls);
 }
 .seat.spd {
-    fill: #390;
+    fill: var(--vp);
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
 .seat.prarr {
-    fill: #c9c;
+    fill: var(--prarr);
 }
 .seat.ddp {
-    fill: #f90;
+    fill: var(--adp);
 }
 .seat.z {
-    fill: #000;
-}
-.seat.bvp {
-    fill: #69A2BE;
+    fill: var(--c);
 }
 .seat.dvp {
-    fill: #D5AC27;
+    fill: var(--app);
 }
 .seat.other {
     fill: #909090;
 }
 .seat.dnvp {
-    fill: #3F7BC1;
+    fill: var(--napp);
 }
 .seat.nsdap {
-    fill: #954B00;
+    fill: var(--tani);
 }
 .seat.sapd {
-    fill: #C40000;
+    fill: var(--lvp);
 }
 
+/* Internal factions */
 .seat.left {
     fill: #060;
 }
@@ -590,9 +613,4 @@ table {
 }
 .seat.right {
     fill: #6c0;
-}
-
-.tooltip-text {
-    text-decoration: underline;
-    text-decoration-style: dotted;
 }
