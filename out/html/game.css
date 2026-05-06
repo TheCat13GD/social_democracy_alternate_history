@@ -544,21 +544,21 @@ table {
 /* Styles for parties */
 :root {
   --lf: #000000;
-  --pac: #8B0000;
-  --rpls: #E3000F;
+  --pac: #990000;
+  --rpls: #ff3300;
   --lvp: #fc7a82;
-  --vp: #ff3c00;
-  --rvp: #DCCA4A;
-  --prarr: #c700a2;
-  --adp: #ff006a;
+  --vp: #e3000f;
+  --rvp: #dcca4a;
+  --prarr: #cc99cc;
+  --adp: #ee66cc;
   --dcp: #c268ff;
-  --c: #FFBB5A;
-  --rpp: #61c7fc;
-  --cldp: #00780A;
+  --c: #000000;
+  --rpp: #9999cc;
+  --cldp: #00780a;
   --rpa: #76f981;
-  --app: #3F7BC1;
+  --app: #66ccff;
   --nscu: #919191;
-  --napp: #67feff;
+  --napp: #006699;
   --tani: #0030ff;
   --anf: #758fff;
 }
