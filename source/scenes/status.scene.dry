@@ -101,11 +101,11 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Party Leadership
 
-{!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: #390;"><strong>VPs</strong></span>!}: Reformist Verdantianism (IDK)
+{!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: #390;"><strong>VPs</strong></span>!}: [+ vps_ideology +] ([+ vps_leader +])
 
 {!<span class="tooltip-text" title="Communist Party of Germany" style="color: #900;"><strong>KPD</strong></span>!}: [+ kpd_ideology +] ([+ kpd_party_leader +])
 
-{!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: #f30;"><strong>RPL&S</strong></span>!}: [+ rpls_relation : relationships +]
+{!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: #f30;"><strong>RPL&S</strong></span>!}: [+ rpls_ideology +] ([+ rpls_leader +])
 
 [? if prarr_name = "PRARR": {!<span class="tooltip-text" title="Party of Revolutionaries, Accelerationists and Radical-Republicans" style="color: #c9c;">!}<strong>PRARR</strong>{!</span>!}: [+ prarr_ideology +] ([+ prarr_leader +]) ?]
 
@@ -115,11 +115,11 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if prarr_name = "RPP": {!<span class="tooltip-text" title="Revolutionary Progress Party" style="color: #99c;">!}<strong>RPP</strong>{!</span>!}: [+ prarr_ideology +] ([+ prarr_leader +]) ?]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_ideology +] ([+ dvp_leader +])
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_ideology +] ([+ dnvp_leader +])
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_ideology +] ([+ nsdap_leader +])
 
 = Internal Factions of the <span style="color: #390;"><strong>VPs</strong></span>
 
