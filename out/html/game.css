@@ -568,6 +568,9 @@ table {
 .seat.rpls {
     fill: var(--rpls);
 }
+.seat.sapd {
+    fill: var(--lvp);
+}
 .seat.spd {
     fill: var(--vp);
     stroke: var(--border-color);
@@ -582,6 +585,9 @@ table {
 .seat.z {
     fill: var(--c);
 }
+.seat.rpp {
+    fill: var(--rpp);
+}
 .seat.dvp {
     fill: var(--app);
 }
@@ -593,9 +599,6 @@ table {
 }
 .seat.nsdap {
     fill: var(--tani);
-}
-.seat.sapd {
-    fill: var(--lvp);
 }
 
 /* Internal factions */
