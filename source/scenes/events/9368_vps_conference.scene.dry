@@ -1,11 +1,11 @@
-title: <span style="color: #390;"><strong>VPs</strong></span> Conference
-subtitle: The <span style="color: #390;"><strong>VPs</strong></span> hold a party conference.
+title: <span style="color: var(--vp);"><strong>VPs</strong></span> Conference
+subtitle: The <span style="color: var(--vp);"><strong>VPs</strong></span> hold a party conference.
 view-if: year = 1928 and month = 11
 max-visits: 1
 tags: event
 new-page: true
 
-= 9368 <span style="color: #390;"><strong>VPs</strong></span> Conference
+= 9368 <span style="color: var(--vp);"><strong>VPs</strong></span> Conference
 
 The VPs are holding their conference in XXX to determine the party's future, following Reformy McReformface's resignation.
 
@@ -93,8 +93,8 @@ The first matter in the conference is, as usual, the election of the General Sec
 
 On the other hand, there's "Roos", supported by the Reformists and Agrarians. He's sometimes referred to as "McReformface Jr.", I sure wonder why.
 
-- @caas: The <span style="color: #390;"><strong>VPs</strong></span> elect Center boi as General Secretary.
-- @roos: The <span style="color: #390;"><strong>VPs</strong></span> elect Right boi as General Secretary.
+- @caas: The <span style="color: var(--vp);"><strong>VPs</strong></span> elect Center boi as General Secretary.
+- @roos: The <span style="color: var(--vp);"><strong>VPs</strong></span> elect Right boi as General Secretary.
 
 @caas
 unavailable-subtitle: The Left, Center and Sorcerers lack enough votes.
