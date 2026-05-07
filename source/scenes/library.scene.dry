@@ -284,31 +284,31 @@ go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
 Overall dissent: [+ dissent_percent : dissent +]
 
-<span style="color: #060;">**Left**
+<span style="color: #060;">**Left-VPs**</span>
 
-Many leftists are former members of the USPD (the left-wing, anti-war Independent Social Democratic Party), or are young radicals. Many are interested in closer cooperation with the KPD, and some support extraparliamentary action.
+The <span style="color: #060;">Left-VPs</span> are a revolutionary faction with communist and anarchist tendencies. They generally support radical economic change and cooperation with the parties to our left, mostly by extraparliamentary means.
 
 Strength: [+ left_strength : strength +]
 
 Dissent: [+ left_dissent : dissent +]
 
-<span style="color: #096;">**Neorevisionists**
+<span style="color: #096;">**Sorcerers**</span>
 
-Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extraparliamentary action in defense of the republic.
+The <span style="color: #096;">Sorcerers</span>' faction is not so much an interest group as it is its own ideological current. It is a left-wing group following a form of orthodox Verdantianism in favor of expanding workers' and sorcerers' rights through militant action, while also supporting an internationalist position in foreign policy.
 
 Strength: [+ neorevisionist_strength : strength +]
 
 Dissent: [+ neorevisionist_dissent : dissent +]
 
-<span style="color: #390;">**Centrists**
+<span style="color: #390;">**Center-VPs**</span>
 
-Centrists in the SPD are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
+Pragmatic-Revolutionaries in the <span style="color: var(--vp);">**VPs**</span>, simply known as Pragmatists or <span style="color: #390;">Center-VPs</span>, are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
 
 Strength: [+ center_strength : strength +]
 
 Dissent: [+ center_dissent : dissent +]
 
-<span style="color: #cc0;">**Labor**
+<span style="color: #cc0;">**Agrarians**</span>
 
 Many SPD members are also part of the ADGB, the federation of free trade unions. Their goal is economic reform and benefits for organized workers.
 
@@ -316,7 +316,7 @@ Strength: [+ labor_strength : strength +]
 
 Dissent: [+ labor_dissent : dissent +]
 
-<span style="color: #6c0;">**Reformists**
+<span style="color: #6c0;">**Right-VPs**</span>
 
 Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the far right and left. [? if spd_prussia : They are dominant in the state government of Prussia. ?]
 
