@@ -286,7 +286,7 @@ Overall dissent: [+ dissent_percent : dissent +]
 
 <span style="color: #060;">**Left-VPs**</span>
 
-The <span style="color: #060;">Left-VPs</span> are a revolutionary faction with communist and anarchist tendencies. They generally support radical economic change and cooperation with the parties to our left, mostly by extraparliamentary means.
+The <span style="color: #060;">Left-VPs</span> are a revolutionary faction with communist and anarchist tendencies, generally supporting radical economic change, internationalist policies, usage of extraparliamentary means and cooperation with the parties to our left.
 
 Strength: [+ left_strength : strength +]
 
@@ -294,7 +294,7 @@ Dissent: [+ left_dissent : dissent +]
 
 <span style="color: #096;">**Sorcerers**</span>
 
-The <span style="color: #096;">Sorcerers</span>' faction is not so much an interest group as it is its own ideological current. It is a left-wing group following a form of orthodox Verdantianism in favor of expanding workers' and sorcerers' rights through militant action, while also supporting an internationalist position in foreign policy.
+The <span style="color: #096;">Sorcerers</span>' faction is not so much an interest group as it is its own ideological current. A left-wing group following a form of orthodox Verdantianism, it supports defending workers' and sorcerers' rights through militant action at home and abroad, while also supporting an internationalist position in foreign policy.
 
 Strength: [+ neorevisionist_strength : strength +]
 
@@ -302,7 +302,7 @@ Dissent: [+ neorevisionist_dissent : dissent +]
 
 <span style="color: #390;">**Center-VPs**</span>
 
-Pragmatic-Revolutionaries in the <span style="color: var(--vp);">**VPs**</span>, simply known as Pragmatists or <span style="color: #390;">Center-VPs</span>, are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
+Pragmatic-Revolutionaries in the <span style="color: var(--vp);">**VPs**</span>, simply known as Pragmatists or <span style="color: #390;">Center-VPs</span>, are in favor of benefits for organized workers and economic reform as a means of preparing for revolution. They are generally skeptical of participating in bourgeois governments, but have been in favor of tolerating minority coalitions in the past.
 
 Strength: [+ center_strength : strength +]
 
