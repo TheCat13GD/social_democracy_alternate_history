@@ -29,13 +29,15 @@ Resources available: [+ resources +]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
+Next party congress: Soon™
+
 = Government
 
 President: [+ president +]
 
 Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
-Reichstag composition:
+Parliament composition:
 
 # 1928: 30, 1930: 25, 1932: 22
 {!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: var(--vp);"><strong>VPs</strong></span>!}: [+ spd_r +]%
