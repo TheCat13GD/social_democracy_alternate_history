@@ -1,35 +1,35 @@
-title: <span style="color: #c9c;"><strong>PRARR</strong></span> Conference
-subtitle: The party decides on its future...
+title: XXXX Local Government Collapses!
+subtitle: The <span style="color: var(--rpp);"><strong>RPP</strong></span>'s first move against us...
 view-if: year = 1928 and month = 5 and prarr_leader = "Facra"
 max-visits: 1
 tags: event
 new-page: true
 
-= <span style="color: #c9c;"><strong>PRARR</strong></span> Conference
+= XXXX Left-Wing Coalition Dissolved
 
-Thing its biennial conference to delerated this shift.
+The <span style="color: var(--rpp);"><strong>RPP</strong></span> has called a no-confidence motion to delerated this shift.
 
-Current chairmation with tjoraign efforts.
+- @adp_join: The <span style="color: var(--adp);"><strong>ADP</strong></span> will join our coalition!
+- @adp_tolerate: Could we get the <span style="color: var(--adp);"><strong>ADP</strong></span> to abstain?
+- @collapse: New elections will be called.
 
-- @facra: Facra is re-elected as the chairman of the <span style="color: #c9c;"><strong>PRARR</strong></span>.
-- @peral: Use our connections with the <span style="color: #c9c;"><strong>PRARR</strong></span> to sway the vote in favor of Peral.
+@adp_join
+unavailable-subtitle: [? if ddp_relation < 55 : The <span style="color: var(--adp);"><strong>ADP</strong></span> does not trust us enough. ?] [? if kpd_relation < 30 : The <span style="color: var(--pac);"><strong>PAC</strong></span> may break toleration if such a coalition were formed. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
+subtitle: -2 resources
+choose-if: ddp_relation >= 55 and kpd_relation >= 30 and resources >= 2
+on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; workers_prarr += 3; ddp_relation += 5; rpls_relation += 3; kpd_relation -= 2;
 
-@facra
-on-arrival: prarr_leader = "Facra"; prarr_relation -= 7
+We have managed to include the <span style="color: var(--adp);"><strong>ADP</strong></span> in our coalition!
 
-Perhaps eprih as thellrger.
+@adp_tolerate
+unavailable-subtitle: [? if ddp_relation < 60 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
+subtitle: -2 resources
+choose-if: ddp_relation >= 60 and resources >= 2
+on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; old_middle_prarr -= 2; rpls_relation += 3;
 
-- @rpp: The <span style="color: #99c;"><strong>RPP</strong></span> has been formed.
+We have convinced the <span style="color: var(--adp);"><strong>ADP</strong></span> to abstain, thus making them de facto tolerators of the coalition.
 
-@rpp
-on-arrival: prarr_name = "RPP"; prarr_relation -= 25; workers_prarr -= 3; sorcerers_prarr = 0; old_middle_prarr += 5;
+@collapse
+on-arrival: prarr_relation -= 5; old_middle_prarr += 5;
 
-Having f.
-
-@peral
-unavailable-subtitle: [? if prarr_relation < 60 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
-subtitle: -2 resources - Peral is opposed to collaborating with the hard-right and is likely to be friendlier to us than Facra.
-choose-if: prarr_relation >= 60 and resources >= 2
-on-arrival: resources -= 2; prarr_leader = "Peral"; reformist_strength += 5; new_middle_spd += 3; workers_prarr += 3; old_middle_prarr -= 2;
-
-With our grassroots and official statement.
+The coalition is no more more.
