@@ -561,11 +561,11 @@ table {
   --napp: #006699;
   --tani: #6600cc;
   --anf: #758fff;
-  --left: #66ccff;
-  --sorcerer: #919191;
-  --center: #006699;
-  --agrarian: #6600cc;
-  --right: #758fff;
+  --left: #005426;
+  --sorcerer: #2f8a61;
+  --center: #4bb34e;
+  --agrarian: #90c75a;
+  --right: #9bcf88;
 }
 .seat.kpd {
     fill: var(--pac);
