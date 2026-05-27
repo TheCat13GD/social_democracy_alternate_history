@@ -541,7 +541,7 @@ table {
     text-decoration-style: dotted;
 }
 
-/* Styles for parties */
+/* Styles for parties & factions */
 :root {
   --lf: #000000;
   --pac: #990000;
@@ -561,6 +561,11 @@ table {
   --napp: #006699;
   --tani: #6600cc;
   --anf: #758fff;
+  --left: #66ccff;
+  --sorcerer: #919191;
+  --center: #006699;
+  --agrarian: #6600cc;
+  --right: #758fff;
 }
 .seat.kpd {
     fill: var(--pac);
@@ -603,17 +608,17 @@ table {
 
 /* Internal factions */
 .seat.left {
-    fill: #060;
+    fill: var(--left);
 }
 .seat.sorcerer {
-    fill: #096;
+    fill: var(--sorcerer);
 }
 .seat.center {
-    fill: #390;
+    fill: var(--center);
 }
 .seat.agrarian {
-    fill: #cc0;
+    fill: var(--agrarian);
 }
 .seat.right {
-    fill: #6c0;
+    fill: var(--right);
 }
