@@ -278,37 +278,36 @@ Loyalty: [+ prussian_police_loyalty : loyalty +]
 
 
 @factions
-go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
 **Internal factions of the <span style="color: var(--vp);">VPs</span>**
 
 Overall dissent: [+ dissent_percent : dissent +]
 
-<span style="color: #060;">**Left-VPs**</span>
+<span style="color: var(--left);">**Left-VPs**</span>
 
-The <span style="color: #060;">Left-VPs</span> are a revolutionary faction with communist and anarchist tendencies, generally supporting radical economic change, internationalism, usage of extraparliamentary means and cooperation with the parties to our left.
+The <span style="color: var(--left);">Left-VPs</span> are a revolutionary faction with communist and anarchist tendencies, generally supporting radical economic change, internationalism, usage of extraparliamentary means and cooperation with the parties to our left.
 
 Strength: [+ left_strength : strength +]
 
 Dissent: [+ left_dissent : dissent +]
 
-<span style="color: #096;">**Sorcerers**</span>
+<span style="color: var(--sorcerer);">**Sorcerers**</span>
 
-The <span style="color: #096;">Sorcerers</span>' faction is not so much an interest group as it is its own ideological current. A left-wing group following a form of orthodox Verdantianism, it supports defending workers' and sorcerers' rights through militant action at home and abroad, while also supporting an internationalist position in foreign policy.
+The <span style="color: var(--sorcerer);">Sorcerers</span>' faction is not only an interest group, but also its own ideological current. A left-wing group following a form of orthodox Verdantianism, it supports defending workers' and sorcerers' rights through militant action at home and abroad, while also supporting an internationalist position in foreign policy.
 
 Strength: [+ neorevisionist_strength : strength +]
 
 Dissent: [+ neorevisionist_dissent : dissent +]
 
-<span style="color: #390;">**Center-VPs**</span>
+<span style="color: var(--center);">**Center-VPs**</span>
 
-Pragmatic-Revolutionaries in the <span style="color: var(--vp);">**VPs**</span>, simply known as Pragmatists or <span style="color: #390;">Center-VPs</span>, are in favor of benefits for organized workers and economic reform as a means of preparing for revolution. They are generally skeptical of participating in bourgeois governments, but have been in favor of tolerating minority coalitions in the past.
+Pragmatic-Revolutionaries in the <span style="color: var(--vp);">**VPs**</span>, simply known as Pragmatists or <span style="color: var(--center);">Center-VPs</span>, are in favor of benefits for organized workers and economic reform as a means of preparing for revolution. They are generally skeptical of participating in bourgeois governments, but have been in favor of tolerating minority coalitions in the past.
 
 Strength: [+ center_strength : strength +]
 
 Dissent: [+ center_dissent : dissent +]
 
-<span style="color: #cc0;">**Agrarians**</span>
+<span style="color: var(--agrarian);">**Agrarians**</span>
 
 Many SPD members are also part of the ADGB, the federation of free trade unions. Their goal is economic reform and benefits for organized workers.
 
@@ -316,16 +315,13 @@ Strength: [+ labor_strength : strength +]
 
 Dissent: [+ labor_dissent : dissent +]
 
-<span style="color: #6c0;">**Right-VPs**</span>
+<span style="color: var(--right);">**Right-VPs**</span>
 
 Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the far right and left. [? if spd_prussia : They are dominant in the state government of Prussia. ?]
 
 Strength: [+ reformist_strength : strength +]
 
 Dissent: [+ reformist_dissent : dissent +]
-
-@neorevisionists
-go-to: menu
 
 
 @figures
