@@ -7,14 +7,18 @@ new-page: true
 
 = XXXX Left-Wing Coalition Dissolved
 
-The <span style="color: var(--rpp);"><strong>RPP</strong></span> has called a no-confidence motion to delerated this shift.
+Since the June 9365 election, the province of XXXX has been governed by a radical left coalition consisting of the <span style="color: var(--rpls);"><strong>RPL&S</strong></span>, <span style="color: var(--vp);"><strong>VPs</strong></span> and <span style="color: var(--prarr);"><strong>PRARR</strong></span>, with external support from the <span style="color: var(--pac);"><strong>PAC</strong></span>. It has been dubbed a bastion of the alt-left in the midst of an increasingly right-wing political landscape.
+
+With the <span style="color: var(--prarr);"><strong>PRARR</strong></span> (now the <span style="color: var(--rpp);"><strong>RPP</strong></span>) having undergone a significant shift to the right, it was clear that the coalition's days were numbered. The <span style="color: var(--rpp);"><strong>RPP</strong></span> has now called a no-confidence motion to bring down our local government.
+
+Some within our party have proposed forming a traffic light coalition by bringing the <span style="color: var(--adp);"><strong>ADP</strong></span> on board, which should be possible as long as we have maintained good enough relations with them.
 
 - @adp_join: The <span style="color: var(--adp);"><strong>ADP</strong></span> will join our coalition!
 - @adp_tolerate: Could we get the <span style="color: var(--adp);"><strong>ADP</strong></span> to abstain?
 - @collapse: New elections will be called.
 
 @adp_join
-unavailable-subtitle: [? if ddp_relation < 55 : The <span style="color: var(--adp);"><strong>ADP</strong></span> does not trust us enough. ?] [? if kpd_relation < 30 : The <span style="color: var(--pac);"><strong>PAC</strong></span> may break toleration if such a coalition were formed. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
+unavailable-subtitle: [? if ddp_relation < 55 : The <span style="color: var(--adp);"><strong>ADP</strong></span> does not trust us enough. ?] [? if kpd_relation < 30 : The <span style="color: var(--pac);"><strong>PAC</strong></span> may break toleration if such a coalition were to be formed. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
 subtitle: -2 resources
 choose-if: ddp_relation >= 55 and kpd_relation >= 30 and resources >= 2
 on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; workers_prarr += 3; ddp_relation += 5; rpls_relation += 3; kpd_relation -= 2;
@@ -22,7 +26,7 @@ on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; worker
 We have managed to include the <span style="color: var(--adp);"><strong>ADP</strong></span> in our coalition!
 
 @adp_tolerate
-unavailable-subtitle: [? if ddp_relation < 60 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
+unavailable-subtitle: [? if ddp_relation < 55 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
 subtitle: -2 resources
 choose-if: ddp_relation >= 60 and resources >= 2
 on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; old_middle_prarr -= 2; rpls_relation += 3;
