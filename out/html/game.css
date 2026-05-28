@@ -543,24 +543,24 @@ table {
 
 /* Styles for parties & factions */
 :root {
-  --lf: #DDDDDD;
+  --lf: #dc143c;
   --pac: #8b0000;
   --rpls: #ed2c00;
   --lvp: #00542e;
   --vp: #35991e;
-  --rvp: #DDDDDD;
+  --rvp: #abce22;
   --prarr: #db90b3;
   --adp: #ff9900;
-  --dcp: #DDDDDD;
+  --dcp: #06402b;
   --c: #000000;
   --rpp: #ab98ee;
-  --cldp: #DDDDDD;
-  --rpa: #DDDDDD;
+  --cldp: #00ca9a;
+  --rpa: #1e90ff;
   --app: #87cefa;
-  --nscu: #DDDDDD;
+  --nscu: #d8bfff;
   --napp: #266ca5;
   --tani: #4b0082;
-  --anf: #DDDDDD;
+  --anf: #190070;
   --left: #005426;
   --sorcerer: #2f8a61;
   --center: #4bb34e;
