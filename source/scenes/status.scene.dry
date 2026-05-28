@@ -42,7 +42,7 @@ Parliament composition:
 
 {!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: var(--vp);"><strong>VPs</strong></span>!}: [+ spd_r +]%
 
-[? if sapd_formed and sapd_r > 0: <span style="color: var(--lvp);"><strong>Left-VPs</strong></span>: [+ sapd_r +]% ?]
+[? if sapd_formed and sapd_r > 0: <span class="tooltip-text" title="Party of Left-Verdantian-Progressives" style="color: var(--lvp);"><strong>Left-VPs</strong></span>: [+ sapd_r +]% ?]
 
 {!<span class="tooltip-text" title="Party of Aurelian Communists" style="color: var(--pac);"><strong>PAC</strong></span>!}: [+ kpd_r +]%
 
