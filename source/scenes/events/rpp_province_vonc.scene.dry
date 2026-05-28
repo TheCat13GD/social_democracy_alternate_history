@@ -18,7 +18,7 @@ Some within our party have proposed forming a traffic light coalition by bringin
 - @collapse: New elections will be called.
 
 @adp_join
-unavailable-subtitle: [? if ddp_relation < 55 : The <span style="color: var(--adp);"><strong>ADP</strong></span> does not trust us enough. ?] [? if kpd_relation < 30 : The <span style="color: var(--pac);"><strong>PAC</strong></span> may break toleration if such a coalition were to be formed. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
+unavailable-subtitle: [? if ddp_relation < 50 : The <span style="color: var(--adp);"><strong>ADP</strong></span> does not trust us enough. ?] [? if kpd_relation < 30 : The <span style="color: var(--pac);"><strong>PAC</strong></span> may break toleration if this coalition were to be formed. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
 subtitle: -2 resources
 choose-if: ddp_relation >= 50 and kpd_relation >= 30 and resources >= 2
 on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; workers_prarr += 3; ddp_relation += 5; rpls_relation += 3; kpd_relation -= 2;
@@ -26,7 +26,7 @@ on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; worker
 We have managed to include the <span style="color: var(--adp);"><strong>ADP</strong></span> in our coalition!
 
 @adp_tolerate
-unavailable-subtitle: [? if ddp_relation < 55 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
+unavailable-subtitle: [? if ddp_relation < 50 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
 subtitle: -2 resources
 choose-if: ddp_relation >= 50 and resources >= 2
 on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; old_middle_prarr -= 2; rpls_relation += 3;
