@@ -40,7 +40,7 @@ if (Q.z_relation >= 30) {
     Q.reform_support += Q.z_normalized - 0.03;
 }
 if (!Q.stresemann_dead) {
-    Q.reform_support += Q.dvp_normalized;
+    Q.reform_support += Q.app_normalized;
 }
 !}
 view-if: constructive_vonc = 0
