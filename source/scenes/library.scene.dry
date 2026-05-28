@@ -77,7 +77,7 @@ KPD: [+ kpd_r +]%
 # 1928: 5, 1930: 4 (as DstP)
 DDP: [+ ddp_r +]%
 # 1928: 9, 1930: 5
-DVP: [+ dvp_r +]%
+APP: [+ app_r +]%
 # 1928: 14, 1930: 7
 DNVP: [+ dnvp_r +]%
 # 1928: 3, 1930: 18
@@ -172,7 +172,7 @@ KPD: [+ kpd_votes +]%
 DDP: [+ ddp_votes +]%
 
 # 1928: 9, 1930: 5
-DVP: [+ dvp_votes +]%
+APP: [+ app_votes +]%
 
 # 1928: 14, 1930: 7
 DNVP: [+ dnvp_votes +]%
@@ -185,17 +185,17 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, DDP: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, DDP: [+ workers_ddp_display +]%, APP: [+ workers_app_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-New Middle Class: SPD: [+ new_middle_spd_display +]%, Z: [+ new_middle_z_display +]%, KPD: [+ new_middle_kpd_display +]%, DDP: [+ new_middle_ddp_display +]%, DVP: [+ new_middle_dvp_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+New Middle Class: SPD: [+ new_middle_spd_display +]%, Z: [+ new_middle_z_display +]%, KPD: [+ new_middle_kpd_display +]%, DDP: [+ new_middle_ddp_display +]%, APP: [+ new_middle_app_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
-Old Middle Class: SPD: [+ old_middle_spd_display +]%, Z: [+ old_middle_z_display +]%, KPD: [+ old_middle_kpd_display +]%, DDP: [+ old_middle_ddp_display +]%, DVP: [+ old_middle_dvp_display +]%; DNVP: [+ old_middle_dnvp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Old Middle Class: SPD: [+ old_middle_spd_display +]%, Z: [+ old_middle_z_display +]%, KPD: [+ old_middle_kpd_display +]%, DDP: [+ old_middle_ddp_display +]%, APP: [+ old_middle_app_display +]%; DNVP: [+ old_middle_dnvp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
 
-Rural: SPD: [+ rural_spd_display +]%, Z: [+ rural_z_display +]%, KPD: [+ rural_kpd_display +]%, DDP: [+ rural_ddp_display +]%, DVP: [+ rural_dvp_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Rural: SPD: [+ rural_spd_display +]%, Z: [+ rural_z_display +]%, KPD: [+ rural_kpd_display +]%, DDP: [+ rural_ddp_display +]%, APP: [+ rural_app_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
 
-Unemployed: SPD: [+ unemployed_spd_display +]%, Z: [+ unemployed_z_display +]%, KPD: [+ unemployed_kpd_display +]%, DDP: [+ unemployed_ddp_display +]%, DVP: [+ unemployed_dvp_display +]%; DNVP: [+ unemployed_dnvp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Unemployed: SPD: [+ unemployed_spd_display +]%, Z: [+ unemployed_z_display +]%, KPD: [+ unemployed_kpd_display +]%, DDP: [+ unemployed_ddp_display +]%, APP: [+ unemployed_app_display +]%; DNVP: [+ unemployed_dnvp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
 
-Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD: [+ catholics_kpd_display +]%, DDP: [+ catholics_ddp_display +]%, DVP: [+ catholics_dvp_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD: [+ catholics_kpd_display +]%, DDP: [+ catholics_ddp_display +]%, APP: [+ catholics_app_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
 
 @parties
 go-to: menu
@@ -211,9 +211,9 @@ Current relations: [+ z_relation : relationships +]
 
 Current relations: [+ ddp_relation : relationships +]
 
-**DVP** - *Deutsche Volkspartei* (German People's Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. We have occasionally been in coalitions.
+**APP** - *Deutsche Volkspartei* (German People's Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. We have occasionally been in coalitions.
 
-Current relations: [+ dvp_relation : relationships +]
+Current relations: [+ app_relation : relationships +]
 
 **DNVP** - *Deutschnationale Volkspartei* (German National People's Party) - a right-wing nationalist-conservative party, with authoritarian, monarchist, and racist elements. It is supported by the former aristocracy, rural landowners, and conservative Lutherans.
 
@@ -229,7 +229,7 @@ Current relations: [+ kpd_relation : relationships +]
 
 Current relations: [+ nsdap_relation : relationships +]
 
-**Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP. 
+**Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the APP and DNVP. 
 
 @paramilitaries
 on-arrival: {!
@@ -391,10 +391,10 @@ if (Q.prarr_name == "RPP" && Q.prarr_r) {
 }
 data = data.concat([
     {
-        "id": "dvp",
-        "legend": "DVP",
-        "name": "DVP",
-        "seats": Math.trunc(Q.dvp_r*4),
+        "id": "app",
+        "legend": "APP",
+        "name": "APP",
+        "seats": Math.trunc(Q.app_r*4),
     },
     {
         "id": "dnvp",
@@ -437,11 +437,11 @@ if (d3 && window) {
     let colors, labels;
     
     if (Q.prarr_name == "PRARR") {
-        colors = {spd: 'var(--vp)', kpd: 'var(--pac)', rpls: 'var(--rpls)', prarr: 'var(--prarr)', ddp: 'var(--adp)', z: 'var(--c)', rpp: 'var(--rpp)', dvp: 'var(--app)', dnvp: 'var(--napp)', nsdap: 'var(--tani)', other: '#a0a0a0', sapd: 'var(--lvp)'};
-        labels = {spd: 'SPD', kpd: 'KPD', rpls: 'RPL&S', prarr: 'PRARR', ddp: 'DDP', z: 'Z', rpp: 'RPP', dvp: 'DVP', dnvp: 'DNVP', nsdap: 'NSDAP', other: 'Others', sapd: 'SAPD'};
+        colors = {spd: 'var(--vp)', kpd: 'var(--pac)', rpls: 'var(--rpls)', prarr: 'var(--prarr)', ddp: 'var(--adp)', z: 'var(--c)', rpp: 'var(--rpp)', app: 'var(--app)', dnvp: 'var(--napp)', nsdap: 'var(--tani)', other: '#a0a0a0', sapd: 'var(--lvp)'};
+        labels = {spd: 'SPD', kpd: 'KPD', rpls: 'RPL&S', prarr: 'PRARR', ddp: 'DDP', z: 'Z', rpp: 'RPP', app: 'APP', dnvp: 'DNVP', nsdap: 'NSDAP', other: 'Others', sapd: 'SAPD'};
     } else {
-        colors = {spd: 'var(--vp)', kpd: 'var(--pac)', rpls: 'var(--rpls)', prarr: 'var(--rpp)', ddp: 'var(--adp)', z: 'var(--c)', rpp: 'var(--rpp)', dvp: 'var(--app)', dnvp: 'var(--napp)', nsdap: 'var(--tani)', other: '#a0a0a0', sapd: 'var(--lvp)'};
-        labels = {spd: 'SPD', kpd: 'KPD', rpls: 'RPL&S', prarr: 'RPP', ddp: 'DDP', z: 'Z', rpp: 'RPP', dvp: 'DVP', dnvp: 'DNVP', nsdap: 'NSDAP', other: 'Others', sapd: 'SAPD'};
+        colors = {spd: 'var(--vp)', kpd: 'var(--pac)', rpls: 'var(--rpls)', prarr: 'var(--rpp)', ddp: 'var(--adp)', z: 'var(--c)', rpp: 'var(--rpp)', app: 'var(--app)', dnvp: 'var(--napp)', nsdap: 'var(--tani)', other: '#a0a0a0', sapd: 'var(--lvp)'};
+        labels = {spd: 'SPD', kpd: 'KPD', rpls: 'RPL&S', prarr: 'RPP', ddp: 'DDP', z: 'Z', rpp: 'RPP', app: 'APP', dnvp: 'DNVP', nsdap: 'NSDAP', other: 'Others', sapd: 'SAPD'};
     }
 
     // election history graph
@@ -502,7 +502,7 @@ if (d3 && window) {
 
 [? if prarr_name = "RPP": {!<tr><td><div class="box" style='background-color: var(--rpp)'> </div></td> <td>!}RPP: {!</td><td>!} [+ prarr_r +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color: var(--app)'> </div></td><td>!} DVP: {!</td><td>!} [+ dvp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--app)'> </div></td><td>!} APP: {!</td><td>!} [+ app_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color: var(--napp)'> </div></td><td>!} DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td></tr>!}
 
