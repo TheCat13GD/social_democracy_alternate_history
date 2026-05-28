@@ -29,7 +29,7 @@ Since we are currently ruling as part of an emergency government, we may use qua
 - @election_algorithm: No, let's hold the elections.
 
 @cancel_elections_2
-on-departure: next_election_year = next_election_year + 1; next_election_time = time + 12; pro_republic -= 10; dvp_relation -= 8; z_relation -= 8; ddp_relation -= 10; kpd_relation -= 8; coup_progress += 2; workers_spd -= 4; new_middle_spd -= 5; old_middle_spd -= 5; rural_spd -= 5; catholics_spd -= 5; unemployed_spd -= 5; coup_progress += 2 if nsdap_normalized >= 0.3; coup_progress += 2 if nsdap_normalized + dnvp_normalized >= 0.5; sa_strength += 100 if coup_progress >= 7; sh_strength += 100 if coup_progress >= 7
+on-departure: next_election_year = next_election_year + 1; next_election_time = time + 12; pro_republic -= 10; app_relation -= 8; z_relation -= 8; ddp_relation -= 10; kpd_relation -= 8; coup_progress += 2; workers_spd -= 4; new_middle_spd -= 5; old_middle_spd -= 5; rural_spd -= 5; catholics_spd -= 5; unemployed_spd -= 5; coup_progress += 2 if nsdap_normalized >= 0.3; coup_progress += 2 if nsdap_normalized + dnvp_normalized >= 0.5; sa_strength += 100 if coup_progress >= 7; sh_strength += 100 if coup_progress >= 7
 achievement: ausnahmezustand
 
 Fine. President [+ president +] has taken the unprecedented step of canceling these elections. New elections are scheduled for [+ next_election_month : month +] [+ next_election_year +].
@@ -101,15 +101,15 @@ if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
 
 // coalitions
 Q.weimar_coalition = (Q.spd_r + Q.ddp_r + Q.z_r).toFixed(1);
-Q.grand_coalition = (Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r).toFixed(1);
-Q.bourgeois_coalition = (Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r).toFixed(1);
-Q.center_right_coalition = (Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r).toFixed(1);
-Q.right_coalition = (Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r).toFixed(1);
+Q.grand_coalition = (Q.spd_r + Q.ddp_r + Q.z_r + Q.app_r).toFixed(1);
+Q.bourgeois_coalition = (Q.ddp_r + Q.z_r + Q.app_r + Q.other_r).toFixed(1);
+Q.center_right_coalition = (Q.z_r + Q.ddp_r + Q.app_r + Q.other_r + Q.dnvp_r).toFixed(1);
+Q.right_coalition = (Q.z_r + Q.app_r + Q.other_r + Q.dnvp_r).toFixed(1);
 Q.far_right_coalition = (Q.dnvp_r + Q.nsdap_r).toFixed(1);
 Q.left_coalition = (Q.spd_r + Q.kpd_r + Q.sapd_r).toFixed(1);
 Q.popular_front_coalition = (Q.spd_r + Q.kpd_r + Q.z_r + Q.ddp_r + Q.sapd_r).toFixed(1);
 Q.anti_democratic_coalition = (Q.kpd_r + Q.nsdap_r + Q.dnvp_r).toFixed(1);
-Q.neo_weimar_coalition = (Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r).toFixed(1);
+Q.neo_weimar_coalition = (Q.spd_r + Q.ddp_r + Q.z_r + Q.app_r + Q.other_r).toFixed(1);
 // Hitler + Right-wing parties (only comes into effect if you've alienated Z too badly)
 Q.hitler_right_coalition = (Q.z_r + Q.dnvp_r + Q.nsdap_r).toFixed(1);
 Q.progressive_coalition = (Q.spd_r + Q.kpd_r + Q.ddp_r + Q.sapd_r).toFixed(1);
@@ -134,13 +134,13 @@ Q.in_minority_government = 0;
 Q.in_unity_government = 0;
 Q.spd_toleration = 0;
 Q.spd_caretaker = 0;
-Q.foreign_minister_party = 'DVP';
+Q.foreign_minister_party = 'APP';
 Q.interior_minister_party = 'Z';
 Q.justice_minister_party = 'I';
 Q.labor_minister_party = 'Z';
 Q.reichswehr_minister_party = 'I';
 Q.economic_minister_party = 'DDP';
-Q.finance_minister_party = 'DVP';
+Q.finance_minister_party = 'APP';
 Q.agriculture_minister_party = 'Z';
 
 // reset KPD goals
@@ -243,10 +243,10 @@ if (Q.prarr_name == "RPP" && Q.prarr_r) {
 }
 data = data.concat([
     {
-        "id": "dvp",
-        "legend": "DVP",
-        "name": "DVP",
-        "seats": Math.trunc(Q.dvp_r*4),
+        "id": "app",
+        "legend": "APP",
+        "name": "APP",
+        "seats": Math.trunc(Q.app_r*4),
     },
     {
         "id": "dnvp",
@@ -311,7 +311,7 @@ go-to: coalition_menu
 
 [? if prarr_name = "RPP": {!<tr><td><div class="box" style='background-color: var(--rpp)'> </div> !}RPP: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color: var(--app)'> </div> !}DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--app)'> </div> !}APP: {!</td><td>!} [+ app_r +]% {!</td><td>!} [+ str_change_app +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color: var(--napp)'> </div> !}DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td><td>!} [+ str_change_dnvp +] {!</td></tr>!}
 
@@ -324,11 +324,11 @@ go-to: coalition_menu
 
 Weimar Coalition (SPD + Z + DDP): [+ weimar_coalition +]%
 
-Grand Coalition (SPD + Z + DDP + DVP): [+ grand_coalition +]%
+Grand Coalition (SPD + Z + DDP + APP): [+ grand_coalition +]%
 
-Bourgeois Coalition (Z + DDP + DVP + Others): [+ bourgeois_coalition +]%
+Bourgeois Coalition (Z + DDP + APP + Others): [+ bourgeois_coalition +]%
 
-Right-wing Coalition (Z + DVP + Others + DNVP): [+ right_coalition +]%
+Right-wing Coalition (Z + APP + Others + DNVP): [+ right_coalition +]%
 
 [? if nazi_urgency <= 1 and nsdap_r >= 15 : The rapid rise in NSDAP votes is extremely worrying. Many had believed that the party was moribund; now, some of us consider it to be the greatest threat to democracy in Germany. ?]
 
@@ -559,12 +559,12 @@ In response to the KPD's entrance into the government, the right-wing immediatel
 
 @right_coalition
 title: Refuse to form a government, so that a right-wing coalition may be formed.
-subtitle: Z + DVP + DNVP + Others ([+ right_coalition +]%)
+subtitle: Z + APP + DNVP + Others ([+ right_coalition +]%)
 unavailable-subtitle: The DNVP is not interested in a coalition with the Center.
 view-if: right_coalition >= 50
 choose-if: year < 1929
 
-There are enough votes for a right-wing coalition of the Center, DVP, DNVP, and minor conservative parties. [? if largest_party == "SPD": However, this will be seen as abdicating responsibility for government, as we are the largest party. ?]
+There are enough votes for a right-wing coalition of the Center, APP, DNVP, and minor conservative parties. [? if largest_party == "SPD": However, this will be seen as abdicating responsibility for government, as we are the largest party. ?]
 
 - @right_coalition_sure: Yes, we will abdicate our responsibility for government formation, and let a right-wing coalition take power.
 - @grand_coalition: Actually, we wish to form a grand coalition after all.
@@ -576,7 +576,7 @@ However, the DNVP and its leader Hugenberg is refusing to partake in a coalition
 
 @right_coalition_sure
 subtitle: This will be extremely unpopular within our party.
-on-arrival: pro_republic -= 5; center_dissent += 15; left_dissent += 10; labor_dissent += 25; reformist_dissent += 25; neorevisionist_dissent += 15; z_relation -= 5; ddp_relation -= 5; dvp_relation -= 5
+on-arrival: pro_republic -= 5; center_dissent += 15; left_dissent += 10; labor_dissent += 25; reformist_dissent += 25; neorevisionist_dissent += 15; z_relation -= 5; ddp_relation -= 5; app_relation -= 5
 go-to: right_coalition_2
 
 
@@ -584,7 +584,7 @@ go-to: right_coalition_2
 unavailable-subtitle: The DNVP is not interested in a coalition with the Center.
 view-if: right_coalition >= 50
 choose-if: year < 1929
-on-arrival: spd_in_government = 0; spd_toleration = 0; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "DVP"; interior_minister_party = "DNVP"; justice_minister_party = "DNVP"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DVP"; finance_minister_party = "Z"; agriculture_minister_party = "DNVP"; in_right_coalition = 1;
+on-arrival: spd_in_government = 0; spd_toleration = 0; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "APP"; interior_minister_party = "DNVP"; justice_minister_party = "DNVP"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "APP"; finance_minister_party = "Z"; agriculture_minister_party = "DNVP"; in_right_coalition = 1;
 
 Even though the DNVP is very reluctant to participate in such a coalition, they still accede to President Hindenburg's wishes. Thus, a majority center-right coalition is formed, with Brüning as chancellor.
 
@@ -641,12 +641,12 @@ The third option is to have new elections.
 
 @new_grand_coalition
 title: A "New Grand Coalition" of all the constitutional parties?
-subtitle: SPD + Z + DDP + DVP + Others ([+ neo_weimar_coalition +]%)
+subtitle: SPD + Z + DDP + APP + Others ([+ neo_weimar_coalition +]%)
 view-if: neo_weimar_coalition >= 50 and grand_coalition < 50
-choose-if: z_relation >= 50 and dvp_relation >= 30
-unavailable-subtitle: SPD + Z + DDP + DVP + Others ([+ neo_weimar_coalition +]%) - [? if z_relation < 50 : We do not have adequate relations with the Center Party. ?][? if dvp_relation < 30 : We do not have adequate relations with the DVP. ?]
+choose-if: z_relation >= 50 and app_relation >= 30
+unavailable-subtitle: SPD + Z + DDP + APP + Others ([+ neo_weimar_coalition +]%) - [? if z_relation < 50 : We do not have adequate relations with the Center Party. ?][? if app_relation < 30 : We do not have adequate relations with the APP. ?]
 
-How do we convince vehemently anti-socialist parties to allow us to form a majority coalition? Our largely benevolent relations with the Center and DVP may allow us some leverage.
+How do we convince vehemently anti-socialist parties to allow us to form a majority coalition? Our largely benevolent relations with the Center and APP may allow us some leverage.
 
 - @use_resources
 - @toleration_bruning: No. We will tolerate a minority government.
@@ -682,7 +682,7 @@ We have assembled a new coalition under Otto Braun.
 
 @unity_government
 title: The Center Party offers a "Government of National Unity" under Chancellor Joseph Wirth.
-subtitle: SPD + Z + DDP + DVP + Others ([+ neo_weimar_coalition +]%)
+subtitle: SPD + Z + DDP + APP + Others ([+ neo_weimar_coalition +]%)
 view-if: z_party_leader == "Joos" and neo_weimar_coalition >= 50 and weimar_coalition < 50 and z_relation >= 10
 
 The Center Party leader, Joseph Joos, clearly sees the threat from the ascension of the anti-democratic extremist parties, and thus tries to negotiate a "Government of National Unity" to save the republic. This coalition would be led by Joseph Wirth, a left-leaning member of the Center Party and former chancellor, and would encompass all of the constitutional parties. Our role in this government might be limited, however.
@@ -692,7 +692,7 @@ The Center Party leader, Joseph Joos, clearly sees the threat from the ascension
 
 @unity_government_2
 title: Accept the offer!
-on-arrival: chancellor = "Wirth"; chancellor_party = "Z"; spd_in_government = 1; in_grand_coalition = 1; in_unity_government = 1; leverage = 15; z_relation += 5; dvp_relation += 4
+on-arrival: chancellor = "Wirth"; chancellor_party = "Z"; spd_in_government = 1; in_grand_coalition = 1; in_unity_government = 1; leverage = 15; z_relation += 5; app_relation += 4
 achievement: constitutional_coalition
 go-to: ministries
 
@@ -700,7 +700,7 @@ We have formed a new unity government of all the constitutional parties! We have
 
 
 @reject_unity_government
-on-arrival: z_relation -= 8; ddp_relation -= 5; dvp_relation -= 5
+on-arrival: z_relation -= 8; ddp_relation -= 5; app_relation -= 5
 
 Our rejection of the unity government has hurt our relations with the bourgeois and center-right parties.
 
@@ -714,7 +714,7 @@ Our rejection of the unity government has hurt our relations with the bourgeois 
 view-if: z_party_leader = "Joos"
 choose-if: president == "Braun"
 unavailable-subtitle: President Hindenburg will not support a minority government led by Joseph Wirth.
-on-arrival: chancellor = "Wirth"; chancellor_party = "Z"; spd_in_government = 0; spd_toleration = 1; z_relation += 5; foreign_minister_party = "DVP"; interior_minister_party = "Z"; justice_minister_party = "I"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DDP"; finance_minister_party = "DVP"; agriculture_minister_party = "Z"; pro_republic -= 2;
+on-arrival: chancellor = "Wirth"; chancellor_party = "Z"; spd_in_government = 0; spd_toleration = 1; z_relation += 5; foreign_minister_party = "APP"; interior_minister_party = "Z"; justice_minister_party = "I"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DDP"; finance_minister_party = "APP"; agriculture_minister_party = "Z"; pro_republic -= 2;
 
 We have supported a minority government led by the Center Party under Chancellor Joseph Wirth.
 
@@ -880,7 +880,7 @@ Their numbers are bolstered by the many government workers who are against the p
 @emergency_no_confidence
 title: The Nazis immediately call a no-confidence vote against us...
 view-if: far_right_coalition < 45
-on-arrival: z_no_confidence = 1 if z_relation < 45; kpd_no_confidence = 1 if kpd_relation < 45; other_no_confidence = 1 if (z_relation + dvp_relation)/2 < 45; dvp_no_confidence = 1 if dvp_relation < 45; sa_strength += 200; sh_strength += 200; no_confidence_votes = nsdap_r + dnvp_r; no_confidence_votes += z_r if z_no_confidence; no_confidence_votes += dvp_r if dvp_no_confidence; no_confidence_votes += kpd_r if kpd_no_confidence; no_confidence_votes += other_r if other_no_confidence; no_confidence_succeeds = 1 if no_confidence_votes > 50
+on-arrival: z_no_confidence = 1 if z_relation < 45; kpd_no_confidence = 1 if kpd_relation < 45; other_no_confidence = 1 if (z_relation + app_relation)/2 < 45; app_no_confidence = 1 if app_relation < 45; sa_strength += 200; sh_strength += 200; no_confidence_votes = nsdap_r + dnvp_r; no_confidence_votes += z_r if z_no_confidence; no_confidence_votes += app_r if app_no_confidence; no_confidence_votes += kpd_r if kpd_no_confidence; no_confidence_votes += other_r if other_no_confidence; no_confidence_succeeds = 1 if no_confidence_votes > 50
 
 The NSDAP and DNVP will vote against us, of course. The other parties vote their conscience. [? if z_no_confidence: The Center Party is voting against us. ?] [? if kpd_no_confidence: The KPD votes against us. ?] [? if other_no_confidence: The assortment of minor parties are voting against us. ?]
 
@@ -973,7 +973,7 @@ Rudolf Breitscheid has been appointed chancellor.
 @grand_coalition
 title: We can form a Grand Coalition.
 view-if: grand_coalition >= 50 and grand_coalition_failed == 0
-subtitle: SPD + Z + DDP + DVP ([+ grand_coalition +]%)
+subtitle: SPD + Z + DDP + APP ([+ grand_coalition +]%)
 on-arrival: in_grand_coalition = 1; in_popular_front = 0; in_left_front = 0
 go-to: grand_coalition_spd_lead if (n_elections <= 1 and largest_party == "SPD") or (largest_party == "SPD" and spd_r >= 30) or president = "Braun"; grand_coalition_z_lead if president != "Braun" and ((n_elections > 1 and spd_r < 30) or (n_elections <= 1 and largest_party != "SPD"))
 
@@ -981,9 +981,9 @@ go-to: grand_coalition_spd_lead if (n_elections <= 1 and largest_party == "SPD")
 # In the first election, SPD always leads. In subsequent elections, if spd_r >= 29 then SPD leads, otherwise Z leads?
 
 @grand_coalition_z_lead
-go-to: grand_coalition_z_lead_2 if dvp_relation >= 30; grand_coalition_fail if dvp_relation < 30
+go-to: grand_coalition_z_lead_2 if app_relation >= 30; grand_coalition_fail if app_relation < 30
 
-There are enough votes to form a majority coalition consisting of the SPD, Center (Z), Democratic (DDP), and People's (DVP) parties. Given our rather weak electoral performance, [? if spd_no_confidence = 1 : and our previous vote of no confidence against the government, ?][? if no_confidence_against_spd = 1 : and the vote of no confidence against us, ?] President Hindenburg has asked the Center Party to take the lead role in forming a government.
+There are enough votes to form a majority coalition consisting of the SPD, Center (Z), Democratic (DDP), and People's (APP) parties. Given our rather weak electoral performance, [? if spd_no_confidence = 1 : and our previous vote of no confidence against the government, ?][? if no_confidence_against_spd = 1 : and the vote of no confidence against us, ?] President Hindenburg has asked the Center Party to take the lead role in forming a government.
 
 # TODO: if the SPD participated in bringing down the previous government via a vote-of-no-confidence, or if we were essentially removed from government by our coalition partners, we should be more reluctant to participate in a new government.
 
@@ -1000,13 +1000,13 @@ Brüning is not opposed to a coalition with us. Alternatively, we could enter a 
 
 @join_bruning
 view-if: grand_coalition >= 50 or neo_weimar_coalition >= 50
-on-arrival: spd_in_government = 1; spd_toleration = 0; in_grand_coalition = 1; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "DVP"; interior_minister_party = "Z"; justice_minister_party = "Z"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "Z"; finance_minister_party = "Z"; agriculture_minister_party = "Z"; leverage = 25 if leverage >= 25;
+on-arrival: spd_in_government = 1; spd_toleration = 0; in_grand_coalition = 1; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "APP"; interior_minister_party = "Z"; justice_minister_party = "Z"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "Z"; finance_minister_party = "Z"; agriculture_minister_party = "Z"; leverage = 25 if leverage >= 25;
 go-to: ministries
 
 Heinrich Brüning welcomes us into his new cabinet. Now, we have our pick of ministries.
 
 @bruning_oppo
-on-arrival: spd_in_government = 0; spd_toleration = 0; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "DVP"; interior_minister_party = "Z"; justice_minister_party = "Z"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "Z"; finance_minister_party = "Z"; agriculture_minister_party = "Z"; grand_coalition_failed = 1
+on-arrival: spd_in_government = 0; spd_toleration = 0; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "APP"; interior_minister_party = "Z"; justice_minister_party = "Z"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "Z"; finance_minister_party = "Z"; agriculture_minister_party = "Z"; grand_coalition_failed = 1
 
 By refusing to join the grand coalition or tolerating it, we essentially throw the balance of government to the right wing. [? if right_coalition >= 50 : There are enough votes to form a right-wing coalition that includes the DNVP. However, the DNVP leader, Hugenberg, is opposed to a coalition with the "November criminals" of the Center Party. And of course, the NSDAP is not interested in coalition government. This means that there will not be enough votes to form a majority coalition. ?][? if right_coalition < 50 : There are not enough votes to form a right-wing coalition that includes the DNVP, and they are not interested in joining in a coalition with the "November criminals" of the Center Party, anyhow. And of course, the NSDAP is not interested in coalition government. This means that there is no route to a majority coalition. ?]
 
@@ -1030,7 +1030,7 @@ if (Q.next_election_month > 12) {
 }
 if (Q.chancellor == "Brüning") {
     Q.z_relation -= 5;
-    Q.dvp_relation -= 5;
+    Q.app_relation -= 5;
 }
 Q.pro_republic -= 8;
 Q.workers_spd -= 5;
@@ -1038,8 +1038,8 @@ Q.new_middle_spd -= 5;
 Q.old_middle_spd -= 5;
 Q.rural_spd -= 5;
 Q.catholics_spd -= 3;
-Q.new_middle_dvp -= 8;
-Q.old_middle_dvp -= 8;
+Q.new_middle_app -= 8;
+Q.old_middle_app -= 8;
 Q.new_middle_ddp -= 5;
 Q.old_middle_ddp -= 10;
 Q.rural_dnvp -= 5;
@@ -1055,7 +1055,7 @@ if (Q.pro_republic < 45 && Q.pro_republic >= 36) {
 if (Q.pro_republic < 36) {
     // TODO: if you pursue a consistently revolutionary course, you might avoid this? But you might also cause a coalition between Hitler and the Center.
     Q.z_relation -= 5;
-    Q.dvp_relation -= 5;
+    Q.app_relation -= 5;
     Q.workers_spd *= 0.85;
     Q.unemployed_spd -= 2;
     Q.new_middle_spd -= 5;
@@ -1083,67 +1083,67 @@ The people's faith in democracy is shaken by this ordeal. Of course, the Nazis a
 @toleration_bruning
 choose-if: neo_weimar_coalition >= 50
 unavailable-subtitle: The parties supporting Brüning do not have a majority.
-on-arrival: spd_in_government = 0; spd_toleration = 1; minority_government = 1; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "DVP"; interior_minister_party = "Z"; justice_minister_party = "I"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DDP"; finance_minister_party = "DVP"; agriculture_minister_party = "Z"; pro_republic -= 4; new_middle_dvp -= 5; new_middle_ddp -= 5; old_middle_dvp -= 5; old_middle_ddp -= 5; old_middle_nsdap += 5; new_middle_nsdap += 5; rural_dnvp -= 5;
+on-arrival: spd_in_government = 0; spd_toleration = 1; minority_government = 1; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "APP"; interior_minister_party = "Z"; justice_minister_party = "I"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DDP"; finance_minister_party = "APP"; agriculture_minister_party = "Z"; pro_republic -= 4; new_middle_app -= 5; new_middle_ddp -= 5; old_middle_app -= 5; old_middle_ddp -= 5; old_middle_nsdap += 5; new_middle_nsdap += 5; rural_dnvp -= 5;
 
 We have decided to tolerate Brüning's government. This means that we will vote against no-confidence votes to make sure they fail, but also that we will not be directly participating as ministers in the government. Thus, we can prevent a new election and stop the far right from entering government.
 
 @grand_coalition_fail
 on-arrival: grand_coalition_failed = 1
 
-Unfortunately, the DVP are unwilling to enter into another coalition with the SPD, so the grand coalition is unable to be formed.
+Unfortunately, the APP are unwilling to enter into another coalition with the SPD, so the grand coalition is unable to be formed.
 
 - @no_majority: Thus, there is no clear majority.
 - @brauns_dilemma
 - @right_coalition_2: Perhaps a right-wing coalition may form.
-- @beg_dvp: Perhaps we could ask the DVP to change their minds?
+- @beg_app: Perhaps we could ask the APP to change their minds?
 - @unity_government
 - @coalition_menu: What are the other governing arrangements?
 
 
-@beg_dvp
-view-if: dvp_relation >= 15
-go-to: dvp_conservative if stresemann_dead == 1; dvp_majority if stresemann_dead == 0
+@beg_app
+view-if: app_relation >= 15
+go-to: app_conservative if stresemann_dead == 1; app_majority if stresemann_dead == 0
 
-@dvp_majority
+@app_majority
 go-to: join_bruning
 
-Under the influence of Gustav Stresemann, the DVP agrees to allow us into the coalition.
+Under the influence of Gustav Stresemann, the APP agrees to allow us into the coalition.
 
 
-@dvp_conservative
+@app_conservative
 
-The DVP asks us to adhere to their conservative economic policies (that is, extreme austerity and labor discipline) in exchange for us joining the coalition.
+The APP asks us to adhere to their conservative economic policies (that is, extreme austerity and labor discipline) in exchange for us joining the coalition.
 
-- @beg_dvp_2: But they would not have a majority without the SPD! The DNVP and NSDAP have no interest in participating in government.
+- @beg_app_2: But they would not have a majority without the SPD! The DNVP and NSDAP have no interest in participating in government.
 - @no_majority: There is no chance that we would agree.
 - @brauns_dilemma
 - @coalition_menu: What are the other governing arrangements?
 
 
-@beg_dvp_2
-go-to: beg_dvp_succeed; beg_dvp_fail
+@beg_app_2
+go-to: beg_app_succeed; beg_app_fail
 
 We make the case that without the SPD, there is no parliamentary majority, given the DNVP and NSDAP's hostility to constitutional government.
 
-@beg_dvp_succeed
+@beg_app_succeed
 go-to: join_bruning
 
 Somehow, we succeed in convincing them! We are now in a coalition.
 
 
-@beg_dvp_fail
+@beg_app_fail
 go-to: no_majority
 
-As expected, the DVP is too set in their anti-democratic ways.
+As expected, the APP is too set in their anti-democratic ways.
 
 
 
 @grand_coalition_spd_lead
-on-arrival: leverage -= 15 if dvp_relation < 20
+on-arrival: leverage -= 15 if app_relation < 20
 
-As expected, the SPD is the largest party, and this time, we are expected to take the lead role in the formation of the next government, including selecting the chancellor. President [+ president +] has asked us to form a majority coalition with the Center (Z), Democratic (DDP), and People's (DVP) parties.
+As expected, the SPD is the largest party, and this time, we are expected to take the lead role in the formation of the next government, including selecting the chancellor. President [+ president +] has asked us to form a majority coalition with the Center (Z), Democratic (DDP), and People's (APP) parties.
 
-[? if dvp_relation < 20 : As our relation with the DVP is poor, they are demanding more minister posts in order to remain part of the coalition. ?]
+[? if app_relation < 20 : As our relation with the APP is poor, they are demanding more minister posts in order to remain part of the coalition. ?]
 
 Who should be the chancellor?
 
@@ -1196,7 +1196,7 @@ We have promised to let the Center have more influence in the government in resp
 @z_chancellor
 title: Let the Center Party have their chancellor.
 subtitle: Heinrich Brüning will be chancellor. This is unexpected and will cause internal dissent, but may give us a better position in negotiating for other cabinet positions.
-on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; z_relation += 10; dvp_relation += 5; kpd_relation -= 5; in_grand_coalition = 1 if in_weimar_coalition == 0; chancellor = "Brüning"; chancellor_party = "Z"; spd_in_government = 1; leverage += 5
+on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; z_relation += 10; app_relation += 5; kpd_relation -= 5; in_grand_coalition = 1 if in_weimar_coalition == 0; chancellor = "Brüning"; chancellor_party = "Z"; spd_in_government = 1; leverage += 5
 go-to: ministries
 
 This is highly unexpected, and many in the left and center of our party are criticizing this decision.
@@ -1330,7 +1330,7 @@ Gustav Radbruch of the SPD has been appointed Justice Minister.
 
 @foreign
 title: Foreign Ministry
-subtitle: This is usually the domain of Gustav Stresemann of the DVP.
+subtitle: This is usually the domain of Gustav Stresemann of the APP.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
@@ -1391,14 +1391,14 @@ go-to: ministries
 @drop_finance
 title: Drop the Finance Ministry.
 view-if: finance_minister_party = "SPD"
-on-arrival: finance_minister_party = "DVP"; finance_minister = "Moldenhauer"; leverage += 10; finance_minister_party = "Z" if in_weimar_coalition or in_popular_front; finance_minister = "Köhler" if in_weimar_coalition or in_popular_front
+on-arrival: finance_minister_party = "APP"; finance_minister = "Moldenhauer"; leverage += 10; finance_minister_party = "Z" if in_weimar_coalition or in_popular_front; finance_minister = "Köhler" if in_weimar_coalition or in_popular_front
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_economic
 title: Drop the Economic Ministry.
 view-if: economic_minister_party = "SPD"
-on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = "DDP" if in_weimar_coalition or in_popular_front; economic_minister = "Dietrich" if in_weimar_coalition or in_popular_front;
+on-arrival: economic_minister_party = "APP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = "DDP" if in_weimar_coalition or in_popular_front; economic_minister = "Dietrich" if in_weimar_coalition or in_popular_front;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -1412,7 +1412,7 @@ go-to: ministries
 @drop_foreign
 title: Drop the Foreign Ministry.
 view-if: foreign_minister_party = "SPD"
-on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann"; foreign_minister = "Curtius" if streseman_dead; leverage += 10; foreign_minister_party = "Z" if in_weimar_coalition or in_popular_front; foreign_minister = "Wirth" if in_weimar_coalition or in_popular_front;
+on-arrival: foreign_minister_party = "APP"; foreign_minister = "Stresemann"; foreign_minister = "Curtius" if streseman_dead; leverage += 10; foreign_minister_party = "Z" if in_weimar_coalition or in_popular_front; foreign_minister = "Wirth" if in_weimar_coalition or in_popular_front;
 tags: drop_mins_1928
 go-to: ministries
 
