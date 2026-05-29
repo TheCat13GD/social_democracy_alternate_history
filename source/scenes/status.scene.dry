@@ -228,7 +228,19 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Urban Workers: VPs: [+ workers_spd_display +]%, KPD: [+ workers_kpd_display +]%, RPL&S: [+ workers_rpls_display +]%, [+ prarr_name +]: [+ workers_prarr_display +]%, DDP: [+ workers_ddp_display +]%, C: [+ workers_z_display +]%, APP: [+ workers_app_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Urban Workers:
+VPs: [+ workers_spd_display +]%,
+[? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+[? if lf_formed: LF: [+ workers_lf_display +]% ?]
+KPD: [+ workers_kpd_display +]%,
+RPL&S: [+ workers_rpls_display +]%,
+[+ prarr_name +]: [+ workers_prarr_display +]%,
+DDP: [+ workers_ddp_display +]%,
+C: [+ workers_z_display +]%,
+APP: [+ workers_app_display +]%;
+DNVP: [+ workers_dnvp_display +]%,
+NSDAP: [+ workers_nsdap_display +]%,
+Others: [+ workers_other_display +]%
 
 Rural Workers: VPs: [+ rural_spd_display +]%, KPD: [+ rural_kpd_display +]%, RPL&S: [+ rural_rpls_display +]%, [+ prarr_name +]: [+ rural_prarr_display +]%, DDP: [+ rural_ddp_display +]%, C: [+ rural_z_display +]%, APP: [+ rural_app_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
 
