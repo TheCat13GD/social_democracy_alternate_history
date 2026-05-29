@@ -189,14 +189,14 @@ if (Q.lf_formed && Q.lf_r) {
             "id": "lf",
             "legend": "LF",
             "name": "LF",
-            "seats": lf_seats,
+            "seats": Q.lf_seats,
         }];
     data = data.concat([
         {
             "id": "kpd",
             "legend": "KPD",
             "name": "KPD",
-            "seats": kpd_seats,
+            "seats": Q.kpd_seats,
         },
     ]);
 } else {
@@ -205,7 +205,7 @@ if (Q.lf_formed && Q.lf_r) {
             "id": "kpd",
             "legend": "KPD",
             "name": "KPD",
-            "seats": kpd_seats,
+            "seats": Q.kpd_seats,
         }];
 }
 data = data.concat([
