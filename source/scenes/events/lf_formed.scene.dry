@@ -1,3 +1,8 @@
+title: Left-wing Split
+new-page: true 
+subtitle: The Left's disagreements with our policies have grown too severe.
+tags: event
+view-if: left_dissent >= 60
 on-arrival: {!
 // set up the infrastructure
 Q.lf_formed = 1;
@@ -25,3 +30,6 @@ for (var record of Q.party_support_records) {
     record['lf'] = 0;
 }
 !}
+max-visits: 1
+
+Here is some text.
