@@ -108,9 +108,9 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Party Leadership
 
-[? if lf_formed: {!<span class="tooltip-text" title="Left Front" style="color: var(--lf);">!}<strong>LF</strong>{!</span>!}: [+ lf_ideology +] ([+ lf_leader +]) ?]
-
 {!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: var(--vp);"><strong>VPs</strong></span>!}: [+ vps_ideology +] ([+ vps_leader +])
+
+[? if lf_formed: {!<span class="tooltip-text" title="Left Front" style="color: var(--lf);">!}<strong>LF</strong>{!</span>!}: [+ lf_ideology +] ([+ lf_leader +]) ?]
 
 {!<span class="tooltip-text" title="Party of Aurelian Communists" style="color: var(--pac);"><strong>PAC</strong></span>!}: [+ kpd_ideology +] ([+ kpd_party_leader +])
 
