@@ -8,6 +8,9 @@ on-arrival: {!
 Q.lf_formed = 1;
 Q.parties.push('lf');
 
+Q.lf_leader = "IDK";
+Q.lf_ideology = "Left Communism";
+
 Q.workers_lf = 10;
 Q.workers_spd -= 3;
 Q.new_middle_lf = 1;
