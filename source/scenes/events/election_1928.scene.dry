@@ -314,8 +314,9 @@ go-to: coalition_menu
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
+[+ change_lf_r +]
+
 [+ change_lf_seats +]
-[+ sign +]
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td>Seats given</td><td>Change</td></tr>!}
