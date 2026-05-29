@@ -1,8 +1,8 @@
-title: Left-wing Split
+title: Left Front Formed
 new-page: true 
-subtitle: The Left's disagreements with our policies have grown too severe.
+subtitle: The Left's disagreements with the PAC's policies have grown too severe.
 tags: event
-view-if: left_dissent >= 60
+view-if: year = 1928 and month = 8
 on-arrival: {!
 // set up the infrastructure
 Q.lf_formed = 1;
