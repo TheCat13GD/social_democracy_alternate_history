@@ -328,15 +328,6 @@ Dissent: [+ reformist_dissent : dissent +]
 title: Figures and Charts
 go-to: menu
 on-display: {!
-if not (Q.lf_formed && Q.lf_r) {
-    data = [
-        {
-            "id": "kpd",
-            "legend": "KPD",
-            "name": "KPD",
-            "seats": Math.trunc(Q.kpd_r*4),
-        }];
-}
 if (Q.lf_formed && Q.lf_r) {
     data = [
         {
@@ -353,7 +344,16 @@ if (Q.lf_formed && Q.lf_r) {
             "seats": Math.trunc(Q.kpd_r*4),
         },
     ]);
+} else {
+    data = [
+        {
+            "id": "kpd",
+            "legend": "KPD",
+            "name": "KPD",
+            "seats": Math.trunc(Q.kpd_r*4),
+        }];
 }
+
 
 data = data.concat([
     {
