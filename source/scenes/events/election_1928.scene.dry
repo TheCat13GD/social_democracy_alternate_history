@@ -316,6 +316,8 @@ go-to: coalition_menu
 
 [+ change_lf_r +]
 
+update ts already ffs
+
 [+ change_lf_seats +]
 
 {!<table>!} 
