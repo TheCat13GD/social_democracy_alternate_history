@@ -567,6 +567,9 @@ table {
   --agrarian: #90c75a;
   --right: #9bcf88;
 }
+.seat.lf {
+    fill: var(--lf);
+}
 .seat.kpd {
     fill: var(--pac);
 }
