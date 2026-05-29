@@ -189,7 +189,7 @@ if (Q.lf_formed && Q.lf_r) {
             "id": "lf",
             "legend": "LF",
             "name": "LF",
-            "seats": Q.lf_seats,
+            "seats": Math.round(Q.lf_seats),
         }];
     data = data.concat([
         {
