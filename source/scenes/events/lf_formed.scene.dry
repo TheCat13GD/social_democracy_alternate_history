@@ -18,7 +18,6 @@ Q.catholics_lf = 0;
 Q.sorcerers_lf = 5;
 
 Q.workers_other -= 5;
-}
 
 // update all records
 Q.lf_r = 0;
