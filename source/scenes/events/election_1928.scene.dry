@@ -189,7 +189,7 @@ if (Q.lf_formed && Q.lf_r) {
             "id": "lf",
             "legend": "LF",
             "name": "LF",
-            "seats": Math.round(Q.lf_seats),
+            "seats": Q.lf_seats,
         }];
     data = data.concat([
         {
@@ -213,7 +213,7 @@ data = data.concat([
         "id": "rpls",
         "legend": "RPL&S",
         "name": "RPL&S",
-        "seats": rpls_seats,
+        "seats": Q.rpls_seats,
     },
 ]);
 if (Q.sapd_formed && Q.sapd_r) {
@@ -221,7 +221,7 @@ if (Q.sapd_formed && Q.sapd_r) {
         "id": "sapd",
         "legend": "SAPD",
         "name": "SAPD",
-        "seats": sapd_seats,
+        "seats": Q.sapd_seats,
         });
 }
 data = data.concat([
@@ -229,7 +229,7 @@ data = data.concat([
         "id": "spd",
         "legend": "SPD",
         "name": "SPD",
-        "seats": spd_seats,
+        "seats": Q.spd_seats,
     },
 ]);
 if (Q.prarr_name == "PRARR" && Q.prarr_r) {
@@ -237,7 +237,7 @@ if (Q.prarr_name == "PRARR" && Q.prarr_r) {
         "id": "prarr",
         "legend": "PRARR",
         "name": "PRARR",
-        "seats": prarr_seats,
+        "seats": Q.prarr_seats,
     });
 }
 data = data.concat([
@@ -245,13 +245,13 @@ data = data.concat([
         "id": "ddp",
         "legend": "DDP",
         "name": "DDP",
-        "seats": ddp_seats,
+        "seats": Q.ddp_seats,
     },
     {
         "id": "z",
         "legend": "Center",
         "name": "Center",
-        "seats": z_seats,
+        "seats": Q.z_seats,
     },
 ]);
 if (Q.prarr_name == "RPP" && Q.prarr_r) {
@@ -259,7 +259,7 @@ if (Q.prarr_name == "RPP" && Q.prarr_r) {
         "id": "rpp",
         "legend": "RPP",
         "name": "RPP",
-        "seats": prarr_seats,
+        "seats": Q.prarr_seats,
     });
 }
 data = data.concat([
@@ -267,19 +267,19 @@ data = data.concat([
         "id": "app",
         "legend": "APP",
         "name": "APP",
-        "seats": app_seats,
+        "seats": Q.app_seats,
     },
     {
         "id": "dnvp",
         "legend": "DNVP",
         "name": "DNVP",
-        "seats": dnvp_seats,
+        "seats": Q.dnvp_seats,
     },
     {
         "id": "nsdap",
         "legend": "NSDAP",
         "name": "NSDAP",
-        "seats": nsdap_seats,
+        "seats": Q.nsdap_seats,
     },
 ]);
 if (Q.other_r) {
@@ -287,7 +287,7 @@ if (Q.other_r) {
         "id": "other",
         "legend": "Other",
         "name": "Other",
-        "seats": other_seats,
+        "seats": Q.other_seats,
     });
 }
 
