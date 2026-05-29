@@ -230,8 +230,8 @@ Others: [+ other_votes +]%
 
 Urban Workers:
 VPs: [+ workers_spd_display +]%,
-[? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
-[? if lf_formed: LF: [+ workers_lf_display +]% ?]
+[? if sapd_formed: SAPD: [+ workers_sapd_display +]%, ?]
+[? if lf_formed: LF: [+ workers_lf_display +]%, ?]
 KPD: [+ workers_kpd_display +]%,
 RPL&S: [+ workers_rpls_display +]%,
 [+ prarr_name +]: [+ workers_prarr_display +]%,
@@ -242,17 +242,89 @@ DNVP: [+ workers_dnvp_display +]%,
 NSDAP: [+ workers_nsdap_display +]%,
 Others: [+ workers_other_display +]%
 
-Rural Workers: VPs: [+ rural_spd_display +]%, KPD: [+ rural_kpd_display +]%, RPL&S: [+ rural_rpls_display +]%, [+ prarr_name +]: [+ rural_prarr_display +]%, DDP: [+ rural_ddp_display +]%, C: [+ rural_z_display +]%, APP: [+ rural_app_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Rural Workers:
+VPs: [+ rural_spd_display +]%,
+[? if sapd_formed: SAPD: [+ rural_sapd_display +]%, ?]
+[? if lf_formed: LF: [+ rural_lf_display +]%, ?]
+KPD: [+ rural_kpd_display +]%,
+RPL&S: [+ rural_rpls_display +]%,
+[+ prarr_name +]: [+ rural_prarr_display +]%,
+DDP: [+ rural_ddp_display +]%,
+C: [+ rural_z_display +]%,
+APP: [+ rural_app_display +]%;
+DNVP: [+ rural_dnvp_display +]%,
+NSDAP: [+ rural_nsdap_display +]%,
+Others: [+ rural_other_display +]%
 
-Unemployed: VPs: [+ unemployed_spd_display +]%, KPD: [+ unemployed_kpd_display +]%, RPL&S: [+ unemployed_rpls_display +]%, [+ prarr_name +]: [+ unemployed_prarr_display +]%, DDP: [+ unemployed_ddp_display +]%, C: [+ unemployed_z_display +]%, APP: [+ unemployed_app_display +]%; DNVP: [+ unemployed_dnvp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Unemployed:
+VPs: [+ unemployed_spd_display +]%,
+[? if sapd_formed: SAPD: [+ unemployed_sapd_display +]%, ?]
+[? if lf_formed: LF: [+ unemployed_lf_display +]%, ?]
+KPD: [+ unemployed_kpd_display +]%,
+RPL&S: [+ unemployed_rpls_display +]%,
+[+ prarr_name +]: [+ unemployed_prarr_display +]%,
+DDP: [+ unemployed_ddp_display +]%,
+C: [+ unemployed_z_display +]%,
+APP: [+ unemployed_app_display +]%;
+DNVP: [+ unemployed_dnvp_display +]%,
+NSDAP: [+ unemployed_nsdap_display +]%,
+Others: [+ unemployed_other_display +]%
 
-Sorcerers: VPs: [+ sorcerers_spd_display +]%, KPD: [+ sorcerers_kpd_display +]%, RPL&S: [+ sorcerers_rpls_display +]%, [+ prarr_name +]: [+ sorcerers_prarr_display +]%, DDP: [+ sorcerers_ddp_display +]%, C: [+ sorcerers_z_display +]%, APP: [+ sorcerers_app_display +]%; DNVP: [+ sorcerers_dnvp_display +]%, NSDAP: [+ sorcerers_nsdap_display +]%, Others: [+ sorcerers_other_display +]% [? if sapd_formed: SAPD: [+ sorcerers_sapd_display +]% ?]
+Sorcerers:
+VPs: [+ sorcerers_spd_display +]%,
+[? if sapd_formed: SAPD: [+ sorcerers_sapd_display +]%, ?]
+[? if lf_formed: LF: [+ sorcerers_lf_display +]%, ?]
+KPD: [+ sorcerers_kpd_display +]%,
+RPL&S: [+ sorcerers_rpls_display +]%,
+[+ prarr_name +]: [+ sorcerers_prarr_display +]%,
+DDP: [+ sorcerers_ddp_display +]%,
+C: [+ sorcerers_z_display +]%,
+APP: [+ sorcerers_app_display +]%;
+DNVP: [+ sorcerers_dnvp_display +]%,
+NSDAP: [+ sorcerers_nsdap_display +]%,
+Others: [+ sorcerers_other_display +]%
 
-Middle Class: VPs: [+ new_middle_spd_display +]%, KPD: [+ new_middle_kpd_display +]%, RPL&S: [+ new_middle_rpls_display +]%, [+ prarr_name +]: [+ new_middle_prarr_display +]%, DDP: [+ new_middle_ddp_display +]%, C: [+ new_middle_z_display +]%, APP: [+ new_middle_app_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+Middle Class:
+VPs: [+ new_middle_spd_display +]%,
+[? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+[? if lf_formed: LF: [+ new_middle_lf_display +]% ?]
+KPD: [+ new_middle_kpd_display +]%,
+RPL&S: [+ new_middle_rpls_display +]%,
+[+ prarr_name +]: [+ new_middle_prarr_display +]%,
+DDP: [+ new_middle_ddp_display +]%,
+C: [+ new_middle_z_display +]%,
+APP: [+ new_middle_app_display +]%;
+DNVP: [+ new_middle_dnvp_display +]%,
+NSDAP: [+ new_middle_nsdap_display +]%,
+Others: [+ new_middle_other_display +]%
 
-Industrialists & Landowners: VPs: [+ old_middle_spd_display +]%, KPD: [+ old_middle_kpd_display +]%, RPL&S: [+ old_middle_rpls_display +]%, [+ prarr_name +]: [+ old_middle_prarr_display +]%, DDP: [+ old_middle_ddp_display +]%, C: [+ old_middle_z_display +]%, APP: [+ old_middle_app_display +]%; DNVP: [+ old_middle_dnvp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Industrialists & Landowners:
+VPs: [+ old_middle_spd_display +]%,
+[? if sapd_formed: SAPD: [+ old_middle_sapd_display +]%, ?]
+[? if lf_formed: LF: [+ old_middle_lf_display +]%, ?]
+KPD: [+ old_middle_kpd_display +]%,
+RPL&S: [+ old_middle_rpls_display +]%,
+[+ prarr_name +]: [+ old_middle_prarr_display +]%,
+DDP: [+ old_middle_ddp_display +]%,
+C: [+ old_middle_z_display +]%,
+APP: [+ old_middle_app_display +]%;
+DNVP: [+ old_middle_dnvp_display +]%,
+NSDAP: [+ old_middle_nsdap_display +]%,
+Others: [+ old_middle_other_display +]%
 
-Catholics: VPs: [+ catholics_spd_display +]%, KPD: [+ catholics_kpd_display +]%, RPL&S: [+ catholics_rpls_display +]%, [+ prarr_name +]: [+ catholics_prarr_display +]%, DDP: [+ catholics_ddp_display +]%, C: [+ catholics_z_display +]%, APP: [+ catholics_app_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Catholics:
+VPs: [+ catholics_spd_display +]%,
+[? if sapd_formed: SAPD: [+ catholics_sapd_display +]%, ?]
+[? if lf_formed: LF: [+ catholics_lf_display +]%, ?]
+KPD: [+ catholics_kpd_display +]%,
+RPL&S: [+ catholics_rpls_display +]%,
+[+ prarr_name +]: [+ catholics_prarr_display +]%,
+DDP: [+ catholics_ddp_display +]%,
+C: [+ catholics_z_display +]%,
+APP: [+ catholics_app_display +]%;
+DNVP: [+ catholics_dnvp_display +]%,
+NSDAP: [+ catholics_nsdap_display +]%,
+Others: [+ catholics_other_display +]%
 
 Support for the Republic: [+ pro_republic_disp +]%
 
