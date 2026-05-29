@@ -13,9 +13,6 @@ Q.catholics_sapd = 0;
 Q.sorcerers_sapd = 5;
 
 Q.workers_other -= 5;
-
-if (Q.unions_independent) {
-    Q.workers_sapd += 8;
 }
 
 // update all records
