@@ -311,32 +311,32 @@ go-to: coalition_menu
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!} 
-{!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color: var(--vp); outline: 2px; outline-style: solid;'> </div> !}**SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td></tr>!}
+{!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td>Seats</td><td>Change</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--vp); outline: 2px; outline-style: solid;'> </div> !}**SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color: var(--lvp)'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color: var(--lvp)'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
 
-[? if lf_formed : {!<tr><td><div class="box" style='background-color: var(--lf)'> </div> !}LF: {!</td><td>!} [+ lf_r +]% {!</td><td>!} [+ str_change_lf +] {!</td></tr>!} ?]
+[? if lf_formed : {!<tr><td><div class="box" style='background-color: var(--lf)'> </div> !}LF: {!</td><td>!} [+ lf_r +]% {!</td><td>!} [+ str_change_lf +] {!</td><td>!} [+ lf_r +]% {!</td><td>!} [+ str_change_lf +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color: var(--pac)'> </div> !}KPD: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--pac)'> </div> !}KPD: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color: var(--rpls)'> </div> !}RPL&S: {!</td><td>!} [+ rpls_r +]% {!</td><td>!} [+ str_change_rpls +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--rpls)'> </div> !}RPL&S: {!</td><td>!} [+ rpls_r +]% {!</td><td>!} [+ str_change_rpls +] {!</td><td>!} [+ rpls_r +]% {!</td><td>!} [+ str_change_rpls +] {!</td></tr>!}
 
-[? if prarr_name = "PRARR": {!<tr><td><div class="box" style='background-color: var(--prarr)'> </div> !}PRARR: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!} ?]
+[? if prarr_name = "PRARR": {!<tr><td><div class="box" style='background-color: var(--prarr)'> </div> !}PRARR: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color: var(--adp)'> </div> !}DDP: {!</td><td>!} [+ ddp_r +]% {!</td><td>!} [+ str_change_ddp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--adp)'> </div> !}DDP: {!</td><td>!} [+ ddp_r +]% {!</td><td>!} [+ str_change_ddp +] {!</td><td>!} [+ ddp_r +]% {!</td><td>!} [+ str_change_ddp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color: var(--c)'> </div> !}Z: {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--c)'> </div> !}Z: {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +] {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +] {!</td></tr>!}
 
-[? if prarr_name = "RPP": {!<tr><td><div class="box" style='background-color: var(--rpp)'> </div> !}RPP: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!} ?]
+[? if prarr_name = "RPP": {!<tr><td><div class="box" style='background-color: var(--rpp)'> </div> !}RPP: {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td><td>!} [+ prarr_r +]% {!</td><td>!} [+ str_change_prarr +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color: var(--app)'> </div> !}APP: {!</td><td>!} [+ app_r +]% {!</td><td>!} [+ str_change_app +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--app)'> </div> !}APP: {!</td><td>!} [+ app_r +]% {!</td><td>!} [+ str_change_app +] {!</td><td>!} [+ app_r +]% {!</td><td>!} [+ str_change_app +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color: var(--napp)'> </div> !}DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td><td>!} [+ str_change_dnvp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--napp)'> </div> !}DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td><td>!} [+ str_change_dnvp +] {!</td><td>!} [+ dnvp_r +]% {!</td><td>!} [+ str_change_dnvp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color: var(--tani)'> </div> !}NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td><td>!} [+ str_change_nsdap +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--tani)'> </div> !}NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td><td>!} [+ str_change_nsdap +] {!</td><td>!} [+ nsdap_r +]% {!</td><td>!} [+ str_change_nsdap +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color: #a0a0a0'> </div> !}Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: #a0a0a0'> </div> !}Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
 {!</table>!}
 
 **Potential coalitions:**
