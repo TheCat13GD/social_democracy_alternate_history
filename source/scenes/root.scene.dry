@@ -248,6 +248,7 @@ Q.classes = ['workers', 'rural', 'unemployed', 'sorcerers', 'new_middle', 'old_m
 Q.parties = ['spd', 'kpd', 'rpls', 'prarr', 'ddp', 'z', 'app', 'dnvp', 'nsdap', 'other'];
 
 // TODO: add 'sapd' later on
+Q.lf_formed = 0;
 Q.sapd_formed = 0;
 
 // Support for party by social group
@@ -355,7 +356,11 @@ Q.old_dnvp_r = 21.3;
 Q.old_nsdap_r = 7;
 Q.old_other_r = 0;
 
-// sapd isn't formed yet, but it may be formed
+// Left Front isn't formed yet, but it will be formed
+Q.lf_r = 0;
+Q.old_lf_r = 0;
+
+// Left-VPs isn't formed yet, but it may be formed
 Q.sapd_r = 0;
 Q.old_sapd_r = 0;
 
