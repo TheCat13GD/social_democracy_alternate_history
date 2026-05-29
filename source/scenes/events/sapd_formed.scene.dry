@@ -13,7 +13,6 @@ Q.catholics_sapd = 0;
 Q.sorcerers_sapd = 5;
 
 Q.workers_other -= 5;
-}
 
 // update all records
 Q.sapd_r = 0;
