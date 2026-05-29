@@ -332,7 +332,6 @@ Q.catholics_other = 0;
 
 
 // Current Reichstag composition
-// % of Reichstag in Jan 1928
 Q.spd_r = 8.8;
 Q.kpd_r = 5.3;
 Q.rpls_r = 14.5;
@@ -343,6 +342,16 @@ Q.app_r = 17;
 Q.dnvp_r = 21.3;
 Q.nsdap_r = 7;
 Q.other_r = 0;
+Q.spd_seats = 35;
+Q.kpd_seats = 21;
+Q.rpls_seats = 58;
+Q.prarr_seats = 5;
+Q.ddp_seats = 31;
+Q.z_seats = 69;
+Q.app_seats = 68;
+Q.dnvp_seats = 85;
+Q.nsdap_seats = 28;
+Q.other_seats = 0;
 
 // diff from prev
 Q.old_spd_r = 8.8;
@@ -355,6 +364,16 @@ Q.old_app_r = 17;
 Q.old_dnvp_r = 21.3;
 Q.old_nsdap_r = 7;
 Q.old_other_r = 0;
+Q.old_spd_seats = 35;
+Q.old_kpd_seats = 21;
+Q.old_rpls_seats = 58;
+Q.old_prarr_seats = 5;
+Q.old_ddp_seats = 31;
+Q.old_z_seats = 69;
+Q.old_app_seats = 68;
+Q.old_dnvp_seats = 85;
+Q.old_nsdap_seats = 28;
+Q.old_other_seats = 0;
 
 // Left Front isn't formed yet, but it will be formed
 Q.lf_r = 0;
