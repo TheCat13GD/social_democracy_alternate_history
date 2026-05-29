@@ -89,20 +89,20 @@ if (d3 && window) {
 {!<tr><td><div class="box" style='background-color:var(--right)'> </div></td><td>!}Right-VPs: {!</td><td>!} [+ reformist_strength +]% {!</td></tr>!}
 {!</table>!}
 
-The first matter in the conference is, as usual, the election of the General Secretary. Our Pragmatist faction has put forth "Caas".
+The first matter in the conference is, as usual, the election of the General Secretary. Our Pragmatist faction has put forth XXXX Puig.
 
-On the other hand, there's "Roos", supported by the Reformists and Agrarians. He's sometimes referred to as "McReformface Jr.", I sure wonder why.
+On the other hand, there's XXXX Roos, supported by the Reformists and Agrarians. He's sometimes referred to as "McReformface Jr.", I sure wonder why.
 
-- @caas: The <span style="color: var(--vp);"><strong>VPs</strong></span> elect Center boi as General Secretary.
+- @puig: The <span style="color: var(--vp);"><strong>VPs</strong></span> elect Center boi as General Secretary.
 - @roos: The <span style="color: var(--vp);"><strong>VPs</strong></span> elect Right boi as General Secretary.
 
-@caas
+@puig
 unavailable-subtitle: The Left, Center and Sorcerers lack enough votes.
 subtitle: The Left, Center and Sorcerers hold a majority.
 choose-if: left_strength + neorevisionist_strength + center_strength > 50
-on-arrival: workers_spd += 5
+on-arrival: vps_leader = "Puig"
 
-Center boi wins.
+Puig is elected.
 
 Next up is the program to appeal to urban workers.
 
@@ -113,8 +113,9 @@ Next up is the program to appeal to urban workers.
 unavailable-subtitle: The Right and Agrarians lack enough votes.
 subtitle: The Right and Agrarians hold a majority.
 choose-if: labor_strength + reformist_strength > 50
+on-arrival: vps_leader = "Roos"
 
-Right boi wins.
+Roos is elected.
 
 Next up is the program to appeal to urban workers.
 
