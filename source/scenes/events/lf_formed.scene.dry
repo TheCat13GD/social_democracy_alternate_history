@@ -8,18 +8,18 @@ on-arrival: {!
 Q.lf_formed = 1;
 Q.parties.push('lf');
 
-Q.lf_relation = 25;
+Q.lf_relation = 30;
 Q.lf_leader = "collective leadership";
 Q.lf_ideology = "Left Communism";
 
-Q.workers_lf = 10;
-Q.workers_spd -= 3;
+Q.workers_lf = 5;
+Q.workers_kpd -= 3;
 Q.new_middle_lf = 1;
 Q.old_middle_lf = 0;
 Q.rural_lf = 0;
 Q.unemployed_lf = 2;
 Q.catholics_lf = 0;
-Q.sorcerers_lf = 5;
+Q.sorcerers_lf = 2;
 
 Q.workers_other -= 5;
 
