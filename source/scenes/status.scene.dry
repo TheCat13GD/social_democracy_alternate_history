@@ -44,6 +44,8 @@ Parliament composition:
 
 [? if sapd_formed and sapd_r > 0: <span class="tooltip-text" title="Party of Left-Verdantian-Progressives" style="color: var(--lvp);"><strong>Left-VPs</strong></span>: [+ sapd_r +]% ?]
 
+[? if lf_formed and lf_r > 0: <span class="tooltip-text" title="Left Front" style="color: var(--lf);"><strong>LF</strong></span>: [+ lf_r +]% ?]
+
 {!<span class="tooltip-text" title="Party of Aurelian Communists" style="color: var(--pac);"><strong>PAC</strong></span>!}: [+ kpd_r +]%
 
 {!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: var(--rpls);"><strong>RPL&S</strong></span>!}: [+ rpls_r +]%
@@ -84,6 +86,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
+[? if lf_formed: {!<span class="tooltip-text" title="Left Front" style="color: var(--lf);">!}<strong>LF</strong>{!</span>!}: [+ lf_relation : relationships +] ?]
+
 {!<span class="tooltip-text" title="Party of Aurelian Communists" style="color: var(--pac);"><strong>PAC</strong></span>!}: [+ kpd_relation : relationships +]
 
 {!<span class="tooltip-text" title="Radical Party of Labor and Socialists" style="color: var(--rpls);"><strong>RPL&S</strong></span>!}: [+ rpls_relation : relationships +]
@@ -103,6 +107,8 @@ Economic growth: [+ economic_growth_2 +]%
 {!<span class="tooltip-text" title="Territorial Alliance of Nobles and Intellectuals" style="color: var(--tani);"><strong>TANI</strong></span>!}: [+ nsdap_relation : relationships +]
 
 = Party Leadership
+
+[? if lf_formed: {!<span class="tooltip-text" title="Left Front" style="color: var(--lf);">!}<strong>LF</strong>{!</span>!}: [+ lf_ideology +] ([+ lf_leader +]) ?]
 
 {!<span class="tooltip-text" title="Party of Verdantian-Progressives" style="color: var(--vp);"><strong>VPs</strong></span>!}: [+ vps_ideology +] ([+ vps_leader +])
 
@@ -197,6 +203,8 @@ Q.socialism_disp = Math.round(Q.socialism);
 <span style="color: var(--vp);"><strong>VPs</strong></span>: [+ spd_votes +]%
 
 [? if sapd_formed: <span style="color: var(--lvp);"><strong>Left-VPs</strong></span>: [+ sapd_votes +]% ?]
+
+[? if lf_formed: <span style="color: var(--lf);"><strong>LF</strong></span>: [+ lf_votes +]% ?]
 
 <span style="color: var(--pac);"><strong>PAC</strong></span>: [+ kpd_votes +]%
 
