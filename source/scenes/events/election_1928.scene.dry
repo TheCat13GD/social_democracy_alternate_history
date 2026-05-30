@@ -44,6 +44,7 @@ on-arrival: {!
 var new_party_sum = 0;
 for (var party of Q.parties) {
     Q['old_' + party + '_r'] = Q[party + '_r'];
+    Q['old_' + party + '_seats'] = Q[party + '_seats'];
     // idk why I'm keeping this 'if' lol
     if (1 > 0) {
         if (Q[party + '_votes'] < Q.electoral_threshold || party == 'other' || Q[party + '_banned']) {
