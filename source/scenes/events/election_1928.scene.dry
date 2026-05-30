@@ -65,9 +65,9 @@ for (var party of Q.parties) {
     var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
     Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
     Q[party + '_seats'] = Math.trunc(Q[party + '_r'] * 4);
-    Q['change_' + party + '_seats'] = (Q[party + '_seats'] - Q['old_' + party + '_seats']).toFixed(1);
+    Q['change_' + party + '_seats'] = (Q[party + '_seats'] - Q['old_' + party + '_seats']);
     var sign = Q['change_' + party + '_seats'] > 0 ? '+'  : '';
-    Q['str_seat_change_' + party] = sign + Q['change_' + party + '_seats'];//.toFixed(1);
+    Q['str_seat_change_' + party] = sign + Q['change_' + party + '_seats'];
 }
 // calculate new party sum if electoral reform
 if (Q.electoral_threshold && Q.electoral_threshold > 0) {
@@ -88,9 +88,9 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
         var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
         Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
         Q[party + '_seats'] = Math.trunc(Q[party + '_r'] * 4);
-        Q['change_' + party + '_seats'] = (Q[party + '_seats'] - Q['old_' + party + '_seats']).toFixed(1);
+        Q['change_' + party + '_seats'] = (Q[party + '_seats'] - Q['old_' + party + '_seats']);
         var sign = Q['change_' + party + '_seats'] > 0 ? '+'  : '';
-        Q['str_seat_change_' + party] = sign + Q['change_' + party + '_seats'];//.toFixed(1);
+        Q['str_seat_change_' + party] = sign + Q['change_' + party + '_seats'];
     }
 }
 
@@ -317,12 +317,6 @@ go-to: coalition_menu
 = Election results
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
-
-[+ change_lf_r +]
-
-Proof that it updated
-
-[+ change_lf_seats +]
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td>Seats given</td><td>Change</td></tr>!}
