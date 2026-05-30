@@ -334,14 +334,14 @@ if (Q.lf_formed && Q.lf_r) {
             "id": "lf",
             "legend": "LF",
             "name": "LF",
-            "seats": Math.trunc(Q.lf_r*4),
+            "seats": Q.lf_seats,
         }];
     data = data.concat([
         {
             "id": "kpd",
             "legend": "KPD",
             "name": "KPD",
-            "seats": Math.trunc(Q.kpd_r*4),
+            "seats": Q.kpd_seats,
         },
     ]);
 } else {
@@ -350,7 +350,7 @@ if (Q.lf_formed && Q.lf_r) {
             "id": "kpd",
             "legend": "KPD",
             "name": "KPD",
-            "seats": Math.trunc(Q.kpd_r*4),
+            "seats": Q.kpd_seats,
         }];
 }
 
@@ -360,7 +360,7 @@ data = data.concat([
         "id": "rpls",
         "legend": "RPL&S",
         "name": "RPL&S",
-        "seats": Math.trunc(Q.rpls_r*4),
+        "seats": Q.rpls_seats,
     },
 ]);
 if (Q.sapd_formed && Q.sapd_r) {
@@ -368,7 +368,7 @@ if (Q.sapd_formed && Q.sapd_r) {
         "id": "sapd",
         "legend": "SAPD",
         "name": "SAPD",
-        "seats": Math.trunc(Q.sapd_r*4),
+        "seats": Q.sapd_seats,
     });
 }
 data = data.concat([
@@ -376,7 +376,7 @@ data = data.concat([
         "id": "spd",
         "legend": "SPD",
         "name": "SPD",
-        "seats": Math.trunc(Q.spd_r*4),
+        "seats": Q.spd_seats,
     },
 ]);
 if (Q.prarr_name == "PRARR" && Q.prarr_r) {
@@ -384,7 +384,7 @@ if (Q.prarr_name == "PRARR" && Q.prarr_r) {
         "id": "prarr",
         "legend": "PRARR",
         "name": "PRARR",
-        "seats": Math.trunc(Q.prarr_r*4),
+        "seats": Q.prarr_seats,
     });
 }
 data = data.concat([
@@ -392,13 +392,13 @@ data = data.concat([
         "id": "ddp",
         "legend": "DDP",
         "name": "DDP",
-        "seats": Math.trunc(Q.ddp_r*4),
+        "seats": Q.ddp_seats,
     },
     {
         "id": "z",
         "legend": "Center",
         "name": "Center",
-        "seats": Math.trunc(Q.z_r*4),
+        "seats": Q.z_seats,
     },
 ]);
 if (Q.prarr_name == "RPP" && Q.prarr_r) {
@@ -406,7 +406,7 @@ if (Q.prarr_name == "RPP" && Q.prarr_r) {
         "id": "rpp",
         "legend": "RPP",
         "name": "RPP",
-        "seats": Math.trunc(Q.prarr_r*4),
+        "seats": Q.prarr_seats,
     });
 }
 data = data.concat([
@@ -414,19 +414,19 @@ data = data.concat([
         "id": "app",
         "legend": "APP",
         "name": "APP",
-        "seats": Math.trunc(Q.app_r*4),
+        "seats": Q.app_seats,
     },
     {
         "id": "dnvp",
         "legend": "DNVP",
         "name": "DNVP",
-        "seats": Math.trunc(Q.dnvp_r*4),
+        "seats": Q.dnvp_seats,
     },
     {
         "id": "nsdap",
         "legend": "NSDAP",
         "name": "NSDAP",
-        "seats": Math.trunc(Q.nsdap_r*4),
+        "seats": Q.nsdap_seats,
     },
 ]);
 if (Q.other_r) {
@@ -434,7 +434,7 @@ if (Q.other_r) {
         "id": "other",
         "legend": "Other",
         "name": "Other",
-        "seats": Math.trunc(Q.other_r*4),
+        "seats": Q.other_seats,
     });
 }
 if (d3 && window) {
@@ -507,31 +507,31 @@ if (d3 && window) {
 
 {!<table>!}
 {!<tr><td>Party</td><td>Seats</td><td>%</td></tr>!}
-{!<tr><td><div class="box" style='background-color: var(--vp); outline: 2px; outline-style: solid;'> </div></td><td>!} **SPD:** {!</td><td>!} **[+ spd_seats +]** {!</td><td>!} **[+ spd_r +]%** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--vp); outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_seats +]** {!</td><td>!} **[+ spd_r +]%** {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color: var(--lvp)'> </div></td> <td> !}SAPD: {!</td><td>!} [+ sapd_seats +] {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color: var(--lvp)'> </div> !}SAPD: {!</td><td>!} [+ sapd_seats +] {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
 
-[? if lf_formed : {!<tr><td><div class="box" style='background-color: var(--lf)'> </div></td> <td> !}LF: {!</td><td>!} [+ lf_seats +] {!</td><td>!} [+ lf_r +]% {!</td></tr>!} ?]
+[? if lf_formed : {!<tr><td><div class="box" style='background-color: var(--lf)'> </div> !}LF: {!</td><td>!} [+ lf_seats +] {!</td><td>!} [+ lf_r +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color: var(--pac)'> </div></td> <td>!}KPD: {!</td><td>!} [+ kpd_seats +] {!</td><td>!} [+ kpd_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--pac)'> </div> !}KPD: {!</td><td>!} [+ kpd_seats +] {!</td><td>!} [+ kpd_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color: var(--rpls)'> </div></td> <td>!}RPL&S: {!</td><td>!} [+ rpls_seats +] {!</td><td>!} [+ rpls_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--rpls)'> </div> !}RPL&S: {!</td><td>!} [+ rpls_seats +] {!</td><td>!} [+ rpls_r +]% {!</td></tr>!}
 
-[? if prarr_name = "PRARR": {!<tr><td><div class="box" style='background-color: var(--prarr)'> </div></td> <td>!}PRARR: {!</td><td>!} [+ prarr_seats +] {!</td><td>!} [+ prarr_r +]% {!</td></tr>!} ?]
+[? if prarr_name = "PRARR": {!<tr><td><div class="box" style='background-color: var(--prarr)'> </div> !}PRARR: {!</td><td>!} [+ prarr_seats +] {!</td><td>!} [+ prarr_r +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color: var(--adp)'> </div></td><td>!}DDP: {!</td><td>!} [+ ddp_seats +] {!</td><td>!} [+ ddp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--adp)'> </div> !}DDP: {!</td><td>!} [+ ddp_seats +] {!</td><td>!} [+ ddp_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color: var(--c)'> </div></td><td>!} Z: {!</td><td>!} [+ z_seats +] {!</td><td>!} [+ z_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--c)'> </div> !} Z: {!</td><td>!} [+ z_seats +] {!</td><td>!} [+ z_r +]% {!</td></tr>!}
 
-[? if prarr_name = "RPP": {!<tr><td><div class="box" style='background-color: var(--rpp)'> </div></td> <td>!}RPP: {!</td><td>!} [+ prarr_seats +] {!</td><td>!} [+ prarr_r +]% {!</td></tr>!} ?]
+[? if prarr_name = "RPP": {!<tr><td><div class="box" style='background-color: var(--rpp)'> </div> !}RPP: {!</td><td>!} [+ prarr_seats +] {!</td><td>!} [+ prarr_r +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color: var(--app)'> </div></td><td>!} APP: {!</td><td>!} [+ app_seats +] {!</td><td>!} [+ app_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--app)'> </div> !} APP: {!</td><td>!} [+ app_seats +] {!</td><td>!} [+ app_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color: var(--napp)'> </div></td><td>!} DNVP: {!</td><td>!} [+ dnvp_seats +] {!</td><td>!} [+ dnvp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--napp)'> </div> !} DNVP: {!</td><td>!} [+ dnvp_seats +] {!</td><td>!} [+ dnvp_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color: var(--tani)'> </div></td><td>!} NSDAP: {!</td><td>!} [+ nsdap_seats +] {!</td><td>!} [+ nsdap_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color: var(--tani)'> </div> !} NSDAP: {!</td><td>!} [+ nsdap_seats +] {!</td><td>!} [+ nsdap_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_seats +] {!</td><td>!} [+ other_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Other parties: {!</td><td>!} [+ other_seats +] {!</td><td>!} [+ other_r +]% {!</td></tr>!}
 {!</table>!}
 
 = Election history
