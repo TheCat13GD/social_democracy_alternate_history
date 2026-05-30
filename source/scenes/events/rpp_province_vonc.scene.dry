@@ -21,7 +21,7 @@ Some within our party have proposed forming a traffic light coalition by bringin
 unavailable-subtitle: [? if ddp_relation < 50 : The <span style="color: var(--adp);"><strong>ADP</strong></span> does not trust us enough. ?] [? if kpd_relation < 30 : The <span style="color: var(--pac);"><strong>PAC</strong></span> may break toleration if this coalition were to be formed. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
 subtitle: -2 resources
 choose-if: ddp_relation >= 50 and kpd_relation >= 30 and resources >= 2
-on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; workers_prarr += 3; ddp_relation += 5; rpls_relation += 3; kpd_relation -= 2;
+on-arrival: resources -= 2; pro_republic += 3; socialism += 2; reformist_strength += 3; workers_spd += 2; new_middle_spd += 2;  old_middle_prarr -= 3; ddp_relation += 5; rpls_relation += 3; kpd_relation -= 2;
 
 We have managed to include the <span style="color: var(--adp);"><strong>ADP</strong></span> in our coalition!
 
@@ -29,11 +29,11 @@ We have managed to include the <span style="color: var(--adp);"><strong>ADP</str
 unavailable-subtitle: [? if ddp_relation < 50 : Our relations are not good enough. ?] [? if resources < 2 : We do not have enough resources (2 needed). ?]
 subtitle: -2 resources
 choose-if: ddp_relation >= 50 and resources >= 2
-on-arrival: resources -= 2; reformist_strength += 5; new_middle_spd += 3; old_middle_prarr -= 2; rpls_relation += 3;
+on-arrival: resources -= 2; pro_republic += 2; socialism += 2; reformist_strength += 3; workers_spd += 2; new_middle_spd += 2; old_middle_prarr -= 2; rpls_relation += 3;
 
 We have convinced the <span style="color: var(--adp);"><strong>ADP</strong></span> to abstain, thus making them de facto tolerators of the coalition.
 
 @collapse
-on-arrival: prarr_relation -= 5; old_middle_prarr += 5;
+on-arrival: pro_republic -= 3; socialism -= 2; prarr_relation -= 5; old_middle_prarr += 5; new_middle_dnvp += 2; old_middle_dnvp += 3; workers_spd -= 2; new_middle_spd -= 1; workers_rpls += 3; new_middle_rpls -= 1;
 
-The coalition is no more more.
+With no compromise being made, the no-confidence vote succeds. Disillusionment is building up among the <span style="color: var(--rpls);"><strong>RPL&S</strong></span>'s and <span style="color: var(--vp);"><strong>VPs</strong></span>' rank-and file, as the most progressive local government in the country has been dismantled.
